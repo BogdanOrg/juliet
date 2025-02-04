@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getQueryString_Servlet_67a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getQueryString_Servlet_67b.java", "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getQueryString_Servlet_67a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_67a.java:CWE643_Xpath_Injection__getQueryString_Servlet_67a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_67a.java:CWE643_Xpath_Injection__getQueryString_Servlet_67a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67b.java", "src\\testcasesupport\\IO.java", "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67a.java:CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67a.java:CWE606_Unchecked_Loop_Condition__getParameter_Servlet_67a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__max_value_for_loop_68a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__max_value_for_loop_68b.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__max_value_for_loop_68a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__max_value_for_loop_68a.java:CWE400_Resource_Exhaustion__max_value_for_loop_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__max_value_for_loop_68a.java:CWE400_Resource_Exhaustion__max_value_for_loop_68a:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE681_Incorrect_Conversion_Between_Numeric_Types\\CWE681_Incorrect_Conversion_Between_Numeric_Types__float2int_09.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE681_Incorrect_Conversion_Between_Numeric_Types\\CWE681_Incorrect_Conversion_Between_Numeric_Types__float2int_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE681_Incorrect_Conversion_Between_Numeric_Types/CWE681_Incorrect_Conversion_Between_Numeric_Types__float2int_09.java:CWE681_Incorrect_Conversion_Between_Numeric_Types__float2int_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE681_Incorrect_Conversion_Between_Numeric_Types/CWE681_Incorrect_Conversion_Between_Numeric_Types__float2int_09.java:CWE681_Incorrect_Conversion_Between_Numeric_Types__float2int_09:good()",
+    "typeName" : "good"
+  } ]
+}

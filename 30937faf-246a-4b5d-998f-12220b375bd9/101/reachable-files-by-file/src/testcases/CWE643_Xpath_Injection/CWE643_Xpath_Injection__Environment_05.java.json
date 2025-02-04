@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__Environment_05.java",
+  "reachableFiles" : [ "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__Environment_05.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__Environment_05.java:CWE643_Xpath_Injection__Environment_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__Environment_05.java:CWE643_Xpath_Injection__Environment_05:good()",
+    "typeName" : "good"
+  } ]
+}

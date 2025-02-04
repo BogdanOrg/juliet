@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE832_Unlock_Not_Locked\\CWE832_Unlock_Not_Locked__ReentrantLock_Thread_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE832_Unlock_Not_Locked\\CWE832_Unlock_Not_Locked__ReentrantLock_Thread_01.java", "src\\testcasesupport\\IO.java", "src\\testcasesupport\\AbstractTestCase.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE832_Unlock_Not_Locked/CWE832_Unlock_Not_Locked__ReentrantLock_Thread_01.java:CWE832_Unlock_Not_Locked__ReentrantLock_Thread_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE832_Unlock_Not_Locked/CWE832_Unlock_Not_Locked__ReentrantLock_Thread_01.java:CWE832_Unlock_Not_Locked__ReentrantLock_Thread_01:good()",
+    "typeName" : "good"
+  } ]
+}

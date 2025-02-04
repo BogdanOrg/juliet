@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getParameter_Servlet_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getParameter_Servlet_07.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__getParameter_Servlet_07.java:CWE78_OS_Command_Injection__getParameter_Servlet_07:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__getParameter_Servlet_07.java:CWE78_OS_Command_Injection__getParameter_Servlet_07:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

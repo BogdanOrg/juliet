@@ -1,0 +1,302 @@
+{
+  "ruleId" : "Protocol:ExternalSystemControl",
+  "level" : "error",
+  "message" : {
+    "text" : "'setCatalog' method of 'java.sql.Connection' object could be abused to change sensitive system properties."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+      },
+      "region" : {
+        "startLine" : 114,
+        "startColumn" : 26,
+        "endLine" : 114,
+        "endColumn" : 35,
+        "snippet" : {
+          "text" : "java.sql.Connection.setCatalog"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 66,
+              "endLine" : 54,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 37,
+              "endLine" : 54,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 37,
+              "endLine" : 54,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 34,
+              "endLine" : 55,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 34,
+              "endLine" : 55,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 58,
+              "startColumn" : 39,
+              "endLine" : 58,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 58,
+              "startColumn" : 39,
+              "endLine" : 58,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 114,
+              "startColumn" : 26,
+              "endLine" : 114,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "java.sql.Connection.setCatalog"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'setCatalog' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Connection.setCatalog",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 66,
+              "endLine" : 54,
+              "endColumn" : 79,
+              "snippet" : {
+                "text" : "getInputStream"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:su:352390",
+          "loc" : "new InputStreamReader(socket.getInputStream(), \"UTF-8\")"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-system-properties",
+    "cwe" : 15,
+    "confidence" : "LOW"
+  }
+}

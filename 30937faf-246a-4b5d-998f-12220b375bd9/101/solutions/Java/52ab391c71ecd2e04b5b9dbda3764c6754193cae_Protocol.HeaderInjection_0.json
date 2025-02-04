@@ -1,0 +1,332 @@
+{
+  "ruleId" : "Protocol:HeaderInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'addHeader' method of 'javax.servlet.http.HttpServletResponse' object could be abused to perform a HTTP Header Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+      },
+      "region" : {
+        "startLine" : 130,
+        "startColumn" : 26,
+        "endLine" : 130,
+        "endColumn" : 34,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.addHeader"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 61,
+              "startColumn" : 66,
+              "endLine" : 61,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 61,
+              "startColumn" : 37,
+              "endLine" : 61,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 61,
+              "startColumn" : 37,
+              "endLine" : 61,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 62,
+              "startColumn" : 34,
+              "endLine" : 62,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 62,
+              "startColumn" : 34,
+              "endLine" : 62,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 65,
+              "startColumn" : 39,
+              "endLine" : 65,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 65,
+              "startColumn" : 39,
+              "endLine" : 65,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 130,
+              "startColumn" : 48,
+              "endLine" : 130,
+              "endColumn" : 74,
+              "snippet" : {
+                "text" : "response.addHeader(\"Location\", \"/author.jsp?lang=\" + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"/author.jsp?lang=\" + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 130,
+              "startColumn" : 26,
+              "endLine" : 130,
+              "endColumn" : 34,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.addHeader"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java:CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'addHeader' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.addHeader",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_17.java"
+            },
+            "region" : {
+              "startLine" : 61,
+              "startColumn" : 66,
+              "endLine" : 61,
+              "endColumn" : 79,
+              "snippet" : {
+                "text" : "getInputStream"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:su:69467",
+          "loc" : "new InputStreamReader(socket.getInputStream(), \"UTF-8\")"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-header-inj",
+    "cwe" : 113,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_01.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_01:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_01.java:CWE15_External_Control_of_System_or_Configuration_Setting__getQueryString_Servlet_01:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

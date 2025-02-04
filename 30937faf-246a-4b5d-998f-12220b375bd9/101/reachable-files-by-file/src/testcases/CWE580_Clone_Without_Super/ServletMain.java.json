@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE580_Clone_Without_Super\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE580_Clone_Without_Super\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE580_Clone_Without_Super/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE580_Clone_Without_Super/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

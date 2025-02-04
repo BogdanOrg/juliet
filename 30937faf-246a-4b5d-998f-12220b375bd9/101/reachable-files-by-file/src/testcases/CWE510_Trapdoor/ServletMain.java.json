@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE510_Trapdoor\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE510_Trapdoor\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE510_Trapdoor/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE510_Trapdoor/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

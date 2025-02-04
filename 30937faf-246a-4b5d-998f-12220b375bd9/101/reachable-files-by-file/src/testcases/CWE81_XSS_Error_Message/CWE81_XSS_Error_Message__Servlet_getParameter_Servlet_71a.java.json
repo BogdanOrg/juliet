@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71b.java", "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71a.java:CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71a.java:CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_71a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

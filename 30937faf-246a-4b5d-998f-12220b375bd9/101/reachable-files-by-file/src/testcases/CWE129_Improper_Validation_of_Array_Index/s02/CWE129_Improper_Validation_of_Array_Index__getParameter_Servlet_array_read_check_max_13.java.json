@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s02\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_check_max_13.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s02\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_check_max_13.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s02/CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_check_max_13.java:CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_check_max_13:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s02/CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_check_max_13.java:CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_check_max_13:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

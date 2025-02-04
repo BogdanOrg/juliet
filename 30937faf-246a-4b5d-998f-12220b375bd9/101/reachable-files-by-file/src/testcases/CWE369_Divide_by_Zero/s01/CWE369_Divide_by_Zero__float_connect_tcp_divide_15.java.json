@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_connect_tcp_divide_15.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_connect_tcp_divide_15.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_connect_tcp_divide_15.java:CWE369_Divide_by_Zero__float_connect_tcp_divide_15:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_connect_tcp_divide_15.java:CWE369_Divide_by_Zero__float_connect_tcp_divide_15:good()",
+    "typeName" : "good"
+  } ]
+}

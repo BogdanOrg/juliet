@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__File_71a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__File_71b.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__File_71a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_71a.java:CWE23_Relative_Path_Traversal__File_71a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_71a.java:CWE23_Relative_Path_Traversal__File_71a:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53d.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53c.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53b.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53a.java:CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53a.java:CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_53a:good()",
+    "typeName" : "good"
+  } ]
+}

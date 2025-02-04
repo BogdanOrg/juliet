@@ -1,0 +1,452 @@
+{
+  "ruleId" : "Protocol:PathTraversal",
+  "level" : "error",
+  "message" : {
+    "text" : "'exists' method of 'java.io.File' object could be abused to disclose or manipulate sensitive files."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+      },
+      "region" : {
+        "startLine" : 64,
+        "startColumn" : 22,
+        "endLine" : 64,
+        "endColumn" : 27,
+        "snippet" : {
+          "text" : "java.io.File.exists"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 136,
+              "startColumn" : 39,
+              "endLine" : 136,
+              "endColumn" : 64,
+              "snippet" : {
+                "text" : "streamFileInput = new FileInputStream(file);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "streamFileInput",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 137,
+              "startColumn" : 41,
+              "endLine" : 137,
+              "endColumn" : 88,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(streamFileInput, \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 137,
+              "startColumn" : 41,
+              "endLine" : 137,
+              "endColumn" : 88,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(streamFileInput, \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 138,
+              "startColumn" : 38,
+              "endLine" : 138,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 138,
+              "startColumn" : 38,
+              "endLine" : 138,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 142,
+              "startColumn" : 43,
+              "endLine" : 142,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 142,
+              "startColumn" : 43,
+              "endLine" : 142,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 196,
+              "startColumn" : 9,
+              "endLine" : 196,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad_source()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad_source()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "bad_source",
+            "locationType" : "RETURN"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 16,
+              "endLine" : 43,
+              "endColumn" : 26,
+              "snippet" : {
+                "text" : "data = bad_source();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 60,
+              "startColumn" : 34,
+              "endLine" : 60,
+              "endColumn" : 45,
+              "snippet" : {
+                "text" : "File file = new File(root + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "root + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 60,
+              "startColumn" : 25,
+              "endLine" : 60,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "File file = new File(root + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.File.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 60,
+              "startColumn" : 25,
+              "endLine" : 60,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "File file = new File(root + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "file",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 64,
+              "startColumn" : 22,
+              "endLine" : 64,
+              "endColumn" : 27,
+              "snippet" : {
+                "text" : "java.io.File.exists"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java:CWE23_Relative_Path_Traversal__File_21:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING, STOP]' for variable 'exists' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.File.exists",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__File_21.java"
+            },
+            "region" : {
+              "startLine" : 137,
+              "startColumn" : 63,
+              "endLine" : 137,
+              "endColumn" : 77,
+              "snippet" : {
+                "text" : "streamFileInput"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "streamFileInput",
+          "loc" : "new InputStreamReader(streamFileInput, \"UTF-8\")"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-path-traversal",
+    "cwe" : 22,
+    "confidence" : "LOW"
+  }
+}

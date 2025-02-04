@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE191_Integer_Underflow\\s01\\CWE191_Integer_Underflow__byte_console_readLine_multiply_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE191_Integer_Underflow\\s01\\CWE191_Integer_Underflow__byte_console_readLine_multiply_16.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__byte_console_readLine_multiply_16.java:CWE191_Integer_Underflow__byte_console_readLine_multiply_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__byte_console_readLine_multiply_16.java:CWE191_Integer_Underflow__byte_console_readLine_multiply_16:good()",
+    "typeName" : "good"
+  } ]
+}

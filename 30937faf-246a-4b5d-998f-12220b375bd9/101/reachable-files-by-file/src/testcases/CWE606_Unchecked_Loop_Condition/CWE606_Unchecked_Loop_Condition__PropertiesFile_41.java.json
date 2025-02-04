@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__PropertiesFile_41.java",
+  "reachableFiles" : [ "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__PropertiesFile_41.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__PropertiesFile_41.java:CWE606_Unchecked_Loop_Condition__PropertiesFile_41:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__PropertiesFile_41.java:CWE606_Unchecked_Loop_Condition__PropertiesFile_41:good()",
+    "typeName" : "good"
+  } ]
+}

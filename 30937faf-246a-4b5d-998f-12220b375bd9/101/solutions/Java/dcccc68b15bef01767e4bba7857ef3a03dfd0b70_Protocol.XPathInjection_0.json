@@ -1,0 +1,592 @@
+{
+  "ruleId" : "Protocol:XPathInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'evaluate' method of 'javax.xml.xpath.XPath' object could be abused to perform an XPATH Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+      },
+      "region" : {
+        "startLine" : 117,
+        "startColumn" : 47,
+        "endLine" : 117,
+        "endColumn" : 54,
+        "snippet" : {
+          "text" : "javax.xml.xpath.XPath.evaluate"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 32,
+              "endLine" : 52,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 39,
+              "endLine" : 54,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 39,
+              "endLine" : 54,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 101,
+              "startColumn" : 41,
+              "endLine" : 101,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 101,
+              "startColumn" : 41,
+              "endLine" : 101,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokens",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 106,
+              "startColumn" : 35,
+              "endLine" : 106,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String username = tokens[0];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 106,
+              "startColumn" : 35,
+              "endLine" : 106,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String username = tokens[0];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "username",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 114,
+              "startColumn" : 32,
+              "endLine" : 114,
+              "endColumn" : 48,
+              "snippet" : {
+                "text" : "String query = \"//users/user[name/text()='\" + username +"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "query",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 117,
+              "startColumn" : 47,
+              "endLine" : 117,
+              "endColumn" : 54,
+              "snippet" : {
+                "text" : "javax.xml.xpath.XPath.evaluate"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'evaluate' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.xml.xpath.XPath.evaluate",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    }, {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 32,
+              "endLine" : 52,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 39,
+              "endLine" : 54,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 39,
+              "endLine" : 54,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 101,
+              "startColumn" : 41,
+              "endLine" : 101,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 101,
+              "startColumn" : 41,
+              "endLine" : 101,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokens",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 107,
+              "startColumn" : 35,
+              "endLine" : 107,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String password = tokens[1];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 107,
+              "startColumn" : 35,
+              "endLine" : 107,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String password = tokens[1];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "password",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 114,
+              "startColumn" : 32,
+              "endLine" : 114,
+              "endColumn" : 48,
+              "snippet" : {
+                "text" : "String query = \"//users/user[name/text()='\" + username +"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "query",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java"
+            },
+            "region" : {
+              "startLine" : 117,
+              "startColumn" : 47,
+              "endLine" : 117,
+              "endColumn" : 54,
+              "snippet" : {
+                "text" : "javax.xml.xpath.XPath.evaluate"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__PropertiesFile_12.java:CWE643_Xpath_Injection__PropertiesFile_12:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'evaluate' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.xml.xpath.XPath.evaluate",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-xpath-inj",
+    "cwe" : 643,
+    "confidence" : "LOW"
+  }
+}

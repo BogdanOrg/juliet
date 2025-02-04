@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s02\\CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s02\\CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s02\\CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52c.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s02\\CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s02/CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52a.java:CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s02/CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52a.java:CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_size_52a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

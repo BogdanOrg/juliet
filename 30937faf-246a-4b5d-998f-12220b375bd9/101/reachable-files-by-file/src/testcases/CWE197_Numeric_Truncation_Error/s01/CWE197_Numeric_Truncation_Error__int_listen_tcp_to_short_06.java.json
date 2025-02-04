@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_06.java",
+  "reachableFiles" : [ "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_06.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_06.java:CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_06:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_06.java:CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_06:good()",
+    "typeName" : "good"
+  } ]
+}

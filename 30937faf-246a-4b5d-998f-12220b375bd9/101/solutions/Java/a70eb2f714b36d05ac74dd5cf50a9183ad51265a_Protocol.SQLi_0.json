@@ -1,0 +1,374 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'execute' method of 'java.sql.Statement' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java"
+      },
+      "region" : {
+        "startLine" : 41,
+        "startColumn" : 43,
+        "endLine" : 41,
+        "endColumn" : 49,
+        "snippet" : {
+          "text" : "java.sql.Statement.execute"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(data,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54e:badSink(data,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54a.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 24,
+              "endLine" : 31,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "data = request.getParameter(\"name\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54a.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 71,
+              "endLine" : 33,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54b()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54a.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54b.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 17,
+              "endLine" : 25,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54b.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54b.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 71,
+              "endLine" : 27,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54c()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54b.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54c()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54c.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 17,
+              "endLine" : 25,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54c.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54c.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 71,
+              "endLine" : 27,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54d()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54c.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54d()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54d.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 17,
+              "endLine" : 25,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54d.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54d:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54d.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 71,
+              "endLine" : 27,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54e()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54d.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54d:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__getParameter_Servlet_execute_54e()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 17,
+              "endLine" : 29,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 51,
+              "endLine" : 41,
+              "endColumn" : 120,
+              "snippet" : {
+                "text" : "Boolean result = sqlStatement.execute(\"insert into users (status) values ('updated') where name='\"+data+\"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"insert into users (status) values ('updated') where name='\"+data+\"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 43,
+              "endLine" : 41,
+              "endColumn" : 49,
+              "snippet" : {
+                "text" : "java.sql.Statement.execute"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_54e.java:CWE89_SQL_Injection__getParameter_Servlet_execute_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'execute' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Statement.execute",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

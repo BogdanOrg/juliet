@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE197_Numeric_Truncation_Error\\s02\\CWE197_Numeric_Truncation_Error__short_connect_tcp_68a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE197_Numeric_Truncation_Error\\s02\\CWE197_Numeric_Truncation_Error__short_connect_tcp_68a.java", "src\\testcases\\CWE197_Numeric_Truncation_Error\\s02\\CWE197_Numeric_Truncation_Error__short_connect_tcp_68b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s02/CWE197_Numeric_Truncation_Error__short_connect_tcp_68a.java:CWE197_Numeric_Truncation_Error__short_connect_tcp_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s02/CWE197_Numeric_Truncation_Error__short_connect_tcp_68a.java:CWE197_Numeric_Truncation_Error__short_connect_tcp_68a:good()",
+    "typeName" : "good"
+  } ]
+}

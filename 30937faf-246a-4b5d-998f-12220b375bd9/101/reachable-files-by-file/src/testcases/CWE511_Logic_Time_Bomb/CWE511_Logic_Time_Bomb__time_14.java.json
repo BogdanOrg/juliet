@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE511_Logic_Time_Bomb\\CWE511_Logic_Time_Bomb__time_14.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE511_Logic_Time_Bomb\\CWE511_Logic_Time_Bomb__time_14.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE511_Logic_Time_Bomb/CWE511_Logic_Time_Bomb__time_14.java:CWE511_Logic_Time_Bomb__time_14:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE511_Logic_Time_Bomb/CWE511_Logic_Time_Bomb__time_14.java:CWE511_Logic_Time_Bomb__time_14:good()",
+    "typeName" : "good"
+  } ]
+}

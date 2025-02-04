@@ -1,0 +1,164 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b.java"
+      },
+      "region" : {
+        "startLine" : 34,
+        "startColumn" : 35,
+        "endLine" : 34,
+        "endColumn" : 39,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(data,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b:badSink(data,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51a.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 24,
+              "endLine" : 31,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "data = request.getParameter(\"name\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51a.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 76,
+              "endLine" : 33,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b()).badSink(data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51a.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 17,
+              "endLine" : 29,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 35,
+              "endLine" : 34,
+              "endColumn" : 39,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_51b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

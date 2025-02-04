@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE248_Uncaught_Exception\\CWE248_Uncaught_Exception__Error_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE248_Uncaught_Exception\\CWE248_Uncaught_Exception__Error_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE248_Uncaught_Exception/CWE248_Uncaught_Exception__Error_01.java:CWE248_Uncaught_Exception__Error_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE248_Uncaught_Exception/CWE248_Uncaught_Exception__Error_01.java:CWE248_Uncaught_Exception__Error_01:good()",
+    "typeName" : "good"
+  } ]
+}

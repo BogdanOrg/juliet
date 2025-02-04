@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__database_67a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__database_67a.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__database_67b.java", "src\\testcasesupport\\AbstractTestCase.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java:CWE470_Unsafe_Reflection__database_67a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java:CWE470_Unsafe_Reflection__database_67a:good()",
+    "typeName" : "good"
+  } ]
+}

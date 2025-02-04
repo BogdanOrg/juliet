@@ -1,0 +1,362 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+      },
+      "region" : {
+        "startLine" : 253,
+        "startColumn" : 41,
+        "endLine" : 253,
+        "endColumn" : 45,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2G1(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 332,
+              "startColumn" : 17,
+              "endLine" : 332,
+              "endColumn" : 21,
+              "snippet" : {
+                "text" : "public void good(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "good(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:good(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 336,
+              "startColumn" : 9,
+              "endLine" : 336,
+              "endColumn" : 17,
+              "snippet" : {
+                "text" : "goodB2G1(request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "good(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:good(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "goodB2G1",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 207,
+              "startColumn" : 18,
+              "endLine" : 207,
+              "endColumn" : 26,
+              "snippet" : {
+                "text" : "private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 215,
+              "startColumn" : 50,
+              "endLine" : 215,
+              "endColumn" : 60,
+              "snippet" : {
+                "text" : "Cookie cookieSources[] = request.getCookies();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletRequest.getCookies",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 215,
+              "startColumn" : 50,
+              "endLine" : 215,
+              "endColumn" : 60,
+              "snippet" : {
+                "text" : "Cookie cookieSources[] = request.getCookies();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "cookieSources",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 219,
+              "startColumn" : 28,
+              "endLine" : 219,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<javax.servlet.http.Cookie>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 219,
+              "startColumn" : 28,
+              "endLine" : 219,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "cookieSources[0]",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 219,
+              "startColumn" : 45,
+              "endLine" : 219,
+              "endColumn" : 53,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.Cookie.getValue",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 219,
+              "startColumn" : 45,
+              "endLine" : 219,
+              "endColumn" : 53,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 253,
+              "startColumn" : 41,
+              "endLine" : 253,
+              "endColumn" : 45,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java:CWE643_Xpath_Injection__getCookies_Servlet_07:goodB2G1(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2G1'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_07.java"
+            },
+            "region" : {
+              "startLine" : 215,
+              "startColumn" : 42,
+              "endLine" : 215,
+              "endColumn" : 48,
+              "snippet" : {
+                "text" : "request"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "request",
+          "loc" : "getCookies"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

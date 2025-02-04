@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_68a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_68b.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_68a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__listen_tcp_68a.java:CWE78_OS_Command_Injection__listen_tcp_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__listen_tcp_68a.java:CWE78_OS_Command_Injection__listen_tcp_68a:good()",
+    "typeName" : "good"
+  } ]
+}

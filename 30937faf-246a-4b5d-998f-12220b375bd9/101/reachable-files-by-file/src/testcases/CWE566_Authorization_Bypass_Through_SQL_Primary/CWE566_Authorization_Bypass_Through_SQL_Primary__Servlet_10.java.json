@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE566_Authorization_Bypass_Through_SQL_Primary\\CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_10.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE566_Authorization_Bypass_Through_SQL_Primary\\CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_10.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE566_Authorization_Bypass_Through_SQL_Primary/CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_10.java:CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_10:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE566_Authorization_Bypass_Through_SQL_Primary/CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_10.java:CWE566_Authorization_Bypass_Through_SQL_Primary__Servlet_10:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

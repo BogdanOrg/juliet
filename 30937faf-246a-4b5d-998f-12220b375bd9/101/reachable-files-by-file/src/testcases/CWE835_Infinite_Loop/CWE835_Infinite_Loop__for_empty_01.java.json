@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE835_Infinite_Loop\\CWE835_Infinite_Loop__for_empty_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE835_Infinite_Loop\\CWE835_Infinite_Loop__for_empty_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE835_Infinite_Loop/CWE835_Infinite_Loop__for_empty_01.java:CWE835_Infinite_Loop__for_empty_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE835_Infinite_Loop/CWE835_Infinite_Loop__for_empty_01.java:CWE835_Infinite_Loop__for_empty_01:good()",
+    "typeName" : "good"
+  } ]
+}

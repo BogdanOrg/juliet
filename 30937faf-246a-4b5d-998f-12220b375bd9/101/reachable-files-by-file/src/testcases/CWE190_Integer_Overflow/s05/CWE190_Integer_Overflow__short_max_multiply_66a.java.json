@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s05\\CWE190_Integer_Overflow__short_max_multiply_66a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s05\\CWE190_Integer_Overflow__short_max_multiply_66a.java", "src\\testcases\\CWE190_Integer_Overflow\\s05\\CWE190_Integer_Overflow__short_max_multiply_66b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__short_max_multiply_66a.java:CWE190_Integer_Overflow__short_max_multiply_66a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__short_max_multiply_66a.java:CWE190_Integer_Overflow__short_max_multiply_66a:good()",
+    "typeName" : "good"
+  } ]
+}

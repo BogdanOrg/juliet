@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__Property_array_size_05.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__Property_array_size_05.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__Property_array_size_05.java:CWE129_Improper_Validation_of_Array_Index__Property_array_size_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__Property_array_size_05.java:CWE129_Improper_Validation_of_Array_Index__Property_array_size_05:good()",
+    "typeName" : "good"
+  } ]
+}

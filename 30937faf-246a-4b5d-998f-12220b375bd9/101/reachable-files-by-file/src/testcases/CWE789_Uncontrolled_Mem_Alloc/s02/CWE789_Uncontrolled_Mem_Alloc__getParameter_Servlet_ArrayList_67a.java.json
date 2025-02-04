@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67a.java", "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67a.java:CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67a.java:CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_67a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

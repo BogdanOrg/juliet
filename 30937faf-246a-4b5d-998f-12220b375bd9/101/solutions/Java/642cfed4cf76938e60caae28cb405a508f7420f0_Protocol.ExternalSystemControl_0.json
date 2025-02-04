@@ -1,0 +1,296 @@
+{
+  "ruleId" : "Protocol:ExternalSystemControl",
+  "level" : "error",
+  "message" : {
+    "text" : "'setCatalog' method of 'java.sql.Connection' object could be abused to change sensitive system properties."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java"
+      },
+      "region" : {
+        "startLine" : 41,
+        "startColumn" : 26,
+        "endLine" : 41,
+        "endColumn" : 35,
+        "snippet" : {
+          "text" : "java.sql.Connection.setCatalog"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataContainer)",
+      "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b:badSink(dataContainer)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java"
+            },
+            "region" : {
+              "startLine" : 51,
+              "startColumn" : 28,
+              "endLine" : 51,
+              "endColumn" : 32,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 35,
+              "endLine" : 54,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 35,
+              "endLine" : 54,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java"
+            },
+            "region" : {
+              "startLine" : 78,
+              "startColumn" : 9,
+              "endLine" : 78,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "dataContainer.containerOne = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataContainer.containerOne",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java"
+            },
+            "region" : {
+              "startLine" : 79,
+              "startColumn" : 95,
+              "endLine" : 79,
+              "endColumn" : 102,
+              "snippet" : {
+                "text" : "(new CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b()).badSink(dataContainer  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 17,
+              "endLine" : 29,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67a.Container dataContainer ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b:badSink(dataContainer)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "containerOne",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 16,
+              "endLine" : 31,
+              "endColumn" : 49,
+              "snippet" : {
+                "text" : "String data = dataContainer.containerOne;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b:badSink(dataContainer)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 26,
+              "endLine" : 41,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "java.sql.Connection.setCatalog"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_67b:badSink(dataContainer)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'setCatalog' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Connection.setCatalog",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : ""
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "containerOne",
+          "loc" : "badSink"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-system-properties",
+    "cwe" : 15,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__getQueryString_Servlet_72a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__getQueryString_Servlet_72b.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__getQueryString_Servlet_72a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_72a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_72a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_72a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_72a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

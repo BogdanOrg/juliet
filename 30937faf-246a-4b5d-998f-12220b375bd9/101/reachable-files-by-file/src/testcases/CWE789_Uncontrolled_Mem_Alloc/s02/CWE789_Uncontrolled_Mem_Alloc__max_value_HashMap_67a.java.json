@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67a.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67b.java", "src\\testcasesupport\\AbstractTestCase.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67a.java:CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67a.java:CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67a:good()",
+    "typeName" : "good"
+  } ]
+}

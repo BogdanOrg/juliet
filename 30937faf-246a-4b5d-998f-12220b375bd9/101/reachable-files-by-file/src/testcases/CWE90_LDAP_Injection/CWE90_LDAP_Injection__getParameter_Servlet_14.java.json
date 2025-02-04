@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__getParameter_Servlet_14.java",
+  "reachableFiles" : [ "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__getParameter_Servlet_14.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__getParameter_Servlet_14.java:CWE90_LDAP_Injection__getParameter_Servlet_14:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__getParameter_Servlet_14.java:CWE90_LDAP_Injection__getParameter_Servlet_14:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

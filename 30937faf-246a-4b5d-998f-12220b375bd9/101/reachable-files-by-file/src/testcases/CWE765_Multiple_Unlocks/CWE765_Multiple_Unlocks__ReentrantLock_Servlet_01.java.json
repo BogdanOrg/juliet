@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE765_Multiple_Unlocks\\CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE765_Multiple_Unlocks\\CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE765_Multiple_Unlocks/CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01.java:CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE765_Multiple_Unlocks/CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01.java:CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE338_Weak_PRNG\\CWE338_Weak_PRNG__util_08.java",
+  "reachableFiles" : [ "src\\testcases\\CWE338_Weak_PRNG\\CWE338_Weak_PRNG__util_08.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE338_Weak_PRNG/CWE338_Weak_PRNG__util_08.java:CWE338_Weak_PRNG__util_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE338_Weak_PRNG/CWE338_Weak_PRNG__util_08.java:CWE338_Weak_PRNG__util_08:good()",
+    "typeName" : "good"
+  } ]
+}

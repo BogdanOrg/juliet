@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE609_Double_Checked_Locking\\CWE609_Double_Checked_Locking__Servlet_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE609_Double_Checked_Locking\\CWE609_Double_Checked_Locking__Servlet_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE609_Double_Checked_Locking/CWE609_Double_Checked_Locking__Servlet_01.java:CWE609_Double_Checked_Locking__Servlet_01:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE609_Double_Checked_Locking/CWE609_Double_Checked_Locking__Servlet_01.java:CWE609_Double_Checked_Locking__Servlet_01:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

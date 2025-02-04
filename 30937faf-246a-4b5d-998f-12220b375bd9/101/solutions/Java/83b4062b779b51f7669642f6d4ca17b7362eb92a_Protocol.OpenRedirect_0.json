@@ -1,0 +1,332 @@
+{
+  "ruleId" : "Protocol:OpenRedirect",
+  "level" : "error",
+  "message" : {
+    "text" : "'addHeader' method of 'javax.servlet.http.HttpServletResponse' object could be abused to perform a Site Redirection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java"
+      },
+      "region" : {
+        "startLine" : 34,
+        "startColumn" : 22,
+        "endLine" : 34,
+        "endColumn" : 30,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.addHeader"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataObject,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b:badSink(dataObject,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 23,
+              "endLine" : 31,
+              "endColumn" : 29,
+              "snippet" : {
+                "text" : "data = System.getenv(\"ADD\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 90,
+              "endLine" : 33,
+              "endColumn" : 102,
+              "snippet" : {
+                "text" : "(new CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b()).badSink((Object)data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(Object)data",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 90,
+              "endLine" : 33,
+              "endColumn" : 102,
+              "snippet" : {
+                "text" : "(new CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b()).badSink((Object)data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(Object)data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 82,
+              "endLine" : 33,
+              "endColumn" : 89,
+              "snippet" : {
+                "text" : "(new CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b()).badSink((Object)data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 17,
+              "endLine" : 27,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataObject",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 23,
+              "endLine" : 29,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "String data = (String)dataObject;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(String)dataObject",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 23,
+              "endLine" : 29,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "String data = (String)dataObject;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 44,
+              "endLine" : 34,
+              "endColumn" : 70,
+              "snippet" : {
+                "text" : "response.addHeader(\"Location\", \"/author.jsp?lang=\" + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"/author.jsp?lang=\" + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 22,
+              "endLine" : 34,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.addHeader"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b.java:CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'addHeader' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.addHeader",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 98,
+              "endLine" : 33,
+              "endColumn" : 101,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "(Object)data"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-redirect",
+    "cwe" : 601,
+    "confidence" : "LOW"
+  }
+}

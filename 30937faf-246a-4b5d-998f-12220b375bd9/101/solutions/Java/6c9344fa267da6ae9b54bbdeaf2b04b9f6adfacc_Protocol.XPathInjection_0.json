@@ -1,0 +1,1192 @@
+{
+  "ruleId" : "Protocol:XPathInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'evaluate' method of 'javax.xml.xpath.XPath' object could be abused to perform an XPATH Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+      },
+      "region" : {
+        "startLine" : 68,
+        "startColumn" : 43,
+        "endLine" : 68,
+        "endColumn" : 50,
+        "snippet" : {
+          "text" : "javax.xml.xpath.XPath.evaluate"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataHashMap)",
+      "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 73,
+              "endLine" : 49,
+              "endColumn" : 87,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 37,
+              "endLine" : 49,
+              "endColumn" : 99,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 37,
+              "endLine" : 49,
+              "endColumn" : 99,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 34,
+              "endLine" : 50,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 34,
+              "endLine" : 50,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 39,
+              "endLine" : 55,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 39,
+              "endLine" : 55,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 93,
+              "startColumn" : 21,
+              "endLine" : 93,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "dataHashMap.put(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.put",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 93,
+              "startColumn" : 21,
+              "endLine" : 93,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "dataHashMap.put(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.put",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 94,
+              "startColumn" : 59,
+              "endLine" : 94,
+              "endColumn" : 66,
+              "snippet" : {
+                "text" : "(new CWE643_Xpath_Injection__URLConnection_74b()).badSink(dataHashMap  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE643_Xpath_Injection__URLConnection_74b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 17,
+              "endLine" : 33,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(HashMap<Integer,String> dataHashMap ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataHashMap",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 35,
+              "endLine" : 35,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "String data = dataHashMap.get(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 35,
+              "endLine" : 35,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "String data = dataHashMap.get(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokens",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 58,
+              "startColumn" : 31,
+              "endLine" : 58,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String password = tokens[1];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 58,
+              "startColumn" : 31,
+              "endLine" : 58,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String password = tokens[1];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "password",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 65,
+              "startColumn" : 28,
+              "endLine" : 65,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String query = \"//users/user[name/text()='\" + username +"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "query",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 18,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 68,
+              "startColumn" : 43,
+              "endLine" : 68,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "javax.xml.xpath.XPath.evaluate"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'evaluate' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "javax.xml.xpath.XPath.evaluate",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 19,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    }, {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 73,
+              "endLine" : 49,
+              "endColumn" : 87,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 37,
+              "endLine" : 49,
+              "endColumn" : 99,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 37,
+              "endLine" : 49,
+              "endColumn" : 99,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 34,
+              "endLine" : 50,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 34,
+              "endLine" : 50,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 39,
+              "endLine" : 55,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 39,
+              "endLine" : 55,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 93,
+              "startColumn" : 21,
+              "endLine" : 93,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "dataHashMap.put(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.put",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 93,
+              "startColumn" : 21,
+              "endLine" : 93,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "dataHashMap.put(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.put",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java"
+            },
+            "region" : {
+              "startLine" : 94,
+              "startColumn" : 59,
+              "endLine" : 94,
+              "endColumn" : 66,
+              "snippet" : {
+                "text" : "(new CWE643_Xpath_Injection__URLConnection_74b()).badSink(dataHashMap  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74a.java:CWE643_Xpath_Injection__URLConnection_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE643_Xpath_Injection__URLConnection_74b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 17,
+              "endLine" : 33,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(HashMap<Integer,String> dataHashMap ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataHashMap",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 35,
+              "endLine" : 35,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "String data = dataHashMap.get(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 35,
+              "endLine" : 35,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "String data = dataHashMap.get(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "String [] tokens = data.split(\"||\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokens",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 57,
+              "startColumn" : 31,
+              "endLine" : 57,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String username = tokens[0];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 57,
+              "startColumn" : 31,
+              "endLine" : 57,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String username = tokens[0];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "username",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 65,
+              "startColumn" : 28,
+              "endLine" : 65,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String query = \"//users/user[name/text()='\" + username +"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "query",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 18,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java"
+            },
+            "region" : {
+              "startLine" : 68,
+              "startColumn" : 43,
+              "endLine" : 68,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "javax.xml.xpath.XPath.evaluate"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__URLConnection_74b.java:CWE643_Xpath_Injection__URLConnection_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'evaluate' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "javax.xml.xpath.XPath.evaluate",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 19,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-xpath-inj",
+    "cwe" : 643,
+    "confidence" : "LOW"
+  }
+}

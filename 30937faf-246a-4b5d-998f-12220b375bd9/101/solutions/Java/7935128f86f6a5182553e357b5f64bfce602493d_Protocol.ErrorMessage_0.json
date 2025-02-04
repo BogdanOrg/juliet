@@ -1,0 +1,104 @@
+{
+  "ruleId" : "Protocol:ErrorMessage",
+  "level" : "error",
+  "message" : {
+    "text" : "'new' method of 'javax.servlet.http.Cookie' object could be abused to reveal sensitive internal information."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10.java"
+      },
+      "region" : {
+        "startLine" : 94,
+        "startColumn" : 37,
+        "endLine" : 94,
+        "endColumn" : 60,
+        "snippet" : {
+          "text" : "javax.servlet.http.Cookie.new"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 43,
+              "endLine" : 48,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10.java"
+            },
+            "region" : {
+              "startLine" : 94,
+              "startColumn" : 37,
+              "endLine" : 94,
+              "endColumn" : 60,
+              "snippet" : {
+                "text" : "javax.servlet.http.Cookie.new"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_10:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'new Cookie(\"lang\", data)' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.Cookie.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-err-msg",
+    "cwe" : 209,
+    "confidence" : "LOW"
+  }
+}

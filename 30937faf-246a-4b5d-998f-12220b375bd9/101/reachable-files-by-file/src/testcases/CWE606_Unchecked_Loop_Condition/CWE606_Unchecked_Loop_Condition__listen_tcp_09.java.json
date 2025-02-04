@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__listen_tcp_09.java",
+  "reachableFiles" : [ "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__listen_tcp_09.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__listen_tcp_09.java:CWE606_Unchecked_Loop_Condition__listen_tcp_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__listen_tcp_09.java:CWE606_Unchecked_Loop_Condition__listen_tcp_09:good()",
+    "typeName" : "good"
+  } ]
+}

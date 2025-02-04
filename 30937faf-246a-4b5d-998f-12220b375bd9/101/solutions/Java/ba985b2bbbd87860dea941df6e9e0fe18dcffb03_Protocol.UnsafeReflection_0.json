@@ -1,0 +1,602 @@
+{
+  "ruleId" : "Protocol:UnsafeReflection",
+  "level" : "error",
+  "message" : {
+    "text" : "'forName' method of 'java.lang.Class' object could be abused to execute arbitrary code."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java"
+      },
+      "region" : {
+        "startLine" : 30,
+        "startColumn" : 36,
+        "endLine" : 30,
+        "endColumn" : 42,
+        "snippet" : {
+          "text" : "java.lang.Class.forName"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataObject,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71b:badSink(dataObject,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 17,
+              "endLine" : 27,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 69,
+              "endLine" : 35,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletRequest.getQueryString",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 69,
+              "endLine" : 35,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getQueryString",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 41,
+              "endLine" : 35,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.StringTokenizer.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 41,
+              "endLine" : 35,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokenizer",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 38,
+              "startColumn" : 42,
+              "endLine" : 38,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "String token = tokenizer.nextToken(); /* a token will be like \"id=foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.StringTokenizer.nextToken",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 38,
+              "startColumn" : 42,
+              "endLine" : 38,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "String token = tokenizer.nextToken(); /* a token will be like \"id=foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "token",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 26,
+              "endLine" : 39,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "if(token.startsWith(\"id=\")) /* check if we have the \"id\" parameter\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.startsWith",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 26,
+              "endLine" : 39,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "if(token.startsWith(\"id=\")) /* check if we have the \"id\" parameter\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.startsWith",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 34,
+              "endLine" : 41,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = token.substring(3); /* set data to \"foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.substring",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 34,
+              "endLine" : 41,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = token.substring(3); /* set data to \"foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 78,
+              "endLine" : 47,
+              "endColumn" : 90,
+              "snippet" : {
+                "text" : "(new CWE470_Unsafe_Reflection__getQueryString_Servlet_71b()).badSink((Object)data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(Object)data",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 78,
+              "endLine" : 47,
+              "endColumn" : 90,
+              "snippet" : {
+                "text" : "(new CWE470_Unsafe_Reflection__getQueryString_Servlet_71b()).badSink((Object)data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(Object)data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 70,
+              "endLine" : 47,
+              "endColumn" : 77,
+              "snippet" : {
+                "text" : "(new CWE470_Unsafe_Reflection__getQueryString_Servlet_71b()).badSink((Object)data , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE470_Unsafe_Reflection__getQueryString_Servlet_71b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 17,
+              "endLine" : 25,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataObject",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 23,
+              "endLine" : 27,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "String data = (String)dataObject;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(String)dataObject",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 23,
+              "endLine" : 27,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "String data = (String)dataObject;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 36,
+              "endLine" : 30,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "java.lang.Class.forName"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataObject,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71b.java:CWE470_Unsafe_Reflection__getQueryString_Servlet_71b:badSink(dataObject,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'forName' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.Class.forName",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 18,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getQueryString_Servlet_71a.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 86,
+              "endLine" : 47,
+              "endColumn" : 89,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "(Object)data"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-unsafe-reflection",
+    "cwe" : 470,
+    "confidence" : "LOW"
+  }
+}

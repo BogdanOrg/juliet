@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51a.java", "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51a.java:CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51a.java:CWE190_Integer_Overflow__int_getQueryString_Servlet_add_51a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

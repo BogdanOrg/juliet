@@ -1,0 +1,302 @@
+{
+  "ruleId" : "Protocol:HeaderInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'addCookie' method of 'javax.servlet.http.HttpServletResponse' object could be abused to perform a HTTP Header Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java"
+      },
+      "region" : {
+        "startLine" : 34,
+        "startColumn" : 22,
+        "endLine" : 34,
+        "endColumn" : 30,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.addCookie"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(data,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c:badSink(data,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52a.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 23,
+              "endLine" : 31,
+              "endColumn" : 34,
+              "snippet" : {
+                "text" : "data = System.getProperty(\"user.home\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52a.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 79,
+              "endLine" : 33,
+              "endColumn" : 86,
+              "snippet" : {
+                "text" : "(new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52a.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 17,
+              "endLine" : 25,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 79,
+              "endLine" : 27,
+              "endColumn" : 86,
+              "snippet" : {
+                "text" : "(new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 17,
+              "endLine" : 27,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 33,
+              "endLine" : 32,
+              "endColumn" : 57,
+              "snippet" : {
+                "text" : "Cookie cookieSink = new Cookie(\"lang\", data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.Cookie.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 33,
+              "endLine" : 32,
+              "endColumn" : 57,
+              "snippet" : {
+                "text" : "Cookie cookieSink = new Cookie(\"lang\", data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "cookieSink",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 22,
+              "endLine" : 34,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.addCookie"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java:CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'addCookie' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.addCookie",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addCookieServlet_52c.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 52,
+              "endLine" : 32,
+              "endColumn" : 55,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "new Cookie(\"lang\", data)"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-header-inj",
+    "cwe" : 113,
+    "confidence" : "LOW"
+  }
+}

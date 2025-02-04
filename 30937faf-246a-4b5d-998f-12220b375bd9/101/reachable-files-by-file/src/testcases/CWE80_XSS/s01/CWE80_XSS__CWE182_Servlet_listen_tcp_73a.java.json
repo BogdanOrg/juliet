@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_listen_tcp_73a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_listen_tcp_73b.java", "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_listen_tcp_73a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_listen_tcp_73a.java:CWE80_XSS__CWE182_Servlet_listen_tcp_73a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_listen_tcp_73a.java:CWE80_XSS__CWE182_Servlet_listen_tcp_73a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

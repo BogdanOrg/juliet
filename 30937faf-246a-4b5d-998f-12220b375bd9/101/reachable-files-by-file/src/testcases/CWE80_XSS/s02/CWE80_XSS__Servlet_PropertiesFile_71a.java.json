@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s02\\CWE80_XSS__Servlet_PropertiesFile_71a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s02\\CWE80_XSS__Servlet_PropertiesFile_71a.java", "src\\testcases\\CWE80_XSS\\s02\\CWE80_XSS__Servlet_PropertiesFile_71b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_PropertiesFile_71a.java:CWE80_XSS__Servlet_PropertiesFile_71a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_PropertiesFile_71a.java:CWE80_XSS__Servlet_PropertiesFile_71a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

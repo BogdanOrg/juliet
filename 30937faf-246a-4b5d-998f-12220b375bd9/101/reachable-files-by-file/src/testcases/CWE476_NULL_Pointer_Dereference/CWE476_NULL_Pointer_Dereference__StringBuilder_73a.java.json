@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__StringBuilder_73a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__StringBuilder_73a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__StringBuilder_73b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__StringBuilder_73a.java:CWE476_NULL_Pointer_Dereference__StringBuilder_73a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__StringBuilder_73a.java:CWE476_NULL_Pointer_Dereference__StringBuilder_73a:good()",
+    "typeName" : "good"
+  } ]
+}

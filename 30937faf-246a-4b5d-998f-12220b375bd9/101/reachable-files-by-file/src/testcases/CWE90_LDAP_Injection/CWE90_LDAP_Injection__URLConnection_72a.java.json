@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__URLConnection_72a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__URLConnection_72b.java", "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__URLConnection_72a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__URLConnection_72a.java:CWE90_LDAP_Injection__URLConnection_72a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__URLConnection_72a.java:CWE90_LDAP_Injection__URLConnection_72a:good()",
+    "typeName" : "good"
+  } ]
+}

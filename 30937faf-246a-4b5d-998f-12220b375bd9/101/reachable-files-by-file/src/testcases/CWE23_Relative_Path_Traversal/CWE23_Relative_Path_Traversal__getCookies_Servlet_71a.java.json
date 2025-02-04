@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getCookies_Servlet_71a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getCookies_Servlet_71a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getCookies_Servlet_71b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getCookies_Servlet_71a.java:CWE23_Relative_Path_Traversal__getCookies_Servlet_71a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getCookies_Servlet_71a.java:CWE23_Relative_Path_Traversal__getCookies_Servlet_71a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

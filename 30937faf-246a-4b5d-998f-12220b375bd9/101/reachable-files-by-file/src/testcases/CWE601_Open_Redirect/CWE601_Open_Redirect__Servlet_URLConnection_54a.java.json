@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_URLConnection_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_URLConnection_54b.java", "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_URLConnection_54c.java", "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_URLConnection_54d.java", "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_URLConnection_54a.java", "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_URLConnection_54e.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_URLConnection_54a.java:CWE601_Open_Redirect__Servlet_URLConnection_54a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_URLConnection_54a.java:CWE601_Open_Redirect__Servlet_URLConnection_54a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

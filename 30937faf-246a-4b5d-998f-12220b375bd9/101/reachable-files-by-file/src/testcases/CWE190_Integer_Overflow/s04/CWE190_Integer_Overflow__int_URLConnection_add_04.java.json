@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__int_URLConnection_add_04.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__int_URLConnection_add_04.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__int_URLConnection_add_04.java:CWE190_Integer_Overflow__int_URLConnection_add_04:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__int_URLConnection_add_04.java:CWE190_Integer_Overflow__int_URLConnection_add_04:good()",
+    "typeName" : "good"
+  } ]
+}

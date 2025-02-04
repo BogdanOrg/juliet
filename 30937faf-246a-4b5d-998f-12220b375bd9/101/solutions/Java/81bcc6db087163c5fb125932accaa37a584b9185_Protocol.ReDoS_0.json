@@ -1,0 +1,206 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java"
+      },
+      "region" : {
+        "startLine" : 133,
+        "startColumn" : 37,
+        "endLine" : 133,
+        "endColumn" : 41,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2GSink()",
+      "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java:CWE643_Xpath_Injection__console_readLine_68b:goodB2GSink()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68a.java"
+            },
+            "region" : {
+              "startLine" : 121,
+              "startColumn" : 39,
+              "endLine" : 121,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68a.java:CWE643_Xpath_Injection__console_readLine_68a:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68a.java"
+            },
+            "region" : {
+              "startLine" : 156,
+              "startColumn" : 62,
+              "endLine" : 156,
+              "endColumn" : 73,
+              "snippet" : {
+                "text" : "(new CWE643_Xpath_Injection__console_readLine_68b()).goodB2GSink();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68a.java:CWE643_Xpath_Injection__console_readLine_68a:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE643_Xpath_Injection__console_readLine_68b()).goodB2GSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java"
+            },
+            "region" : {
+              "startLine" : 114,
+              "startColumn" : 17,
+              "endLine" : 114,
+              "endColumn" : 28,
+              "snippet" : {
+                "text" : "public void goodB2GSink() throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java:CWE643_Xpath_Injection__console_readLine_68b:goodB2GSink()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java"
+            },
+            "region" : {
+              "startLine" : 116,
+              "startColumn" : 16,
+              "endLine" : 116,
+              "endColumn" : 72,
+              "snippet" : {
+                "text" : "String data = CWE643_Xpath_Injection__console_readLine_68a.data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java:CWE643_Xpath_Injection__console_readLine_68b:goodB2GSink()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java"
+            },
+            "region" : {
+              "startLine" : 133,
+              "startColumn" : 37,
+              "endLine" : 133,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink()",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__console_readLine_68b.java:CWE643_Xpath_Injection__console_readLine_68b:goodB2GSink()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2GSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : ""
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "goodB2GSink"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

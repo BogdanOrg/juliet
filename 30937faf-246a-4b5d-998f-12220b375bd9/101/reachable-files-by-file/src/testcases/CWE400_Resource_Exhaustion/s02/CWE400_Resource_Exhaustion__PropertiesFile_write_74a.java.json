@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__PropertiesFile_write_74a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__PropertiesFile_write_74a.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__PropertiesFile_write_74b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__PropertiesFile_write_74a.java:CWE400_Resource_Exhaustion__PropertiesFile_write_74a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__PropertiesFile_write_74a.java:CWE400_Resource_Exhaustion__PropertiesFile_write_74a:good()",
+    "typeName" : "good"
+  } ]
+}

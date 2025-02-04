@@ -1,0 +1,494 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'executeBatch' method of 'java.sql.Statement' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+      },
+      "region" : {
+        "startLine" : 134,
+        "startColumn" : 55,
+        "endLine" : 134,
+        "endColumn" : 66,
+        "snippet" : {
+          "text" : "java.sql.Statement.executeBatch"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 57,
+              "startColumn" : 39,
+              "endLine" : 57,
+              "endColumn" : 64,
+              "snippet" : {
+                "text" : "streamFileInput = new FileInputStream(file);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "streamFileInput",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 58,
+              "startColumn" : 41,
+              "endLine" : 58,
+              "endColumn" : 88,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(streamFileInput, \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 58,
+              "startColumn" : 41,
+              "endLine" : 58,
+              "endColumn" : 88,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(streamFileInput, \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 59,
+              "startColumn" : 38,
+              "endLine" : 59,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 59,
+              "startColumn" : 38,
+              "endLine" : 59,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 63,
+              "startColumn" : 43,
+              "endLine" : 63,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 63,
+              "startColumn" : 43,
+              "endLine" : 63,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 121,
+              "startColumn" : 39,
+              "endLine" : 121,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String names[] = data.split(\"-\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 121,
+              "startColumn" : 39,
+              "endLine" : 121,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String names[] = data.split(\"-\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "names",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 132,
+              "startColumn" : 101,
+              "endLine" : 132,
+              "endColumn" : 109,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 132,
+              "startColumn" : 101,
+              "endLine" : 132,
+              "endColumn" : 109,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "names[i]",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 132,
+              "startColumn" : 47,
+              "endLine" : 132,
+              "endColumn" : 115,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 132,
+              "startColumn" : 38,
+              "endLine" : 132,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.sql.Statement.addBatch",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 132,
+              "startColumn" : 38,
+              "endLine" : 132,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.sql.Statement.addBatch",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java"
+            },
+            "region" : {
+              "startLine" : 134,
+              "startColumn" : 55,
+              "endLine" : 134,
+              "endColumn" : 66,
+              "snippet" : {
+                "text" : "java.sql.Statement.executeBatch"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__File_executeBatch_05.java:CWE89_SQL_Injection__File_executeBatch_05:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'executeBatch' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Statement.executeBatch",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

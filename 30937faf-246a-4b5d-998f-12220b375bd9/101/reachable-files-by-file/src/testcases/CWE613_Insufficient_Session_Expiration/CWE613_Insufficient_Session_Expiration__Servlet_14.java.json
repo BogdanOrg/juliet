@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE613_Insufficient_Session_Expiration\\CWE613_Insufficient_Session_Expiration__Servlet_14.java",
+  "reachableFiles" : [ "src\\testcases\\CWE613_Insufficient_Session_Expiration\\CWE613_Insufficient_Session_Expiration__Servlet_14.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE613_Insufficient_Session_Expiration/CWE613_Insufficient_Session_Expiration__Servlet_14.java:CWE613_Insufficient_Session_Expiration__Servlet_14:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE613_Insufficient_Session_Expiration/CWE613_Insufficient_Session_Expiration__Servlet_14.java:CWE613_Insufficient_Session_Expiration__Servlet_14:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

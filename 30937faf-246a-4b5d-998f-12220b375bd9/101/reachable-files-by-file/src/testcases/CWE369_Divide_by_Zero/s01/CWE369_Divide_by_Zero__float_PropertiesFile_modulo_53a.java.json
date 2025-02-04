@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53c.java", "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53d.java", "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53a.java", "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53a.java:CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53a.java:CWE369_Divide_by_Zero__float_PropertiesFile_modulo_53a:good()",
+    "typeName" : "good"
+  } ]
+}

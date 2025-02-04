@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE546_Suspicious_Comment\\CWE546_Suspicious_Comment__HACK_04.java",
+  "reachableFiles" : [ "src\\testcases\\CWE546_Suspicious_Comment\\CWE546_Suspicious_Comment__HACK_04.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE546_Suspicious_Comment/CWE546_Suspicious_Comment__HACK_04.java:CWE546_Suspicious_Comment__HACK_04:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE546_Suspicious_Comment/CWE546_Suspicious_Comment__HACK_04.java:CWE546_Suspicious_Comment__HACK_04:good()",
+    "typeName" : "good"
+  } ]
+}

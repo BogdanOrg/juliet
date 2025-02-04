@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54c.java", "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54e.java", "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54a.java", "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54d.java", "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54a.java:CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54a.java:CWE81_XSS_Error_Message__Servlet_getQueryString_Servlet_54a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

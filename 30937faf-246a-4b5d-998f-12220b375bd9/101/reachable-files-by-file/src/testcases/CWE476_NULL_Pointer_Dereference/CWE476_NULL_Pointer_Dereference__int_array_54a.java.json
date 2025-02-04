@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__int_array_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__int_array_54a.java", "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__int_array_54d.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__int_array_54c.java", "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__int_array_54e.java", "src\\testcases\\CWE476_NULL_Pointer_Dereference\\CWE476_NULL_Pointer_Dereference__int_array_54b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_array_54a.java:CWE476_NULL_Pointer_Dereference__int_array_54a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__int_array_54a.java:CWE476_NULL_Pointer_Dereference__int_array_54a:good()",
+    "typeName" : "good"
+  } ]
+}

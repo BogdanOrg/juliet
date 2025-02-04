@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__Environment_09.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__Environment_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Environment_09.java:CWE78_OS_Command_Injection__Environment_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Environment_09.java:CWE78_OS_Command_Injection__Environment_09:good()",
+    "typeName" : "good"
+  } ]
+}

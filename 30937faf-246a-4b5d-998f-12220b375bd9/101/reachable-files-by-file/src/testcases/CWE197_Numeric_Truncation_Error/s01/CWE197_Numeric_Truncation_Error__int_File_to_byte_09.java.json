@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_File_to_byte_09.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_File_to_byte_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_File_to_byte_09.java:CWE197_Numeric_Truncation_Error__int_File_to_byte_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_File_to_byte_09.java:CWE197_Numeric_Truncation_Error__int_File_to_byte_09:good()",
+    "typeName" : "good"
+  } ]
+}

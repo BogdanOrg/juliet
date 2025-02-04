@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE113_HTTP_Response_Splitting\\s02\\CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE113_HTTP_Response_Splitting\\s02\\CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67a.java", "src\\testcases\\CWE113_HTTP_Response_Splitting\\s02\\CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67b.java", "src\\testcasesupport\\AbstractTestCaseServlet.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67a.java:CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67a.java:CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_67a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

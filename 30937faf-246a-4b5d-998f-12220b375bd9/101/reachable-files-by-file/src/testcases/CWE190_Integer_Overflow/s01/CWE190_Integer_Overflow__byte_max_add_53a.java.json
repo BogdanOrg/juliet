@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__byte_max_add_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__byte_max_add_53d.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__byte_max_add_53a.java", "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__byte_max_add_53c.java", "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__byte_max_add_53b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__byte_max_add_53a.java:CWE190_Integer_Overflow__byte_max_add_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__byte_max_add_53a.java:CWE190_Integer_Overflow__byte_max_add_53a:good()",
+    "typeName" : "good"
+  } ]
+}

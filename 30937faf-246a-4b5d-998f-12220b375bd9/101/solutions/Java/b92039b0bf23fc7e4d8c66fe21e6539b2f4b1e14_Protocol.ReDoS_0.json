@@ -1,0 +1,284 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+      },
+      "region" : {
+        "startLine" : 57,
+        "startColumn" : 39,
+        "endLine" : 57,
+        "endColumn" : 43,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 17,
+              "endLine" : 30,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 38,
+              "startColumn" : 50,
+              "endLine" : 38,
+              "endColumn" : 60,
+              "snippet" : {
+                "text" : "Cookie cookieSources[] = request.getCookies();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletRequest.getCookies",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 38,
+              "startColumn" : 50,
+              "endLine" : 38,
+              "endColumn" : 60,
+              "snippet" : {
+                "text" : "Cookie cookieSources[] = request.getCookies();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "cookieSources",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 42,
+              "startColumn" : 28,
+              "endLine" : 42,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<javax.servlet.http.Cookie>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 42,
+              "startColumn" : 28,
+              "endLine" : 42,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "cookieSources[0]",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 42,
+              "startColumn" : 45,
+              "endLine" : 42,
+              "endColumn" : 53,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.Cookie.getValue",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 42,
+              "startColumn" : 45,
+              "endLine" : 42,
+              "endColumn" : 53,
+              "snippet" : {
+                "text" : "data = cookieSources[0].getValue();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java"
+            },
+            "region" : {
+              "startLine" : 57,
+              "startColumn" : 39,
+              "endLine" : 57,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09.java:CWE89_SQL_Injection__getCookies_Servlet_executeBatch_09:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

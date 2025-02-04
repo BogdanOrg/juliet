@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE510_Trapdoor\\CWE510_Trapdoor__ip_based_logic_09.java",
+  "reachableFiles" : [ "src\\testcases\\CWE510_Trapdoor\\CWE510_Trapdoor__ip_based_logic_09.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE510_Trapdoor/CWE510_Trapdoor__ip_based_logic_09.java:CWE510_Trapdoor__ip_based_logic_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE510_Trapdoor/CWE510_Trapdoor__ip_based_logic_09.java:CWE510_Trapdoor__ip_based_logic_09:good()",
+    "typeName" : "good"
+  } ]
+}

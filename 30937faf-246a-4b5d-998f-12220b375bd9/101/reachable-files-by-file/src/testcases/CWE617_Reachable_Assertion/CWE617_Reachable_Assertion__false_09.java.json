@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE617_Reachable_Assertion\\CWE617_Reachable_Assertion__false_09.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE617_Reachable_Assertion\\CWE617_Reachable_Assertion__false_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE617_Reachable_Assertion/CWE617_Reachable_Assertion__false_09.java:CWE617_Reachable_Assertion__false_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE617_Reachable_Assertion/CWE617_Reachable_Assertion__false_09.java:CWE617_Reachable_Assertion__false_09:good()",
+    "typeName" : "good"
+  } ]
+}

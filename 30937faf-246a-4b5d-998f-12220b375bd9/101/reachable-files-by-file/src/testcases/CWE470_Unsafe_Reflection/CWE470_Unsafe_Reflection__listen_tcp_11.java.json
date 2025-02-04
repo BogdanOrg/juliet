@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__listen_tcp_11.java",
+  "reachableFiles" : [ "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__listen_tcp_11.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__listen_tcp_11.java:CWE470_Unsafe_Reflection__listen_tcp_11:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__listen_tcp_11.java:CWE470_Unsafe_Reflection__listen_tcp_11:good()",
+    "typeName" : "good"
+  } ]
+}

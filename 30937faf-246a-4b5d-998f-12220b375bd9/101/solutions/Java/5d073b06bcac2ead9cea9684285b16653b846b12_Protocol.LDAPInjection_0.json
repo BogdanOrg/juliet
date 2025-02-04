@@ -1,0 +1,212 @@
+{
+  "ruleId" : "Protocol:LDAPInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'search' method of 'javax.naming.directory.InitialDirContext' object could be abused for LDAP Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java"
+      },
+      "region" : {
+        "startLine" : 46,
+        "startColumn" : 71,
+        "endLine" : 46,
+        "endColumn" : 76,
+        "snippet" : {
+          "text" : "javax.naming.directory.InitialDirContext.search"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java:CWE90_LDAP_Injection__Property_61a:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61b.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 23,
+              "endLine" : 31,
+              "endColumn" : 34,
+              "snippet" : {
+                "text" : "data = System.getProperty(\"user.home\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61b.java:CWE90_LDAP_Injection__Property_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 9,
+              "endLine" : 33,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61b.java:CWE90_LDAP_Injection__Property_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSource",
+            "locationType" : "RETURN"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 66,
+              "endLine" : 33,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "String data = (new CWE90_LDAP_Injection__Property_61b()).badSource();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java:CWE90_LDAP_Injection__Property_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java"
+            },
+            "region" : {
+              "startLine" : 44,
+              "startColumn" : 29,
+              "endLine" : 44,
+              "endColumn" : 48,
+              "snippet" : {
+                "text" : "String search = \"(cn=\" + data + \")\";"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java:CWE90_LDAP_Injection__Property_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "search",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 71,
+              "endLine" : 46,
+              "endColumn" : 76,
+              "snippet" : {
+                "text" : "javax.naming.directory.InitialDirContext.search"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61a.java:CWE90_LDAP_Injection__Property_61a:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING, STOP]' for variable 'search' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.naming.directory.InitialDirContext.search",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__Property_61b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 9,
+              "endLine" : 33,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:ret",
+          "loc" : "return data"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-ldap-inj",
+    "cwe" : 90,
+    "confidence" : "LOW"
+  }
+}

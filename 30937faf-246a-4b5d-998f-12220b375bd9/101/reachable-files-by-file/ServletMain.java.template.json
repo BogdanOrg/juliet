@@ -1,0 +1,11 @@
+{
+  "filePath" : "ServletMain.java.template",
+  "reachableFiles" : [ "ServletMain.java.template" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "ServletMain.java.template:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "ServletMain.java.template:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

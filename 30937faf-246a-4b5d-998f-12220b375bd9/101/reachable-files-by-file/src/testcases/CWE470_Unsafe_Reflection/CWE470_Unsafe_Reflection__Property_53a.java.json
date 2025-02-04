@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__Property_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__Property_53c.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__Property_53b.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__Property_53d.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__Property_53a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__Property_53a.java:CWE470_Unsafe_Reflection__Property_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__Property_53a.java:CWE470_Unsafe_Reflection__Property_53a:good()",
+    "typeName" : "good"
+  } ]
+}

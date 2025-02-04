@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_04.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_04.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_04.java:CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_04:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_04.java:CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_04:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

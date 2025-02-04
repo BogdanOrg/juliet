@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE600_Uncaught_Exception_in_Servlet\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE600_Uncaught_Exception_in_Servlet\\ServletMain.java", "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE600_Uncaught_Exception_in_Servlet\\CWE600_Uncaught_Exception_in_Servlet__getParameter_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE600_Uncaught_Exception_in_Servlet/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE600_Uncaught_Exception_in_Servlet/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

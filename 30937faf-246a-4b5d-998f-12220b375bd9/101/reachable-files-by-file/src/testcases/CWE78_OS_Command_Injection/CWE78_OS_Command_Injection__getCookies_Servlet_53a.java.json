@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getCookies_Servlet_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getCookies_Servlet_53b.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getCookies_Servlet_53c.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getCookies_Servlet_53a.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__getCookies_Servlet_53d.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__getCookies_Servlet_53a.java:CWE78_OS_Command_Injection__getCookies_Servlet_53a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__getCookies_Servlet_53a.java:CWE78_OS_Command_Injection__getCookies_Servlet_53a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_String_53a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_String_53c.java", "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_String_53d.java", "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_String_53b.java", "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_Helper.java", "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_String_53a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE690_NULL_Deref_From_Return/CWE690_NULL_Deref_From_Return__Class_String_53a.java:CWE690_NULL_Deref_From_Return__Class_String_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE690_NULL_Deref_From_Return/CWE690_NULL_Deref_From_Return__Class_String_53a.java:CWE690_NULL_Deref_From_Return__Class_String_53a:good()",
+    "typeName" : "good"
+  } ]
+}

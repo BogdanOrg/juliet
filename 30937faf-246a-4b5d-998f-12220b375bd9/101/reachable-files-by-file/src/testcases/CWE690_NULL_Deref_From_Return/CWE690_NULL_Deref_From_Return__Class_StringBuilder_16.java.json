@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_StringBuilder_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_StringBuilder_16.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Class_Helper.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE690_NULL_Deref_From_Return/CWE690_NULL_Deref_From_Return__Class_StringBuilder_16.java:CWE690_NULL_Deref_From_Return__Class_StringBuilder_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE690_NULL_Deref_From_Return/CWE690_NULL_Deref_From_Return__Class_StringBuilder_16.java:CWE690_NULL_Deref_From_Return__Class_StringBuilder_16:good()",
+    "typeName" : "good"
+  } ]
+}

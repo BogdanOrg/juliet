@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE571_Expression_Always_True\\CWE571_Expression_Always_True__class_getClass_not_equal_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE571_Expression_Always_True\\CWE571_Expression_Always_True__class_getClass_not_equal_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE571_Expression_Always_True/CWE571_Expression_Always_True__class_getClass_not_equal_01.java:CWE571_Expression_Always_True__class_getClass_not_equal_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE571_Expression_Always_True/CWE571_Expression_Always_True__class_getClass_not_equal_01.java:CWE571_Expression_Always_True__class_getClass_not_equal_01:good()",
+    "typeName" : "good"
+  } ]
+}

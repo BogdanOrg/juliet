@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__getParameter_Servlet_execute_41.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__getParameter_Servlet_execute_41.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_41.java:CWE89_SQL_Injection__getParameter_Servlet_execute_41:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getParameter_Servlet_execute_41.java:CWE89_SQL_Injection__getParameter_Servlet_execute_41:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

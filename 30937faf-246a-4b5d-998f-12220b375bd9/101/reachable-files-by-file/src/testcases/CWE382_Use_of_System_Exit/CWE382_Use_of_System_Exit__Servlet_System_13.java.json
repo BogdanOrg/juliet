@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE382_Use_of_System_Exit\\CWE382_Use_of_System_Exit__Servlet_System_13.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE382_Use_of_System_Exit\\CWE382_Use_of_System_Exit__Servlet_System_13.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE382_Use_of_System_Exit/CWE382_Use_of_System_Exit__Servlet_System_13.java:CWE382_Use_of_System_Exit__Servlet_System_13:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE382_Use_of_System_Exit/CWE382_Use_of_System_Exit__Servlet_System_13.java:CWE382_Use_of_System_Exit__Servlet_System_13:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

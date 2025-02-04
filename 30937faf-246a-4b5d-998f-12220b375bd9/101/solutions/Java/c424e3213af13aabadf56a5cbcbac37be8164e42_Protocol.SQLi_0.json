@@ -1,0 +1,392 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'executeUpdate' method of 'java.sql.Statement' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java"
+      },
+      "region" : {
+        "startLine" : 43,
+        "startColumn" : 41,
+        "endLine" : 43,
+        "endColumn" : 53,
+        "snippet" : {
+          "text" : "java.sql.Statement.executeUpdate"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataVector)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b:badSink(dataVector)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 28,
+              "endLine" : 47,
+              "endColumn" : 32,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 35,
+              "endLine" : 50,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 35,
+              "endLine" : 50,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 76,
+              "startColumn" : 20,
+              "endLine" : 76,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataVector.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 76,
+              "startColumn" : 20,
+              "endLine" : 76,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataVector.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 77,
+              "startColumn" : 71,
+              "endLine" : 77,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b()).badSink(dataVector  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 17,
+              "endLine" : 30,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(Vector<String> dataVector ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataVector",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 34,
+              "endLine" : 32,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String data = dataVector.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.remove",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 34,
+              "endLine" : 32,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String data = dataVector.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 55,
+              "endLine" : 43,
+              "endColumn" : 124,
+              "snippet" : {
+                "text" : "int rowCount = sqlStatement.executeUpdate(\"insert into users (status) values ('updated') where name='\"+data+\"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"insert into users (status) values ('updated') where name='\"+data+\"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 41,
+              "endLine" : 43,
+              "endColumn" : 53,
+              "snippet" : {
+                "text" : "java.sql.Statement.executeUpdate"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b.java:CWE89_SQL_Injection__PropertiesFile_executeUpdate_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'executeUpdate' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Statement.executeUpdate",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeUpdate_72a.java"
+            },
+            "region" : {
+              "startLine" : 76,
+              "startColumn" : 27,
+              "endLine" : 76,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "add"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__listen_tcp_52a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__listen_tcp_52a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__listen_tcp_52c.java", "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__listen_tcp_52b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__listen_tcp_52a.java:CWE606_Unchecked_Loop_Condition__listen_tcp_52a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__listen_tcp_52a.java:CWE606_Unchecked_Loop_Condition__listen_tcp_52a:good()",
+    "typeName" : "good"
+  } ]
+}

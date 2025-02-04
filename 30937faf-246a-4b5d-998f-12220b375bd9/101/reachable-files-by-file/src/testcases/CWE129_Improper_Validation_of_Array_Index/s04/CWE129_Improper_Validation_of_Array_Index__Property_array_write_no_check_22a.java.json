@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22b.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22a.java:CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22a.java:CWE129_Improper_Validation_of_Array_Index__Property_array_write_no_check_22a:good()",
+    "typeName" : "good"
+  } ]
+}

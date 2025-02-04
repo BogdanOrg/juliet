@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE325_Missing_Required_Cryptographic_Step\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE325_Missing_Required_Cryptographic_Step\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE325_Missing_Required_Cryptographic_Step/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE325_Missing_Required_Cryptographic_Step/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

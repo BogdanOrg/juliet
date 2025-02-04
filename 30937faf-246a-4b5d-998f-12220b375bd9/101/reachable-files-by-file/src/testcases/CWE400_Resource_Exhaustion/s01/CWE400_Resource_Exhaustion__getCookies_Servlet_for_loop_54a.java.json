@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54c.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54d.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54e.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54a.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54a.java:CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54a.java:CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_54a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

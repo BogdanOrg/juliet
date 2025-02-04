@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE570_Expression_Always_False\\CWE570_Expression_Always_False__n_less_int_min_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE570_Expression_Always_False\\CWE570_Expression_Always_False__n_less_int_min_01.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE570_Expression_Always_False/CWE570_Expression_Always_False__n_less_int_min_01.java:CWE570_Expression_Always_False__n_less_int_min_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE570_Expression_Always_False/CWE570_Expression_Always_False__n_less_int_min_01.java:CWE570_Expression_Always_False__n_less_int_min_01:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_no_check_21.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_no_check_21.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_no_check_21.java:CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_no_check_21:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_no_check_21.java:CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_no_check_21:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s03\\CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashSet_31.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s03\\CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashSet_31.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s03/CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashSet_31.java:CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashSet_31:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s03/CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashSet_31.java:CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashSet_31:good()",
+    "typeName" : "good"
+  } ]
+}

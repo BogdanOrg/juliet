@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE390_Error_Without_Action\\CWE390_Error_Without_Action__reader_05.java",
+  "reachableFiles" : [ "src\\testcases\\CWE390_Error_Without_Action\\CWE390_Error_Without_Action__reader_05.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE390_Error_Without_Action/CWE390_Error_Without_Action__reader_05.java:CWE390_Error_Without_Action__reader_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE390_Error_Without_Action/CWE390_Error_Without_Action__reader_05.java:CWE390_Error_Without_Action__reader_05:good()",
+    "typeName" : "good"
+  } ]
+}

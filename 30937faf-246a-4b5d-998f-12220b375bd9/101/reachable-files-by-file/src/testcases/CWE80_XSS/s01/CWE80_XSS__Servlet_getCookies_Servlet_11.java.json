@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getCookies_Servlet_11.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getCookies_Servlet_11.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_getCookies_Servlet_11.java:CWE80_XSS__Servlet_getCookies_Servlet_11:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_getCookies_Servlet_11.java:CWE80_XSS__Servlet_getCookies_Servlet_11:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

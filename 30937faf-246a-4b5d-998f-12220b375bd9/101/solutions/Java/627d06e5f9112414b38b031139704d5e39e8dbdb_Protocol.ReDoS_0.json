@@ -1,0 +1,302 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java"
+      },
+      "region" : {
+        "startLine" : 164,
+        "startColumn" : 35,
+        "endLine" : 164,
+        "endColumn" : 39,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2GSink(dataVector)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java:CWE89_SQL_Injection__Property_executeBatch_72b:goodB2GSink(dataVector)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java"
+            },
+            "region" : {
+              "startLine" : 69,
+              "startColumn" : 23,
+              "endLine" : 69,
+              "endColumn" : 34,
+              "snippet" : {
+                "text" : "data = System.getProperty(\"user.home\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java:CWE89_SQL_Injection__Property_executeBatch_72a:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 20,
+              "endLine" : 74,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataVector.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java:CWE89_SQL_Injection__Property_executeBatch_72a:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 20,
+              "endLine" : 74,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataVector.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java:CWE89_SQL_Injection__Property_executeBatch_72a:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java"
+            },
+            "region" : {
+              "startLine" : 75,
+              "startColumn" : 64,
+              "endLine" : 75,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__Property_executeBatch_72b()).goodB2GSink(dataVector  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java:CWE89_SQL_Injection__Property_executeBatch_72a:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__Property_executeBatch_72b()).goodB2GSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java"
+            },
+            "region" : {
+              "startLine" : 158,
+              "startColumn" : 17,
+              "endLine" : 158,
+              "endColumn" : 28,
+              "snippet" : {
+                "text" : "public void goodB2GSink(Vector<String> dataVector ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java:CWE89_SQL_Injection__Property_executeBatch_72b:goodB2GSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataVector",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java"
+            },
+            "region" : {
+              "startLine" : 160,
+              "startColumn" : 34,
+              "endLine" : 160,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String data = dataVector.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java:CWE89_SQL_Injection__Property_executeBatch_72b:goodB2GSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.remove",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java"
+            },
+            "region" : {
+              "startLine" : 160,
+              "startColumn" : 34,
+              "endLine" : 160,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String data = dataVector.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java:CWE89_SQL_Injection__Property_executeBatch_72b:goodB2GSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java"
+            },
+            "region" : {
+              "startLine" : 164,
+              "startColumn" : 35,
+              "endLine" : 164,
+              "endColumn" : 39,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72b.java:CWE89_SQL_Injection__Property_executeBatch_72b:goodB2GSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2GSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__Property_executeBatch_72a.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 27,
+              "endLine" : 74,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "add"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

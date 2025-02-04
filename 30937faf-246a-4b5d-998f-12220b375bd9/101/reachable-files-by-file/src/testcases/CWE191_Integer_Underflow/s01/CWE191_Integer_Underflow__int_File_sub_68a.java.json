@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE191_Integer_Underflow\\s01\\CWE191_Integer_Underflow__int_File_sub_68a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE191_Integer_Underflow\\s01\\CWE191_Integer_Underflow__int_File_sub_68b.java", "src\\testcases\\CWE191_Integer_Underflow\\s01\\CWE191_Integer_Underflow__int_File_sub_68a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int_File_sub_68a.java:CWE191_Integer_Underflow__int_File_sub_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int_File_sub_68a.java:CWE191_Integer_Underflow__int_File_sub_68a:good()",
+    "typeName" : "good"
+  } ]
+}

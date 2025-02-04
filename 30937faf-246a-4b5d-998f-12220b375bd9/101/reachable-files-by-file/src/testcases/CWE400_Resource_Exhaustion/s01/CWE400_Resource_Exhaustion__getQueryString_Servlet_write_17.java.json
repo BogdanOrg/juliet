@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getQueryString_Servlet_write_17.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getQueryString_Servlet_write_17.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__getQueryString_Servlet_write_17.java:CWE400_Resource_Exhaustion__getQueryString_Servlet_write_17:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__getQueryString_Servlet_write_17.java:CWE400_Resource_Exhaustion__getQueryString_Servlet_write_17:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

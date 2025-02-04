@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_listen_tcp_divide_73a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_listen_tcp_divide_73a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_listen_tcp_divide_73b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_listen_tcp_divide_73a.java:CWE369_Divide_by_Zero__int_listen_tcp_divide_73a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_listen_tcp_divide_73a.java:CWE369_Divide_by_Zero__int_listen_tcp_divide_73a:good()",
+    "typeName" : "good"
+  } ]
+}

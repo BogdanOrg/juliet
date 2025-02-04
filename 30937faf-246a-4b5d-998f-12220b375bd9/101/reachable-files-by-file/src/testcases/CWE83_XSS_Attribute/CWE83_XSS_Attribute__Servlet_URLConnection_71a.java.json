@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_URLConnection_71a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_URLConnection_71a.java", "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_URLConnection_71b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_URLConnection_71a.java:CWE83_XSS_Attribute__Servlet_URLConnection_71a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_URLConnection_71a.java:CWE83_XSS_Attribute__Servlet_URLConnection_71a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

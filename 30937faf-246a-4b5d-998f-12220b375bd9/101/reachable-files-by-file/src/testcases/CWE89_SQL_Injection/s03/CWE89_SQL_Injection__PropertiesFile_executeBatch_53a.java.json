@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__PropertiesFile_executeBatch_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__PropertiesFile_executeBatch_53b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__PropertiesFile_executeBatch_53a.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__PropertiesFile_executeBatch_53c.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__PropertiesFile_executeBatch_53d.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeBatch_53a.java:CWE89_SQL_Injection__PropertiesFile_executeBatch_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__PropertiesFile_executeBatch_53a.java:CWE89_SQL_Injection__PropertiesFile_executeBatch_53a:good()",
+    "typeName" : "good"
+  } ]
+}

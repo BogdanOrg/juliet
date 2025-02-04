@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__getCookies_Servlet_09.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE470_Unsafe_Reflection\\CWE470_Unsafe_Reflection__getCookies_Servlet_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getCookies_Servlet_09.java:CWE470_Unsafe_Reflection__getCookies_Servlet_09:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__getCookies_Servlet_09.java:CWE470_Unsafe_Reflection__getCookies_Servlet_09:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

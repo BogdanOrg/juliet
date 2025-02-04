@@ -1,0 +1,164 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java"
+      },
+      "region" : {
+        "startLine" : 296,
+        "startColumn" : 39,
+        "endLine" : 296,
+        "endColumn" : 43,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2G()",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java:CWE89_SQL_Injection__console_readLine_executeBatch_31:goodB2G()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java"
+            },
+            "region" : {
+              "startLine" : 254,
+              "startColumn" : 43,
+              "endLine" : 254,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java:CWE89_SQL_Injection__console_readLine_executeBatch_31:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java"
+            },
+            "region" : {
+              "startLine" : 289,
+              "startColumn" : 13,
+              "endLine" : 289,
+              "endColumn" : 28,
+              "snippet" : {
+                "text" : "dataCopy = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java:CWE89_SQL_Injection__console_readLine_executeBatch_31:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataCopy",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java"
+            },
+            "region" : {
+              "startLine" : 292,
+              "startColumn" : 20,
+              "endLine" : 292,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataCopy;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java:CWE89_SQL_Injection__console_readLine_executeBatch_31:goodB2G()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java"
+            },
+            "region" : {
+              "startLine" : 296,
+              "startColumn" : 39,
+              "endLine" : 296,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeBatch_31.java:CWE89_SQL_Injection__console_readLine_executeBatch_31:goodB2G()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2G'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

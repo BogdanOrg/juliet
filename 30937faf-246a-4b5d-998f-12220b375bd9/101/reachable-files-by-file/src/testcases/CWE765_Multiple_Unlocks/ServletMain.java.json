@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE765_Multiple_Unlocks\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE765_Multiple_Unlocks\\CWE765_Multiple_Unlocks__ReentrantLock_Servlet_01.java", "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE765_Multiple_Unlocks\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE765_Multiple_Unlocks/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE765_Multiple_Unlocks/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

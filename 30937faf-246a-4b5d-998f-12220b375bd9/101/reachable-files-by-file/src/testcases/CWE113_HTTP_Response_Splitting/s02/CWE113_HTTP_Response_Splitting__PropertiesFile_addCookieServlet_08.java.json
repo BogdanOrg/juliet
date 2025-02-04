@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE113_HTTP_Response_Splitting\\s02\\CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE113_HTTP_Response_Splitting\\s02\\CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_08.java:CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_08:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_08.java:CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_08:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

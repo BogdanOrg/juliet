@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE598_Information_Exposure_QueryString\\CWE598_Information_Exposure_QueryString__Servlet_04.java",
+  "reachableFiles" : [ "src\\testcases\\CWE598_Information_Exposure_QueryString\\CWE598_Information_Exposure_QueryString__Servlet_04.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE598_Information_Exposure_QueryString/CWE598_Information_Exposure_QueryString__Servlet_04.java:CWE598_Information_Exposure_QueryString__Servlet_04:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE598_Information_Exposure_QueryString/CWE598_Information_Exposure_QueryString__Servlet_04.java:CWE598_Information_Exposure_QueryString__Servlet_04:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

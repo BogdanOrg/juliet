@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE252_Unchecked_Return_Value\\CWE252_Unchecked_Return_Value__FileInputStream_04.java",
+  "reachableFiles" : [ "src\\testcases\\CWE252_Unchecked_Return_Value\\CWE252_Unchecked_Return_Value__FileInputStream_04.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE252_Unchecked_Return_Value/CWE252_Unchecked_Return_Value__FileInputStream_04.java:CWE252_Unchecked_Return_Value__FileInputStream_04:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE252_Unchecked_Return_Value/CWE252_Unchecked_Return_Value__FileInputStream_04.java:CWE252_Unchecked_Return_Value__FileInputStream_04:good()",
+    "typeName" : "good"
+  } ]
+}

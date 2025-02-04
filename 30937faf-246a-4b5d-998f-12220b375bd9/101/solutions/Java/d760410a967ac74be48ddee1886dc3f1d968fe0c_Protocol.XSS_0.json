@@ -1,0 +1,332 @@
+{
+  "ruleId" : "Protocol:XSS",
+  "level" : "error",
+  "message" : {
+    "text" : "'println' method of 'java.io.PrintWriter' object could be abused to perform a Cross Site Scripting attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+      },
+      "region" : {
+        "startLine" : 97,
+        "startColumn" : 34,
+        "endLine" : 97,
+        "endColumn" : 40,
+        "snippet" : {
+          "text" : "java.io.PrintWriter.println"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 77,
+              "endLine" : 47,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 41,
+              "endLine" : 47,
+              "endColumn" : 103,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 41,
+              "endLine" : 47,
+              "endColumn" : 103,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 38,
+              "endLine" : 48,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 38,
+              "endLine" : 48,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 43,
+              "endLine" : 52,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 43,
+              "endLine" : 52,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 97,
+              "startColumn" : 42,
+              "endLine" : 97,
+              "endColumn" : 69,
+              "snippet" : {
+                "text" : "response.getWriter().println(\"<br>bad(): data = \" + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"<br>bad(): data = \" + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 97,
+              "startColumn" : 34,
+              "endLine" : 97,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "java.io.PrintWriter.println"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'println' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.PrintWriter.println",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 77,
+              "endLine" : 47,
+              "endColumn" : 90,
+              "snippet" : {
+                "text" : "getInputStream"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:su:1361092",
+          "loc" : "new InputStreamReader(urlConnection.getInputStream(), \"UTF-8\")"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-xss",
+    "cwe" : 79,
+    "confidence" : "LOW"
+  }
+}

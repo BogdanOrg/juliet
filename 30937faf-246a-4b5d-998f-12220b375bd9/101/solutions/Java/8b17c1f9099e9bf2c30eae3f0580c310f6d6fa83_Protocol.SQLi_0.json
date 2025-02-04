@@ -1,0 +1,554 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'executeBatch' method of 'java.sql.Statement' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+      },
+      "region" : {
+        "startLine" : 48,
+        "startColumn" : 51,
+        "endLine" : 48,
+        "endColumn" : 62,
+        "snippet" : {
+          "text" : "java.sql.Statement.executeBatch"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 51,
+              "startColumn" : 66,
+              "endLine" : 51,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 51,
+              "startColumn" : 37,
+              "endLine" : 51,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 51,
+              "startColumn" : 37,
+              "endLine" : 51,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 34,
+              "endLine" : 52,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 34,
+              "endLine" : 52,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 39,
+              "endLine" : 55,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 39,
+              "endLine" : 55,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java"
+            },
+            "region" : {
+              "startLine" : 103,
+              "startColumn" : 9,
+              "endLine" : 103,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61b.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSource",
+            "locationType" : "RETURN"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 81,
+              "endLine" : 31,
+              "endColumn" : 90,
+              "snippet" : {
+                "text" : "String data = (new CWE89_SQL_Injection__connect_tcp_executeBatch_61b()).badSource();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 35,
+              "endLine" : 35,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String names[] = data.split(\"-\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 35,
+              "endLine" : 35,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String names[] = data.split(\"-\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "names",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 97,
+              "endLine" : 46,
+              "endColumn" : 105,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 97,
+              "endLine" : 46,
+              "endColumn" : 105,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "names[i]",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 43,
+              "endLine" : 46,
+              "endColumn" : 111,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 34,
+              "endLine" : 46,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.sql.Statement.addBatch",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 34,
+              "endLine" : 46,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "sqlStatement.addBatch(\"update users set hitcount=hitcount+1 where name='\" + names[i] + \"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.sql.Statement.addBatch",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 51,
+              "endLine" : 48,
+              "endColumn" : 62,
+              "snippet" : {
+                "text" : "java.sql.Statement.executeBatch"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeBatch_61a.java:CWE89_SQL_Injection__connect_tcp_executeBatch_61a:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'executeBatch' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Statement.executeBatch",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

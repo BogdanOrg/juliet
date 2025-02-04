@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__Property_66a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__Property_66b.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__Property_66a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_66a.java:CWE78_OS_Command_Injection__Property_66a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_66a.java:CWE78_OS_Command_Injection__Property_66a:good()",
+    "typeName" : "good"
+  } ]
+}

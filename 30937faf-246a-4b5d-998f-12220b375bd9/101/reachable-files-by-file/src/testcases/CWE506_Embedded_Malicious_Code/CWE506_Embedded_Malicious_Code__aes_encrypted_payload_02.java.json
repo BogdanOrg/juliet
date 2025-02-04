@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE506_Embedded_Malicious_Code\\CWE506_Embedded_Malicious_Code__aes_encrypted_payload_02.java",
+  "reachableFiles" : [ "src\\testcases\\CWE506_Embedded_Malicious_Code\\CWE506_Embedded_Malicious_Code__aes_encrypted_payload_02.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__aes_encrypted_payload_02.java:CWE506_Embedded_Malicious_Code__aes_encrypted_payload_02:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__aes_encrypted_payload_02.java:CWE506_Embedded_Malicious_Code__aes_encrypted_payload_02:good()",
+    "typeName" : "good"
+  } ]
+}

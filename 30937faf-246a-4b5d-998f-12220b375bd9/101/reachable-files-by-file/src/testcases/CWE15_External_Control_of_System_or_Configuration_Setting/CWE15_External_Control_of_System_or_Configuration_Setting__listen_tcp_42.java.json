@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_42.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_42.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_42.java:CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_42:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_42.java:CWE15_External_Control_of_System_or_Configuration_Setting__listen_tcp_42:good()",
+    "typeName" : "good"
+  } ]
+}

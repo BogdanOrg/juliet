@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE570_Expression_Always_False\\CWE570_Expression_Always_False__static_return_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE570_Expression_Always_False\\CWE570_Expression_Always_False__static_return_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE570_Expression_Always_False/CWE570_Expression_Always_False__static_return_01.java:CWE570_Expression_Always_False__static_return_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE570_Expression_Always_False/CWE570_Expression_Always_False__static_return_01.java:CWE570_Expression_Always_False__static_return_01:good()",
+    "typeName" : "good"
+  } ]
+}

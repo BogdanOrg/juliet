@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51a.java", "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51a.java:CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51a.java:CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_driverManager_51a:good()",
+    "typeName" : "good"
+  } ]
+}

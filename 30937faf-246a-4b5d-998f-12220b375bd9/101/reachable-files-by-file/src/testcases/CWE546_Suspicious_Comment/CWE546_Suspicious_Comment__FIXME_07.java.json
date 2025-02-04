@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE546_Suspicious_Comment\\CWE546_Suspicious_Comment__FIXME_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE546_Suspicious_Comment\\CWE546_Suspicious_Comment__FIXME_07.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE546_Suspicious_Comment/CWE546_Suspicious_Comment__FIXME_07.java:CWE546_Suspicious_Comment__FIXME_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE546_Suspicious_Comment/CWE546_Suspicious_Comment__FIXME_07.java:CWE546_Suspicious_Comment__FIXME_07:good()",
+    "typeName" : "good"
+  } ]
+}

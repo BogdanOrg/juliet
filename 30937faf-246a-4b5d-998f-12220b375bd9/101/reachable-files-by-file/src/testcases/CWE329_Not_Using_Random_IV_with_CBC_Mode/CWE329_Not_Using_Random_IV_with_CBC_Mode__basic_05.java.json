@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE329_Not_Using_Random_IV_with_CBC_Mode\\CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_05.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE329_Not_Using_Random_IV_with_CBC_Mode\\CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_05.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE329_Not_Using_Random_IV_with_CBC_Mode/CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_05.java:CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE329_Not_Using_Random_IV_with_CBC_Mode/CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_05.java:CWE329_Not_Using_Random_IV_with_CBC_Mode__basic_05:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,134 @@
+{
+  "ruleId" : "Protocol:XSS",
+  "level" : "error",
+  "message" : {
+    "text" : "'println' method of 'java.io.PrintWriter' object could be abused to perform a Cross Site Scripting attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java"
+      },
+      "region" : {
+        "startLine" : 104,
+        "startColumn" : 34,
+        "endLine" : 104,
+        "endColumn" : 40,
+        "snippet" : {
+          "text" : "java.io.PrintWriter.println"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java:CWE83_XSS_Attribute__Servlet_database_01:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 34,
+              "endLine" : 54,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = resultSet.getString(1);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java:CWE83_XSS_Attribute__Servlet_database_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java"
+            },
+            "region" : {
+              "startLine" : 104,
+              "startColumn" : 42,
+              "endLine" : 104,
+              "endColumn" : 82,
+              "snippet" : {
+                "text" : "response.getWriter().println(\"<br>bad() - <img src=\\\"\" + data + \"\\\">\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java:CWE83_XSS_Attribute__Servlet_database_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"<br>bad() - <img src=\\\"\" + data + \"\\\">\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java"
+            },
+            "region" : {
+              "startLine" : 104,
+              "startColumn" : 34,
+              "endLine" : 104,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "java.io.PrintWriter.println"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_database_01.java:CWE83_XSS_Attribute__Servlet_database_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'println' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.PrintWriter.println",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-xss",
+    "cwe" : 79,
+    "confidence" : "LOW"
+  }
+}

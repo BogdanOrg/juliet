@@ -1,0 +1,212 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'executeQuery' method of 'java.sql.Statement' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java"
+      },
+      "region" : {
+        "startLine" : 43,
+        "startColumn" : 38,
+        "endLine" : 43,
+        "endColumn" : 49,
+        "snippet" : {
+          "text" : "java.sql.Statement.executeQuery"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java:CWE89_SQL_Injection__console_readLine_executeQuery_61a:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61b.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 39,
+              "endLine" : 48,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61b.java:CWE89_SQL_Injection__console_readLine_executeQuery_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61b.java"
+            },
+            "region" : {
+              "startLine" : 83,
+              "startColumn" : 9,
+              "endLine" : 83,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61b.java:CWE89_SQL_Injection__console_readLine_executeQuery_61b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSource",
+            "locationType" : "RETURN"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 86,
+              "endLine" : 31,
+              "endColumn" : 95,
+              "snippet" : {
+                "text" : "String data = (new CWE89_SQL_Injection__console_readLine_executeQuery_61b()).badSource();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java:CWE89_SQL_Injection__console_readLine_executeQuery_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 51,
+              "endLine" : 43,
+              "endColumn" : 94,
+              "snippet" : {
+                "text" : "resultSet = sqlStatement.executeQuery(\"select * from users where name='\"+data+\"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java:CWE89_SQL_Injection__console_readLine_executeQuery_61a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"select * from users where name='\"+data+\"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 38,
+              "endLine" : 43,
+              "endColumn" : 49,
+              "snippet" : {
+                "text" : "java.sql.Statement.executeQuery"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61a.java:CWE89_SQL_Injection__console_readLine_executeQuery_61a:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'executeQuery' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Statement.executeQuery",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_executeQuery_61b.java"
+            },
+            "region" : {
+              "startLine" : 83,
+              "startColumn" : 9,
+              "endLine" : 83,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:ret",
+          "loc" : "return data"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

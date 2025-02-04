@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE607_Public_Static_Final_Mutable\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE607_Public_Static_Final_Mutable\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE607_Public_Static_Final_Mutable/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE607_Public_Static_Final_Mutable/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

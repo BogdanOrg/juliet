@@ -1,0 +1,236 @@
+{
+  "ruleId" : "Protocol:UnsafeReflection",
+  "level" : "error",
+  "message" : {
+    "text" : "'forName' method of 'java.lang.Class' object could be abused to execute arbitrary code."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java"
+      },
+      "region" : {
+        "startLine" : 30,
+        "startColumn" : 36,
+        "endLine" : 30,
+        "endColumn" : 42,
+        "snippet" : {
+          "text" : "java.lang.Class.forName"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataContainer)",
+      "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java:CWE470_Unsafe_Reflection__database_67b:badSink(dataContainer)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java"
+            },
+            "region" : {
+              "startLine" : 59,
+              "startColumn" : 34,
+              "endLine" : 59,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = resultSet.getString(1);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java:CWE470_Unsafe_Reflection__database_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java"
+            },
+            "region" : {
+              "startLine" : 107,
+              "startColumn" : 9,
+              "endLine" : 107,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "dataContainer.containerOne = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java:CWE470_Unsafe_Reflection__database_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataContainer.containerOne",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java"
+            },
+            "region" : {
+              "startLine" : 108,
+              "startColumn" : 56,
+              "endLine" : 108,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "(new CWE470_Unsafe_Reflection__database_67b()).badSink(dataContainer  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67a.java:CWE470_Unsafe_Reflection__database_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE470_Unsafe_Reflection__database_67b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 17,
+              "endLine" : 25,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(CWE470_Unsafe_Reflection__database_67a.Container dataContainer ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java:CWE470_Unsafe_Reflection__database_67b:badSink(dataContainer)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "containerOne",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 16,
+              "endLine" : 27,
+              "endColumn" : 49,
+              "snippet" : {
+                "text" : "String data = dataContainer.containerOne;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java:CWE470_Unsafe_Reflection__database_67b:badSink(dataContainer)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 36,
+              "endLine" : 30,
+              "endColumn" : 42,
+              "snippet" : {
+                "text" : "java.lang.Class.forName"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE470_Unsafe_Reflection/CWE470_Unsafe_Reflection__database_67b.java:CWE470_Unsafe_Reflection__database_67b:badSink(dataContainer)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'forName' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.Class.forName",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : ""
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "containerOne",
+          "loc" : "badSink"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-unsafe-reflection",
+    "cwe" : 470,
+    "confidence" : "LOW"
+  }
+}

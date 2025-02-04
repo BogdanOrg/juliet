@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66a.java:CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66a.java:CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_read_check_max_66a:good()",
+    "typeName" : "good"
+  } ]
+}

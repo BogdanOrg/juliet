@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_URLConnection_divide_61a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_URLConnection_divide_61b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_URLConnection_divide_61a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_61a.java:CWE369_Divide_by_Zero__int_URLConnection_divide_61a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_61a.java:CWE369_Divide_by_Zero__int_URLConnection_divide_61a:good()",
+    "typeName" : "good"
+  } ]
+}

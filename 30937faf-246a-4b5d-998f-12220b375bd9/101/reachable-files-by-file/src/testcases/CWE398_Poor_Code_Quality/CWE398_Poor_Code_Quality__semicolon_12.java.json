@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE398_Poor_Code_Quality\\CWE398_Poor_Code_Quality__semicolon_12.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE398_Poor_Code_Quality\\CWE398_Poor_Code_Quality__semicolon_12.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__semicolon_12.java:CWE398_Poor_Code_Quality__semicolon_12:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__semicolon_12.java:CWE398_Poor_Code_Quality__semicolon_12:good()",
+    "typeName" : "good"
+  } ]
+}

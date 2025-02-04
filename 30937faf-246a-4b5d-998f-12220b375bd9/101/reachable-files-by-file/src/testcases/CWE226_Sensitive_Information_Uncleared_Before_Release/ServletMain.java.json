@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE226_Sensitive_Information_Uncleared_Before_Release\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE226_Sensitive_Information_Uncleared_Before_Release\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE226_Sensitive_Information_Uncleared_Before_Release/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE226_Sensitive_Information_Uncleared_Before_Release/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

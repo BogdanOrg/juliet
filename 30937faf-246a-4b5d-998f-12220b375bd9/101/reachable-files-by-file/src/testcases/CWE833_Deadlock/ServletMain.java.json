@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE833_Deadlock\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE833_Deadlock\\CWE833_Deadlock__ReentrantLock_Servlet_01.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE833_Deadlock\\CWE833_Deadlock__synchronized_Objects_Servlet_01.java", "src\\testcases\\CWE833_Deadlock\\CWE833_Deadlock__synchronized_methods_Servlet_01.java", "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE833_Deadlock\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE833_Deadlock/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE833_Deadlock/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

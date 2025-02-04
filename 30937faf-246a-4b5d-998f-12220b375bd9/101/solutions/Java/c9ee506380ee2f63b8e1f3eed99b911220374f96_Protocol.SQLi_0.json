@@ -1,0 +1,194 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'execute' method of 'java.sql.Statement' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java"
+      },
+      "region" : {
+        "startLine" : 89,
+        "startColumn" : 47,
+        "endLine" : 89,
+        "endColumn" : 53,
+        "snippet" : {
+          "text" : "java.sql.Statement.execute"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java:CWE89_SQL_Injection__PropertiesFile_execute_13:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 32,
+              "endLine" : 48,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java:CWE89_SQL_Injection__PropertiesFile_execute_13:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 39,
+              "endLine" : 50,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java:CWE89_SQL_Injection__PropertiesFile_execute_13:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java"
+            },
+            "region" : {
+              "startLine" : 50,
+              "startColumn" : 39,
+              "endLine" : 50,
+              "endColumn" : 50,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java:CWE89_SQL_Injection__PropertiesFile_execute_13:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java"
+            },
+            "region" : {
+              "startLine" : 89,
+              "startColumn" : 55,
+              "endLine" : 89,
+              "endColumn" : 124,
+              "snippet" : {
+                "text" : "Boolean result = sqlStatement.execute(\"insert into users (status) values ('updated') where name='\"+data+\"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java:CWE89_SQL_Injection__PropertiesFile_execute_13:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"insert into users (status) values ('updated') where name='\"+data+\"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java"
+            },
+            "region" : {
+              "startLine" : 89,
+              "startColumn" : 47,
+              "endLine" : 89,
+              "endColumn" : 53,
+              "snippet" : {
+                "text" : "java.sql.Statement.execute"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s04/CWE89_SQL_Injection__PropertiesFile_execute_13.java:CWE89_SQL_Injection__PropertiesFile_execute_13:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'execute' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Statement.execute",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

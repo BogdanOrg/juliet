@@ -1,0 +1,182 @@
+{
+  "ruleId" : "Protocol:HeaderInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'addCookie' method of 'javax.servlet.http.HttpServletResponse' object could be abused to perform a HTTP Header Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java"
+      },
+      "region" : {
+        "startLine" : 107,
+        "startColumn" : 22,
+        "endLine" : 107,
+        "endColumn" : 30,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.addCookie"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java:CWE113_HTTP_Response_Splitting__database_addCookieServlet_01:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java"
+            },
+            "region" : {
+              "startLine" : 56,
+              "startColumn" : 34,
+              "endLine" : 56,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = resultSet.getString(1);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java:CWE113_HTTP_Response_Splitting__database_addCookieServlet_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java"
+            },
+            "region" : {
+              "startLine" : 105,
+              "startColumn" : 33,
+              "endLine" : 105,
+              "endColumn" : 57,
+              "snippet" : {
+                "text" : "Cookie cookieSink = new Cookie(\"lang\", data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java:CWE113_HTTP_Response_Splitting__database_addCookieServlet_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.Cookie.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java"
+            },
+            "region" : {
+              "startLine" : 105,
+              "startColumn" : 33,
+              "endLine" : 105,
+              "endColumn" : 57,
+              "snippet" : {
+                "text" : "Cookie cookieSink = new Cookie(\"lang\", data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java:CWE113_HTTP_Response_Splitting__database_addCookieServlet_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "cookieSink",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java"
+            },
+            "region" : {
+              "startLine" : 107,
+              "startColumn" : 22,
+              "endLine" : 107,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.addCookie"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java:CWE113_HTTP_Response_Splitting__database_addCookieServlet_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'addCookie' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.addCookie",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__database_addCookieServlet_01.java"
+            },
+            "region" : {
+              "startLine" : 105,
+              "startColumn" : 52,
+              "endLine" : 105,
+              "endColumn" : 55,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "new Cookie(\"lang\", data)"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-header-inj",
+    "cwe" : 113,
+    "confidence" : "LOW"
+  }
+}

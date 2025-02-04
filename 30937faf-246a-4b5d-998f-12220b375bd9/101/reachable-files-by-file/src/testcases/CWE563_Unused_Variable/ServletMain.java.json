@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE563_Unused_Variable\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE563_Unused_Variable\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE328_Reversible_One_Way_Hash\\CWE328_Reversible_One_Way_Hash__SHA1_16.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE328_Reversible_One_Way_Hash\\CWE328_Reversible_One_Way_Hash__SHA1_16.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE328_Reversible_One_Way_Hash/CWE328_Reversible_One_Way_Hash__SHA1_16.java:CWE328_Reversible_One_Way_Hash__SHA1_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE328_Reversible_One_Way_Hash/CWE328_Reversible_One_Way_Hash__SHA1_16.java:CWE328_Reversible_One_Way_Hash__SHA1_16:good()",
+    "typeName" : "good"
+  } ]
+}

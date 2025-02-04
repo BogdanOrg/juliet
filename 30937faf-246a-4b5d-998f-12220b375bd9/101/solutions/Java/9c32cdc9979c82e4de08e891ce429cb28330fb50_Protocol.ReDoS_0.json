@@ -1,0 +1,602 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+      },
+      "region" : {
+        "startLine" : 221,
+        "startColumn" : 35,
+        "endLine" : 221,
+        "endColumn" : 39,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2G(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2G(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 279,
+              "startColumn" : 17,
+              "endLine" : 279,
+              "endColumn" : 21,
+              "snippet" : {
+                "text" : "public void good(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "good(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:good(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 282,
+              "startColumn" : 9,
+              "endLine" : 282,
+              "endColumn" : 16,
+              "snippet" : {
+                "text" : "goodB2G(request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "good(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:good(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "goodB2G",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 215,
+              "startColumn" : 18,
+              "endLine" : 215,
+              "endColumn" : 25,
+              "snippet" : {
+                "text" : "private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 217,
+              "startColumn" : 23,
+              "endLine" : 217,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "String data = goodB2GSource(request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "goodB2GSource",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 192,
+              "startColumn" : 20,
+              "endLine" : 192,
+              "endColumn" : 33,
+              "snippet" : {
+                "text" : "private String goodB2GSource(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 200,
+              "startColumn" : 69,
+              "endLine" : 200,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletRequest.getQueryString",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 200,
+              "startColumn" : 69,
+              "endLine" : 200,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getQueryString",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 200,
+              "startColumn" : 41,
+              "endLine" : 200,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.StringTokenizer.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 200,
+              "startColumn" : 41,
+              "endLine" : 200,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokenizer",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 203,
+              "startColumn" : 42,
+              "endLine" : 203,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "String token = tokenizer.nextToken(); /* a token will be like \"id=foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.StringTokenizer.nextToken",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 203,
+              "startColumn" : 42,
+              "endLine" : 203,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "String token = tokenizer.nextToken(); /* a token will be like \"id=foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "token",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 204,
+              "startColumn" : 26,
+              "endLine" : 204,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "if(token.startsWith(\"id=\")) /* check if we have the \"id\" parameter\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.startsWith",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 204,
+              "startColumn" : 26,
+              "endLine" : 204,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "if(token.startsWith(\"id=\")) /* check if we have the \"id\" parameter\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.startsWith",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 206,
+              "startColumn" : 34,
+              "endLine" : 206,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = token.substring(3); /* set data to \"foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.substring",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 206,
+              "startColumn" : 34,
+              "endLine" : 206,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = token.substring(3); /* set data to \"foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 212,
+              "startColumn" : 9,
+              "endLine" : 212,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2GSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "goodB2GSource",
+            "locationType" : "RETURN"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 217,
+              "startColumn" : 23,
+              "endLine" : 217,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "String data = goodB2GSource(request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 221,
+              "startColumn" : 35,
+              "endLine" : 221,
+              "endColumn" : 39,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java:CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2G'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 18,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_42.java"
+            },
+            "region" : {
+              "startLine" : 212,
+              "startColumn" : 9,
+              "endLine" : 212,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:ret",
+          "loc" : "return data"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s04\\CWE369_Divide_by_Zero__int_zero_modulo_41.java",
+  "reachableFiles" : [ "src\\testcases\\CWE369_Divide_by_Zero\\s04\\CWE369_Divide_by_Zero__int_zero_modulo_41.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s04/CWE369_Divide_by_Zero__int_zero_modulo_41.java:CWE369_Divide_by_Zero__int_zero_modulo_41:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s04/CWE369_Divide_by_Zero__int_zero_modulo_41.java:CWE369_Divide_by_Zero__int_zero_modulo_41:good()",
+    "typeName" : "good"
+  } ]
+}

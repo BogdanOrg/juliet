@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_File_72a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_File_72a.java", "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_File_72b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_File_72a.java:CWE80_XSS__CWE182_Servlet_File_72a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_File_72a.java:CWE80_XSS__CWE182_Servlet_File_72a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

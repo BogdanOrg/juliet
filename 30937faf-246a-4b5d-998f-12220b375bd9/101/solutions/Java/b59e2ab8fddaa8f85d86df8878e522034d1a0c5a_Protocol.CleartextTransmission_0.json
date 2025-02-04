@@ -1,0 +1,104 @@
+{
+  "ruleId" : "Protocol:CleartextTransmission",
+  "level" : "error",
+  "message" : {
+    "text" : "'openConnection' method of 'java.net.URL' object could be abused for the transmission of sensitive or security-critical data in cleartext in a communication channel."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE197_Numeric_Truncation_Error/s03/CWE197_Numeric_Truncation_Error__short_URLConnection_22b.java"
+      },
+      "region" : {
+        "startLine" : 39,
+        "startColumn" : 84,
+        "endLine" : 39,
+        "endColumn" : 97,
+        "snippet" : {
+          "text" : "java.net.URL.openConnection"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSource()",
+      "fullyQualifiedName" : "src/testcases/CWE197_Numeric_Truncation_Error/s03/CWE197_Numeric_Truncation_Error__short_URLConnection_22b.java:CWE197_Numeric_Truncation_Error__short_URLConnection_22b:badSource()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE197_Numeric_Truncation_Error/s03/CWE197_Numeric_Truncation_Error__short_URLConnection_22b.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 47,
+              "endLine" : 39,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "URLConnection urlConnection = (new URL(\"http://www.example.org/\")).openConnection();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE197_Numeric_Truncation_Error/s03/CWE197_Numeric_Truncation_Error__short_URLConnection_22b.java:CWE197_Numeric_Truncation_Error__short_URLConnection_22b:badSource()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new URL(\"http://www.example.org/\"))",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE197_Numeric_Truncation_Error/s03/CWE197_Numeric_Truncation_Error__short_URLConnection_22b.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 84,
+              "endLine" : 39,
+              "endColumn" : 97,
+              "snippet" : {
+                "text" : "java.net.URL.openConnection"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource()",
+            "fullyQualifiedName" : "src/testcases/CWE197_Numeric_Truncation_Error/s03/CWE197_Numeric_Truncation_Error__short_URLConnection_22b.java:CWE197_Numeric_Truncation_Error__short_URLConnection_22b:badSource()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'openConnection' in 'badSource'"
+          },
+          "properties" : {
+            "instanceName" : "java.net.URL.openConnection",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-insecure-transport",
+    "cwe" : 319,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__Property_52a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__Property_52b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__Property_52c.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__Property_52a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__Property_52a.java:CWE23_Relative_Path_Traversal__Property_52a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__Property_52a.java:CWE23_Relative_Path_Traversal__Property_52a:good()",
+    "typeName" : "good"
+  } ]
+}

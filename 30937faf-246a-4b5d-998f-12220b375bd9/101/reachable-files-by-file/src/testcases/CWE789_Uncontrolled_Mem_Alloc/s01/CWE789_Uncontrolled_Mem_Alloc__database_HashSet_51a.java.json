@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51a.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51a.java:CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51a.java:CWE789_Uncontrolled_Mem_Alloc__database_HashSet_51a:good()",
+    "typeName" : "good"
+  } ]
+}

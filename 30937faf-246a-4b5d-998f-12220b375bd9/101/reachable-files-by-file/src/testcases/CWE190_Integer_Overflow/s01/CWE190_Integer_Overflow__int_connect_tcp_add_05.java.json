@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__int_connect_tcp_add_05.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__int_connect_tcp_add_05.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int_connect_tcp_add_05.java:CWE190_Integer_Overflow__int_connect_tcp_add_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int_connect_tcp_add_05.java:CWE190_Integer_Overflow__int_connect_tcp_add_05:good()",
+    "typeName" : "good"
+  } ]
+}

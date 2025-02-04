@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__sleep_listen_tcp_02.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s02\\CWE400_Resource_Exhaustion__sleep_listen_tcp_02.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_listen_tcp_02.java:CWE400_Resource_Exhaustion__sleep_listen_tcp_02:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_listen_tcp_02.java:CWE400_Resource_Exhaustion__sleep_listen_tcp_02:good()",
+    "typeName" : "good"
+  } ]
+}

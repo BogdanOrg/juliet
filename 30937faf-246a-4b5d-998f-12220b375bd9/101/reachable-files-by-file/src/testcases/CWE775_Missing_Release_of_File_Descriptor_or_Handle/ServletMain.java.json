@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE775_Missing_Release_of_File_Descriptor_or_Handle\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE775_Missing_Release_of_File_Descriptor_or_Handle\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE775_Missing_Release_of_File_Descriptor_or_Handle/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE775_Missing_Release_of_File_Descriptor_or_Handle/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

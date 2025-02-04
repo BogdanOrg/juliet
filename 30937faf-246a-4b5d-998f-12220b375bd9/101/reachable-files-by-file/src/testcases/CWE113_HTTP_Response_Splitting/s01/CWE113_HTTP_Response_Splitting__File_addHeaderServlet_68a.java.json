@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE113_HTTP_Response_Splitting\\s01\\CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE113_HTTP_Response_Splitting\\s01\\CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68b.java", "src\\testcases\\CWE113_HTTP_Response_Splitting\\s01\\CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68a.java:CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68a.java:CWE113_HTTP_Response_Splitting__File_addHeaderServlet_68a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

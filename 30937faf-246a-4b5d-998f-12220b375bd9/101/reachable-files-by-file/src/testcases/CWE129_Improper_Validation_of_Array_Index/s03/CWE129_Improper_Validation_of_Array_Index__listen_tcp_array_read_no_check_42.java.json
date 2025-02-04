@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_42.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_42.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_42.java:CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_42:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_42.java:CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_42:good()",
+    "typeName" : "good"
+  } ]
+}

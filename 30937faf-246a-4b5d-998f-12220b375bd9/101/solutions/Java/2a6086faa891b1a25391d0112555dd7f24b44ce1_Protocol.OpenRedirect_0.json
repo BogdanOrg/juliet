@@ -1,0 +1,212 @@
+{
+  "ruleId" : "Protocol:OpenRedirect",
+  "level" : "error",
+  "message" : {
+    "text" : "'addHeader' method of 'javax.servlet.http.HttpServletResponse' object could be abused to perform a Site Redirection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java"
+      },
+      "region" : {
+        "startLine" : 34,
+        "startColumn" : 22,
+        "endLine" : 34,
+        "endColumn" : 30,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.addHeader"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java:CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 23,
+              "endLine" : 31,
+              "endColumn" : 34,
+              "snippet" : {
+                "text" : "data = System.getProperty(\"user.home\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b.java:CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b:badSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 9,
+              "endLine" : 33,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSource(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b.java:CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b:badSource(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSource",
+            "locationType" : "RETURN"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 93,
+              "endLine" : 29,
+              "endColumn" : 102,
+              "snippet" : {
+                "text" : "String data = (new CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b()).badSource(request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java:CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 44,
+              "endLine" : 34,
+              "endColumn" : 70,
+              "snippet" : {
+                "text" : "response.addHeader(\"Location\", \"/author.jsp?lang=\" + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java:CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"/author.jsp?lang=\" + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 22,
+              "endLine" : 34,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.addHeader"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a.java:CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'addHeader' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.addHeader",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE113_HTTP_Response_Splitting/s02/CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_61b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 9,
+              "endLine" : 33,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "return data;"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:ret",
+          "loc" : "return data"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-redirect",
+    "cwe" : 601,
+    "confidence" : "LOW"
+  }
+}

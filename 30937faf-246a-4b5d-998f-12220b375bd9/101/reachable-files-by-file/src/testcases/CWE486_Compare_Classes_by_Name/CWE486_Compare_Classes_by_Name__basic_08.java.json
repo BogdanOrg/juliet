@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE486_Compare_Classes_by_Name\\CWE486_Compare_Classes_by_Name__basic_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE486_Compare_Classes_by_Name\\HelperClass\\CWE486_Compare_Classes_by_Name__Helper.java", "src\\testcases\\CWE486_Compare_Classes_by_Name\\CWE486_Compare_Classes_by_Name__Helper.java", "src\\testcases\\CWE486_Compare_Classes_by_Name\\CWE486_Compare_Classes_by_Name__basic_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE486_Compare_Classes_by_Name/CWE486_Compare_Classes_by_Name__basic_08.java:CWE486_Compare_Classes_by_Name__basic_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE486_Compare_Classes_by_Name/CWE486_Compare_Classes_by_Name__basic_08.java:CWE486_Compare_Classes_by_Name__basic_08:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE597_Wrong_Operator_String_Comparison\\CWE597_Wrong_Operator_String_Comparison__basic_13.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE597_Wrong_Operator_String_Comparison\\CWE597_Wrong_Operator_String_Comparison__basic_13.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE597_Wrong_Operator_String_Comparison/CWE597_Wrong_Operator_String_Comparison__basic_13.java:CWE597_Wrong_Operator_String_Comparison__basic_13:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE597_Wrong_Operator_String_Comparison/CWE597_Wrong_Operator_String_Comparison__basic_13.java:CWE597_Wrong_Operator_String_Comparison__basic_13:good()",
+    "typeName" : "good"
+  } ]
+}

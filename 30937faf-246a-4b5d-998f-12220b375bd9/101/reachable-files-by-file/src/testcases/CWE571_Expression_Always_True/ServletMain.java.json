@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE571_Expression_Always_True\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE571_Expression_Always_True\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE571_Expression_Always_True/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE571_Expression_Always_True/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

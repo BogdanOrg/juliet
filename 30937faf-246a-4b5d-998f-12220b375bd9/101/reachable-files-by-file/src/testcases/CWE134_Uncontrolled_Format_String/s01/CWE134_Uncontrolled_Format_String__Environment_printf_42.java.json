@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__Environment_printf_42.java",
+  "reachableFiles" : [ "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__Environment_printf_42.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_printf_42.java:CWE134_Uncontrolled_Format_String__Environment_printf_42:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_printf_42.java:CWE134_Uncontrolled_Format_String__Environment_printf_42:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,182 @@
+{
+  "ruleId" : "Protocol:SensitiveSystemInformation",
+  "level" : "error",
+  "message" : {
+    "text" : "'new' method of 'javax.servlet.http.Cookie' object could be abused to reveal sensitive internal information."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad.java"
+      },
+      "region" : {
+        "startLine" : 32,
+        "startColumn" : 33,
+        "endLine" : 32,
+        "endColumn" : 56,
+        "snippet" : {
+          "text" : "javax.servlet.http.Cookie.new"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "action(data,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad:action(data,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 39,
+              "endLine" : 48,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a.java"
+            },
+            "region" : {
+              "startLine" : 84,
+              "startColumn" : 20,
+              "endLine" : 84,
+              "endColumn" : 26,
+              "snippet" : {
+                "text" : "baseObject.action(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "baseObject.action",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad.java"
+            },
+            "region" : {
+              "startLine" : 27,
+              "startColumn" : 17,
+              "endLine" : 27,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "public void action(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "action(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad:action(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 33,
+              "endLine" : 32,
+              "endColumn" : 56,
+              "snippet" : {
+                "text" : "javax.servlet.http.Cookie.new"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "action(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad.java:CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81_bad:action(data,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'new Cookie(\"lang\", data)' in 'action'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.Cookie.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE113_HTTP_Response_Splitting/s01/CWE113_HTTP_Response_Splitting__console_readLine_addCookieServlet_81a.java"
+            },
+            "region" : {
+              "startLine" : 84,
+              "startColumn" : 27,
+              "endLine" : 84,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "action"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-system-properties-disc",
+    "cwe" : 497,
+    "confidence" : "LOW"
+  }
+}

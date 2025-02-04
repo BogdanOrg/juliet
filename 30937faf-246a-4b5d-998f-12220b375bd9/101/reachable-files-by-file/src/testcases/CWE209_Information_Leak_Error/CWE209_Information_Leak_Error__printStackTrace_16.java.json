@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE209_Information_Leak_Error\\CWE209_Information_Leak_Error__printStackTrace_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE209_Information_Leak_Error\\CWE209_Information_Leak_Error__printStackTrace_16.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_16.java:CWE209_Information_Leak_Error__printStackTrace_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_16.java:CWE209_Information_Leak_Error__printStackTrace_16:good()",
+    "typeName" : "good"
+  } ]
+}

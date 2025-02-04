@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE482_Comparing_Instead_of_Assigning\\CWE482_Comparing_Instead_of_Assigning__basic_09.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE482_Comparing_Instead_of_Assigning\\CWE482_Comparing_Instead_of_Assigning__basic_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE482_Comparing_Instead_of_Assigning/CWE482_Comparing_Instead_of_Assigning__basic_09.java:CWE482_Comparing_Instead_of_Assigning__basic_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE482_Comparing_Instead_of_Assigning/CWE482_Comparing_Instead_of_Assigning__basic_09.java:CWE482_Comparing_Instead_of_Assigning__basic_09:good()",
+    "typeName" : "good"
+  } ]
+}

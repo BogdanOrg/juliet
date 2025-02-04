@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72a.java:CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72a.java:CWE319_Cleartext_Tx_Sensitive_Info__URLConnection_kerberosKey_72a:good()",
+    "typeName" : "good"
+  } ]
+}

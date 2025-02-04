@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71a.java:CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71a.java:CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_max_71a:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_03.java",
+  "reachableFiles" : [ "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_03.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_03.java:CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_03:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_03.java:CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_03:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

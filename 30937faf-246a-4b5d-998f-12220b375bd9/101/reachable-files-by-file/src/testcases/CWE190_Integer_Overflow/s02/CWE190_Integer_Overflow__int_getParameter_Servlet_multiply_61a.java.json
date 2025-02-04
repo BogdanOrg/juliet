@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61a.java:CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61a.java:CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

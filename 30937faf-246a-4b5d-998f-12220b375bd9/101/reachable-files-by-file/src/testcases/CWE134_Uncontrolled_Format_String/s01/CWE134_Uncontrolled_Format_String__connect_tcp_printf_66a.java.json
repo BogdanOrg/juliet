@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__connect_tcp_printf_66a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__connect_tcp_printf_66a.java", "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__connect_tcp_printf_66b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_printf_66a.java:CWE134_Uncontrolled_Format_String__connect_tcp_printf_66a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_printf_66a.java:CWE134_Uncontrolled_Format_String__connect_tcp_printf_66a:good()",
+    "typeName" : "good"
+  } ]
+}

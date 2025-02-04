@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE15_External_Control_of_System_or_Configuration_Setting\\CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74a.java:CWE15_External_Control_of_System_or_Configuration_Setting__PropertiesFile_74a:good()",
+    "typeName" : "good"
+  } ]
+}

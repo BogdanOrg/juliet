@@ -1,0 +1,392 @@
+{
+  "ruleId" : "Protocol:CommandInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'exec' method of 'java.lang.Runtime' object could be abused to perform an arbitrary Command Execution attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+      },
+      "region" : {
+        "startLine" : 48,
+        "startColumn" : 48,
+        "endLine" : 48,
+        "endColumn" : 51,
+        "snippet" : {
+          "text" : "java.lang.Runtime.exec"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(data)",
+      "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:badSink(data)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 67,
+              "startColumn" : 35,
+              "endLine" : 67,
+              "endColumn" : 60,
+              "snippet" : {
+                "text" : "streamFileInput = new FileInputStream(file);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "streamFileInput",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 68,
+              "startColumn" : 37,
+              "endLine" : 68,
+              "endColumn" : 84,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(streamFileInput, \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 68,
+              "startColumn" : 37,
+              "endLine" : 68,
+              "endColumn" : 84,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(streamFileInput, \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 69,
+              "startColumn" : 34,
+              "endLine" : 69,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 69,
+              "startColumn" : 34,
+              "endLine" : 69,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 39,
+              "endLine" : 74,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 39,
+              "endLine" : 74,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 121,
+              "startColumn" : 9,
+              "endLine" : 121,
+              "endColumn" : 16,
+              "snippet" : {
+                "text" : "badSink(data  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 18,
+              "endLine" : 32,
+              "endColumn" : 25,
+              "snippet" : {
+                "text" : "private void badSink(String data ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data)",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:badSink(data)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 53,
+              "endLine" : 48,
+              "endColumn" : 69,
+              "snippet" : {
+                "text" : "Process process = Runtime.getRuntime().exec(osCommand + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data)",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:badSink(data)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "osCommand + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 48,
+              "endLine" : 48,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "java.lang.Runtime.exec"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data)",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java:CWE78_OS_Command_Injection__File_41:badSink(data)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'exec' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.Runtime.exec",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__File_41.java"
+            },
+            "region" : {
+              "startLine" : 68,
+              "startColumn" : 59,
+              "endLine" : 68,
+              "endColumn" : 73,
+              "snippet" : {
+                "text" : "streamFileInput"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "streamFileInput",
+          "loc" : "new InputStreamReader(streamFileInput, \"UTF-8\")"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-cmd-inj",
+    "cwe" : 78,
+    "confidence" : "LOW"
+  }
+}

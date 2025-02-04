@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_12.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_12.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_12.java:CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_12:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_12.java:CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_12:good()",
+    "typeName" : "good"
+  } ]
+}

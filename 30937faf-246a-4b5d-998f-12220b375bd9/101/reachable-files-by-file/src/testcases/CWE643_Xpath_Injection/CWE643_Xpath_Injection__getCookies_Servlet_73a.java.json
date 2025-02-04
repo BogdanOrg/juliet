@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getCookies_Servlet_73a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getCookies_Servlet_73b.java", "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getCookies_Servlet_73a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_73a.java:CWE643_Xpath_Injection__getCookies_Servlet_73a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getCookies_Servlet_73a.java:CWE643_Xpath_Injection__getCookies_Servlet_73a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

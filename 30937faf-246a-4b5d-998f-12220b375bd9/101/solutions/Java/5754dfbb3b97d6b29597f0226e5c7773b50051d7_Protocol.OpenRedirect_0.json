@@ -1,0 +1,356 @@
+{
+  "ruleId" : "Protocol:OpenRedirect",
+  "level" : "error",
+  "message" : {
+    "text" : "'sendRedirect' method of 'javax.servlet.http.HttpServletResponse' object could be abused to perform a Site Redirection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java"
+      },
+      "region" : {
+        "startLine" : 48,
+        "startColumn" : 22,
+        "endLine" : 48,
+        "endColumn" : 33,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.sendRedirect"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataArray,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66b:badSink(dataArray,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 28,
+              "endLine" : 46,
+              "endColumn" : 32,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 35,
+              "endLine" : 49,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 35,
+              "endLine" : 49,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "startLine" : 73,
+              "startColumn" : 9,
+              "endLine" : 73,
+              "endColumn" : 18,
+              "snippet" : {
+                "text" : "dataArray[2] = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.set",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "startLine" : 73,
+              "startColumn" : 9,
+              "endLine" : 73,
+              "endColumn" : 18,
+              "snippet" : {
+                "text" : "dataArray[2] = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.set",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 66,
+              "endLine" : 74,
+              "endColumn" : 73,
+              "snippet" : {
+                "text" : "(new CWE601_Open_Redirect__Servlet_PropertiesFile_66b()).badSink(dataArray , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE601_Open_Redirect__Servlet_PropertiesFile_66b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java"
+            },
+            "region" : {
+              "startLine" : 28,
+              "startColumn" : 17,
+              "endLine" : 28,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String dataArray[] , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66b:badSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataArray",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 23,
+              "endLine" : 30,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataArray[2];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66b:badSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 23,
+              "endLine" : 30,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataArray[2];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66b:badSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java"
+            },
+            "region" : {
+              "startLine" : 48,
+              "startColumn" : 22,
+              "endLine" : 48,
+              "endColumn" : 33,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.sendRedirect"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66b.java:CWE601_Open_Redirect__Servlet_PropertiesFile_66b:badSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'sendRedirect' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.sendRedirect",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_PropertiesFile_66a.java"
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:1164194",
+          "loc" : "dataArray"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-redirect",
+    "cwe" : 601,
+    "confidence" : "LOW"
+  }
+}

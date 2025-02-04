@@ -1,0 +1,452 @@
+{
+  "ruleId" : "Protocol:XSS",
+  "level" : "error",
+  "message" : {
+    "text" : "'println' method of 'java.io.PrintWriter' object could be abused to perform a Cross Site Scripting attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+      },
+      "region" : {
+        "startLine" : 30,
+        "startColumn" : 34,
+        "endLine" : 30,
+        "endColumn" : 40,
+        "snippet" : {
+          "text" : "java.io.PrintWriter.println"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(data,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java:CWE80_XSS__CWE182_Servlet_database_54e:badSink(data,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54a.java"
+            },
+            "region" : {
+              "startLine" : 53,
+              "startColumn" : 34,
+              "endLine" : 53,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = resultSet.getString(1);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54a.java:CWE80_XSS__CWE182_Servlet_database_54a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54a.java"
+            },
+            "region" : {
+              "startLine" : 100,
+              "startColumn" : 56,
+              "endLine" : 100,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "(new CWE80_XSS__CWE182_Servlet_database_54b()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54a.java:CWE80_XSS__CWE182_Servlet_database_54a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE80_XSS__CWE182_Servlet_database_54b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54b.java"
+            },
+            "region" : {
+              "startLine" : 24,
+              "startColumn" : 17,
+              "endLine" : 24,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54b.java:CWE80_XSS__CWE182_Servlet_database_54b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54b.java"
+            },
+            "region" : {
+              "startLine" : 26,
+              "startColumn" : 56,
+              "endLine" : 26,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "(new CWE80_XSS__CWE182_Servlet_database_54c()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54b.java:CWE80_XSS__CWE182_Servlet_database_54b:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE80_XSS__CWE182_Servlet_database_54c()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54c.java"
+            },
+            "region" : {
+              "startLine" : 24,
+              "startColumn" : 17,
+              "endLine" : 24,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54c.java:CWE80_XSS__CWE182_Servlet_database_54c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54c.java"
+            },
+            "region" : {
+              "startLine" : 26,
+              "startColumn" : 56,
+              "endLine" : 26,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "(new CWE80_XSS__CWE182_Servlet_database_54d()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54c.java:CWE80_XSS__CWE182_Servlet_database_54c:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE80_XSS__CWE182_Servlet_database_54d()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54d.java"
+            },
+            "region" : {
+              "startLine" : 24,
+              "startColumn" : 17,
+              "endLine" : 24,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54d.java:CWE80_XSS__CWE182_Servlet_database_54d:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54d.java"
+            },
+            "region" : {
+              "startLine" : 26,
+              "startColumn" : 56,
+              "endLine" : 26,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "(new CWE80_XSS__CWE182_Servlet_database_54e()).badSink(data , request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54d.java:CWE80_XSS__CWE182_Servlet_database_54d:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE80_XSS__CWE182_Servlet_database_54e()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+            },
+            "region" : {
+              "startLine" : 24,
+              "startColumn" : 17,
+              "endLine" : 24,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java:CWE80_XSS__CWE182_Servlet_database_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 70,
+              "endLine" : 30,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "response.getWriter().println(\"<br>bad(): data = \" + data.replaceAll(\"(<script>)\", \"\"));"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java:CWE80_XSS__CWE182_Servlet_database_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.replaceAll",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 70,
+              "endLine" : 30,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "response.getWriter().println(\"<br>bad(): data = \" + data.replaceAll(\"(<script>)\", \"\"));"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java:CWE80_XSS__CWE182_Servlet_database_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "replaceAll",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 42,
+              "endLine" : 30,
+              "endColumn" : 98,
+              "snippet" : {
+                "text" : "response.getWriter().println(\"<br>bad(): data = \" + data.replaceAll(\"(<script>)\", \"\"));"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java:CWE80_XSS__CWE182_Servlet_database_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"<br>bad(): data = \" + data.replaceAll(\"(<script>)\", \"\")",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 34,
+              "endLine" : 30,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "java.io.PrintWriter.println"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(data,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java:CWE80_XSS__CWE182_Servlet_database_54e:badSink(data,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'println' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.PrintWriter.println",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_database_54e.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 65,
+              "endLine" : 30,
+              "endColumn" : 68,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "replaceAll"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-xss",
+    "cwe" : 79,
+    "confidence" : "LOW"
+  }
+}

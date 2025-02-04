@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE226_Sensitive_Information_Uncleared_Before_Release\\CWE226_Sensitive_Information_Uncleared_Before_Release__basic_09.java",
+  "reachableFiles" : [ "src\\testcases\\CWE226_Sensitive_Information_Uncleared_Before_Release\\CWE226_Sensitive_Information_Uncleared_Before_Release__basic_09.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE226_Sensitive_Information_Uncleared_Before_Release/CWE226_Sensitive_Information_Uncleared_Before_Release__basic_09.java:CWE226_Sensitive_Information_Uncleared_Before_Release__basic_09:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE226_Sensitive_Information_Uncleared_Before_Release/CWE226_Sensitive_Information_Uncleared_Before_Release__basic_09.java:CWE226_Sensitive_Information_Uncleared_Before_Release__basic_09:good()",
+    "typeName" : "good"
+  } ]
+}

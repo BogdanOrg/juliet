@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_database_multiply_75a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_database_multiply_75a.java", "src\\testcases\\CWE190_Integer_Overflow\\s02\\CWE190_Integer_Overflow__int_database_multiply_75b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_database_multiply_75a.java:CWE190_Integer_Overflow__int_database_multiply_75a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_database_multiply_75a.java:CWE190_Integer_Overflow__int_database_multiply_75a:good()",
+    "typeName" : "good"
+  } ]
+}

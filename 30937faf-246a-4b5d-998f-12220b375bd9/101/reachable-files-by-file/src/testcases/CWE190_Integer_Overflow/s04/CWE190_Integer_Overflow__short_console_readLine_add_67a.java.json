@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__short_console_readLine_add_67a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__short_console_readLine_add_67b.java", "src\\testcasesupport\\AbstractTestCase.java", "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__short_console_readLine_add_67a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_console_readLine_add_67a.java:CWE190_Integer_Overflow__short_console_readLine_add_67a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_console_readLine_add_67a.java:CWE190_Integer_Overflow__short_console_readLine_add_67a:good()",
+    "typeName" : "good"
+  } ]
+}

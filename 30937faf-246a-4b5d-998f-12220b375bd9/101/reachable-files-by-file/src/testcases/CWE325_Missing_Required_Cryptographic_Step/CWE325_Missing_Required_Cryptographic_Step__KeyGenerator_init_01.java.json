@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE325_Missing_Required_Cryptographic_Step\\CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE325_Missing_Required_Cryptographic_Step\\CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE325_Missing_Required_Cryptographic_Step/CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_01.java:CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE325_Missing_Required_Cryptographic_Step/CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_01.java:CWE325_Missing_Required_Cryptographic_Step__KeyGenerator_init_01:good()",
+    "typeName" : "good"
+  } ]
+}

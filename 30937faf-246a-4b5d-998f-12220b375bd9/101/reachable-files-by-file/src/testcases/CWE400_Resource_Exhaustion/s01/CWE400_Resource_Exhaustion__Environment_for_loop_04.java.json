@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__Environment_for_loop_04.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__Environment_for_loop_04.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__Environment_for_loop_04.java:CWE400_Resource_Exhaustion__Environment_for_loop_04:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__Environment_for_loop_04.java:CWE400_Resource_Exhaustion__Environment_for_loop_04:good()",
+    "typeName" : "good"
+  } ]
+}

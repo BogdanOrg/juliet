@@ -1,0 +1,182 @@
+{
+  "ruleId" : "Protocol:ErrorMessageWithTaintedWriter",
+  "level" : "error",
+  "message" : {
+    "text" : "'printStackTrace' method could be abused to reveal sensitive internal information."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java"
+      },
+      "region" : {
+        "startLine" : 41,
+        "startColumn" : 44,
+        "endLine" : 41,
+        "endColumn" : 58,
+        "snippet" : {
+          "text" : "exceptUnsupportedOperation.printStackTrace"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java:CWE209_Information_Leak_Error__printStackTrace_Servlet_05:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 17,
+              "endLine" : 31,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java:CWE209_Information_Leak_Error__printStackTrace_Servlet_05:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "response",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 69,
+              "endLine" : 41,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "exceptUnsupportedOperation.printStackTrace(response.getWriter()); /* FLAW: Print stack trace in response on error */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java:CWE209_Information_Leak_Error__printStackTrace_Servlet_05:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.getWriter",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 69,
+              "endLine" : 41,
+              "endColumn" : 78,
+              "snippet" : {
+                "text" : "exceptUnsupportedOperation.printStackTrace(response.getWriter()); /* FLAW: Print stack trace in response on error */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java:CWE209_Information_Leak_Error__printStackTrace_Servlet_05:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getWriter",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 44,
+              "endLine" : 41,
+              "endColumn" : 58,
+              "snippet" : {
+                "text" : "exceptUnsupportedOperation.printStackTrace"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java:CWE209_Information_Leak_Error__printStackTrace_Servlet_05:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'printStackTrace' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "exceptUnsupportedOperation.printStackTrace",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE209_Information_Leak_Error/CWE209_Information_Leak_Error__printStackTrace_Servlet_05.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 60,
+              "endLine" : 41,
+              "endColumn" : 67,
+              "snippet" : {
+                "text" : "response"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "response",
+          "loc" : "getWriter"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-err-msg",
+    "cwe" : 209,
+    "confidence" : "LOW"
+  }
+}

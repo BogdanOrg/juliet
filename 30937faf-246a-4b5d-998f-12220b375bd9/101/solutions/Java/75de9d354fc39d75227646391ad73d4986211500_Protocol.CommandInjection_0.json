@@ -1,0 +1,194 @@
+{
+  "ruleId" : "Protocol:CommandInjection",
+  "level" : "error",
+  "message" : {
+    "text" : "'exec' method of 'java.lang.Runtime' object could be abused to perform an arbitrary Command Execution attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java"
+      },
+      "region" : {
+        "startLine" : 54,
+        "startColumn" : 52,
+        "endLine" : 54,
+        "endColumn" : 55,
+        "snippet" : {
+          "text" : "java.lang.Runtime.exec"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java:CWE78_OS_Command_Injection__Property_31:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 27,
+              "endLine" : 34,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "data = System.getProperty(\"user.home\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java:CWE78_OS_Command_Injection__Property_31:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java"
+            },
+            "region" : {
+              "startLine" : 36,
+              "startColumn" : 13,
+              "endLine" : 36,
+              "endColumn" : 28,
+              "snippet" : {
+                "text" : "dataCopy = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java:CWE78_OS_Command_Injection__Property_31:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataCopy",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 20,
+              "endLine" : 39,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataCopy;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java:CWE78_OS_Command_Injection__Property_31:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 57,
+              "endLine" : 54,
+              "endColumn" : 73,
+              "snippet" : {
+                "text" : "Process process = Runtime.getRuntime().exec(osCommand + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java:CWE78_OS_Command_Injection__Property_31:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "osCommand + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 52,
+              "endLine" : 54,
+              "endColumn" : 55,
+              "snippet" : {
+                "text" : "java.lang.Runtime.exec"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__Property_31.java:CWE78_OS_Command_Injection__Property_31:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'exec' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.Runtime.exec",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-cmd-inj",
+    "cwe" : 78,
+    "confidence" : "LOW"
+  }
+}

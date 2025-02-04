@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s03\\CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s03\\CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68a.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s03\\CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s03/CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68a.java:CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s03/CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68a.java:CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_68a:good()",
+    "typeName" : "good"
+  } ]
+}

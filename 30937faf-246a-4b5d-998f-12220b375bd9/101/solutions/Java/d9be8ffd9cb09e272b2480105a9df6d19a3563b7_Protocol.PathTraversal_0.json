@@ -1,0 +1,242 @@
+{
+  "ruleId" : "Protocol:PathTraversal",
+  "level" : "error",
+  "message" : {
+    "text" : "'exists' method of 'java.io.File' object could be abused to disclose or manipulate sensitive files."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+      },
+      "region" : {
+        "startLine" : 51,
+        "startColumn" : 26,
+        "endLine" : 51,
+        "endColumn" : 31,
+        "snippet" : {
+          "text" : "java.io.File.exists"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 37,
+              "startColumn" : 28,
+              "endLine" : 37,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "data = request.getParameter(\"name\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 13,
+              "endLine" : 39,
+              "endColumn" : 28,
+              "snippet" : {
+                "text" : "dataCopy = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataCopy",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 42,
+              "startColumn" : 20,
+              "endLine" : 42,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataCopy;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 29,
+              "endLine" : 47,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "File file = new File(data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.File.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 29,
+              "endLine" : 47,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "File file = new File(data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "file",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 51,
+              "startColumn" : 26,
+              "endLine" : 51,
+              "endColumn" : 31,
+              "snippet" : {
+                "text" : "java.io.File.exists"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_31:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING, STOP]' for variable 'exists' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.File.exists",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_31.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 38,
+              "endLine" : 47,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "new File(data)"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-path-traversal",
+    "cwe" : 22,
+    "confidence" : "LOW"
+  }
+}

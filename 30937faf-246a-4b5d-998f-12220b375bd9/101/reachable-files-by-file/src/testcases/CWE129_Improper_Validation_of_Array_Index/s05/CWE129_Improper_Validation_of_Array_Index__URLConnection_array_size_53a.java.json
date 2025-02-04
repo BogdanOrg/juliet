@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53c.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53b.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53a.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s05\\CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53d.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53a.java:CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53a.java:CWE129_Improper_Validation_of_Array_Index__URLConnection_array_size_53a:good()",
+    "typeName" : "good"
+  } ]
+}

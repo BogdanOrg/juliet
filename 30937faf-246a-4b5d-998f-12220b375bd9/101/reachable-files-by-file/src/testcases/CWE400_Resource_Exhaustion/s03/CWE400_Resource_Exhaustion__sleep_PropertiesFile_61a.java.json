@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_PropertiesFile_61a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_PropertiesFile_61a.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_PropertiesFile_61b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__sleep_PropertiesFile_61a.java:CWE400_Resource_Exhaustion__sleep_PropertiesFile_61a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__sleep_PropertiesFile_61a.java:CWE400_Resource_Exhaustion__sleep_PropertiesFile_61a:good()",
+    "typeName" : "good"
+  } ]
+}

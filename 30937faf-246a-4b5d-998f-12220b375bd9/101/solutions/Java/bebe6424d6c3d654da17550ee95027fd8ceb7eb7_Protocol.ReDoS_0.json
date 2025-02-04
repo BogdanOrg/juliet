@@ -1,0 +1,296 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java"
+      },
+      "region" : {
+        "startLine" : 163,
+        "startColumn" : 35,
+        "endLine" : 163,
+        "endColumn" : 39,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2GSink(dataArray,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b:goodB2GSink(dataArray,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java"
+            },
+            "region" : {
+              "startLine" : 63,
+              "startColumn" : 24,
+              "endLine" : 63,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "data = request.getParameter(\"name\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java"
+            },
+            "region" : {
+              "startLine" : 66,
+              "startColumn" : 9,
+              "endLine" : 66,
+              "endColumn" : 18,
+              "snippet" : {
+                "text" : "dataArray[2] = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.set",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java"
+            },
+            "region" : {
+              "startLine" : 66,
+              "startColumn" : 9,
+              "endLine" : 66,
+              "endColumn" : 18,
+              "snippet" : {
+                "text" : "dataArray[2] = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.set",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java"
+            },
+            "region" : {
+              "startLine" : 67,
+              "startColumn" : 76,
+              "endLine" : 67,
+              "endColumn" : 87,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b()).goodB2GSink(dataArray , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a:goodB2G(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b()).goodB2GSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java"
+            },
+            "region" : {
+              "startLine" : 157,
+              "startColumn" : 17,
+              "endLine" : 157,
+              "endColumn" : 28,
+              "snippet" : {
+                "text" : "public void goodB2GSink(String dataArray[] , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b:goodB2GSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataArray",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java"
+            },
+            "region" : {
+              "startLine" : 159,
+              "startColumn" : 23,
+              "endLine" : 159,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataArray[2];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b:goodB2GSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java"
+            },
+            "region" : {
+              "startLine" : 159,
+              "startColumn" : 23,
+              "endLine" : 159,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataArray[2];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b:goodB2GSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java"
+            },
+            "region" : {
+              "startLine" : 163,
+              "startColumn" : 35,
+              "endLine" : 163,
+              "endColumn" : 39,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b.java:CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66b:goodB2GSink(dataArray,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2GSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE89_SQL_Injection/s02/CWE89_SQL_Injection__getParameter_Servlet_executeBatch_66a.java"
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:1518078",
+          "loc" : "dataArray"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_random_add_12.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_random_add_12.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_random_add_12.java:CWE190_Integer_Overflow__int_random_add_12:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_random_add_12.java:CWE190_Integer_Overflow__int_random_add_12:good()",
+    "typeName" : "good"
+  } ]
+}

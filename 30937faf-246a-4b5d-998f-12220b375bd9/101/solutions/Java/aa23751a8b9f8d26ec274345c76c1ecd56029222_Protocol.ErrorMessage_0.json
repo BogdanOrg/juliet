@@ -1,0 +1,446 @@
+{
+  "ruleId" : "Protocol:ErrorMessage",
+  "level" : "error",
+  "message" : {
+    "text" : "'sendError' method of 'javax.servlet.http.HttpServletResponse' object could be abused to reveal sensitive internal information."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+      },
+      "region" : {
+        "startLine" : 45,
+        "startColumn" : 22,
+        "endLine" : 45,
+        "endColumn" : 30,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.sendError"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:badSink(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 70,
+              "startColumn" : 66,
+              "endLine" : 70,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 70,
+              "startColumn" : 37,
+              "endLine" : 70,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 70,
+              "startColumn" : 37,
+              "endLine" : 70,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 71,
+              "startColumn" : 34,
+              "endLine" : 71,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 71,
+              "startColumn" : 34,
+              "endLine" : 71,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 39,
+              "endLine" : 74,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 74,
+              "startColumn" : 39,
+              "endLine" : 74,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 122,
+              "startColumn" : 9,
+              "endLine" : 122,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataBad = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataBad",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 123,
+              "startColumn" : 9,
+              "endLine" : 123,
+              "endColumn" : 16,
+              "snippet" : {
+                "text" : "badSink(request, response);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 18,
+              "endLine" : 35,
+              "endColumn" : 25,
+              "snippet" : {
+                "text" : "private void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:badSink(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataBad",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 37,
+              "startColumn" : 16,
+              "endLine" : 37,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "String data = dataBad;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:badSink(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 45,
+              "startColumn" : 37,
+              "endLine" : 45,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "response.sendError(404, \"<br>bad() - Parameter name has value \" + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:badSink(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"<br>bad() - Parameter name has value \" + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 45,
+              "startColumn" : 22,
+              "endLine" : 45,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.sendError"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_connect_tcp_45.java:CWE81_XSS_Error_Message__Servlet_connect_tcp_45:badSink(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'sendError' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.sendError",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : ""
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "dataBad",
+          "loc" : "badSink"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-err-msg",
+    "cwe" : 209,
+    "confidence" : "LOW"
+  }
+}

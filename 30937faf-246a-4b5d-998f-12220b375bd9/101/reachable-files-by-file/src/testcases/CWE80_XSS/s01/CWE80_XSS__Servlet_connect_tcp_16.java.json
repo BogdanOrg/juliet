@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_connect_tcp_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_connect_tcp_16.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_connect_tcp_16.java:CWE80_XSS__Servlet_connect_tcp_16:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_connect_tcp_16.java:CWE80_XSS__Servlet_connect_tcp_16:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

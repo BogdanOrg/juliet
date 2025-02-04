@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE617_Reachable_Assertion\\CWE617_Reachable_Assertion__length_05.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE617_Reachable_Assertion\\CWE617_Reachable_Assertion__length_05.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE617_Reachable_Assertion/CWE617_Reachable_Assertion__length_05.java:CWE617_Reachable_Assertion__length_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE617_Reachable_Assertion/CWE617_Reachable_Assertion__length_05.java:CWE617_Reachable_Assertion__length_05:good()",
+    "typeName" : "good"
+  } ]
+}

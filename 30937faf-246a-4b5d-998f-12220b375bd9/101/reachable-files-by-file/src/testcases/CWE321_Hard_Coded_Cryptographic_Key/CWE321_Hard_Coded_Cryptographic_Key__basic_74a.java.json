@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE321_Hard_Coded_Cryptographic_Key\\CWE321_Hard_Coded_Cryptographic_Key__basic_74a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE321_Hard_Coded_Cryptographic_Key\\CWE321_Hard_Coded_Cryptographic_Key__basic_74a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE321_Hard_Coded_Cryptographic_Key\\CWE321_Hard_Coded_Cryptographic_Key__basic_74b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE321_Hard_Coded_Cryptographic_Key/CWE321_Hard_Coded_Cryptographic_Key__basic_74a.java:CWE321_Hard_Coded_Cryptographic_Key__basic_74a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE321_Hard_Coded_Cryptographic_Key/CWE321_Hard_Coded_Cryptographic_Key__basic_74a.java:CWE321_Hard_Coded_Cryptographic_Key__basic_74a:good()",
+    "typeName" : "good"
+  } ]
+}

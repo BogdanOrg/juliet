@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__Property_45.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__Property_45.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__Property_45.java:CWE36_Absolute_Path_Traversal__Property_45:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__Property_45.java:CWE36_Absolute_Path_Traversal__Property_45:good()",
+    "typeName" : "good"
+  } ]
+}

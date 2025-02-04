@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__database_printf_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__database_printf_54c.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__database_printf_54b.java", "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__database_printf_54a.java", "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__database_printf_54e.java", "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__database_printf_54d.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__database_printf_54a.java:CWE134_Uncontrolled_Format_String__database_printf_54a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__database_printf_54a.java:CWE134_Uncontrolled_Format_String__database_printf_54a:good()",
+    "typeName" : "good"
+  } ]
+}

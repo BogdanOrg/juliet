@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE614_Sensitive_Cookie_Without_Secure\\CWE614_Sensitive_Cookie_Without_Secure__Servlet_08.java",
+  "reachableFiles" : [ "src\\testcases\\CWE614_Sensitive_Cookie_Without_Secure\\CWE614_Sensitive_Cookie_Without_Secure__Servlet_08.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE614_Sensitive_Cookie_Without_Secure/CWE614_Sensitive_Cookie_Without_Secure__Servlet_08.java:CWE614_Sensitive_Cookie_Without_Secure__Servlet_08:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE614_Sensitive_Cookie_Without_Secure/CWE614_Sensitive_Cookie_Without_Secure__Servlet_08.java:CWE614_Sensitive_Cookie_Without_Secure__Servlet_08:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

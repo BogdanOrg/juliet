@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE398_Poor_Code_Quality\\CWE398_Poor_Code_Quality__equals_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE398_Poor_Code_Quality\\CWE398_Poor_Code_Quality__equals_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__equals_08.java:CWE398_Poor_Code_Quality__equals_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__equals_08.java:CWE398_Poor_Code_Quality__equals_08:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,584 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java"
+      },
+      "region" : {
+        "startLine" : 52,
+        "startColumn" : 37,
+        "endLine" : 52,
+        "endColumn" : 41,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataLinkedList,request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java:CWE643_Xpath_Injection__getQueryString_Servlet_73b:badSink(dataLinkedList,request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 17,
+              "endLine" : 29,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "request",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 37,
+              "startColumn" : 69,
+              "endLine" : 37,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletRequest.getQueryString",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 37,
+              "startColumn" : 69,
+              "endLine" : 37,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getQueryString",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 37,
+              "startColumn" : 41,
+              "endLine" : 37,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.StringTokenizer.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 37,
+              "startColumn" : 41,
+              "endLine" : 37,
+              "endColumn" : 91,
+              "snippet" : {
+                "text" : "StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), \"&\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "tokenizer",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 40,
+              "startColumn" : 42,
+              "endLine" : 40,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "String token = tokenizer.nextToken(); /* a token will be like \"id=foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.StringTokenizer.nextToken",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 40,
+              "startColumn" : 42,
+              "endLine" : 40,
+              "endColumn" : 51,
+              "snippet" : {
+                "text" : "String token = tokenizer.nextToken(); /* a token will be like \"id=foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "token",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 26,
+              "endLine" : 41,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "if(token.startsWith(\"id=\")) /* check if we have the \"id\" parameter\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.startsWith",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 26,
+              "endLine" : 41,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "if(token.startsWith(\"id=\")) /* check if we have the \"id\" parameter\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.startsWith",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 34,
+              "endLine" : 43,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = token.substring(3); /* set data to \"foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.substring",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 43,
+              "startColumn" : 34,
+              "endLine" : 43,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "data = token.substring(3); /* set data to \"foo\" */"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 24,
+              "endLine" : 52,
+              "endColumn" : 27,
+              "snippet" : {
+                "text" : "dataLinkedList.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.LinkedList<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 24,
+              "endLine" : 52,
+              "endColumn" : 27,
+              "snippet" : {
+                "text" : "dataLinkedList.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.LinkedList<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java"
+            },
+            "region" : {
+              "startLine" : 53,
+              "startColumn" : 68,
+              "endLine" : 53,
+              "endColumn" : 75,
+              "snippet" : {
+                "text" : "(new CWE643_Xpath_Injection__getQueryString_Servlet_73b()).badSink(dataLinkedList , request, response );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73a.java:CWE643_Xpath_Injection__getQueryString_Servlet_73a:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE643_Xpath_Injection__getQueryString_Servlet_73b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java"
+            },
+            "region" : {
+              "startLine" : 33,
+              "startColumn" : 17,
+              "endLine" : 33,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(LinkedList<String> dataLinkedList , HttpServletRequest request, HttpServletResponse response) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataLinkedList,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java:CWE643_Xpath_Injection__getQueryString_Servlet_73b:badSink(dataLinkedList,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataLinkedList",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 38,
+              "endLine" : 35,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String data = dataLinkedList.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataLinkedList,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java:CWE643_Xpath_Injection__getQueryString_Servlet_73b:badSink(dataLinkedList,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.LinkedList<java.lang.String>.remove",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java"
+            },
+            "region" : {
+              "startLine" : 35,
+              "startColumn" : 38,
+              "endLine" : 35,
+              "endColumn" : 44,
+              "snippet" : {
+                "text" : "String data = dataLinkedList.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataLinkedList,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java:CWE643_Xpath_Injection__getQueryString_Servlet_73b:badSink(dataLinkedList,request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 41,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataLinkedList,request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getQueryString_Servlet_73b.java:CWE643_Xpath_Injection__getQueryString_Servlet_73b:badSink(dataLinkedList,request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 18,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__long_rand_add_08.java",
+  "reachableFiles" : [ "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__long_rand_add_08.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__long_rand_add_08.java:CWE190_Integer_Overflow__long_rand_add_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__long_rand_add_08.java:CWE190_Integer_Overflow__long_rand_add_08:good()",
+    "typeName" : "good"
+  } ]
+}

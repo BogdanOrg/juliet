@@ -1,0 +1,314 @@
+{
+  "ruleId" : "Protocol:SQLi",
+  "level" : "error",
+  "message" : {
+    "text" : "'prepareStatement' method of 'java.sql.Connection' object could be abused to perform a SQL Injection attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java"
+      },
+      "region" : {
+        "startLine" : 41,
+        "startColumn" : 41,
+        "endLine" : 41,
+        "endColumn" : 56,
+        "snippet" : {
+          "text" : "java.sql.Connection.prepareStatement"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataHashMap)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74b:badSink(dataHashMap)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 39,
+              "endLine" : 49,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java"
+            },
+            "region" : {
+              "startLine" : 87,
+              "startColumn" : 21,
+              "endLine" : 87,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "dataHashMap.put(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.put",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java"
+            },
+            "region" : {
+              "startLine" : 87,
+              "startColumn" : 21,
+              "endLine" : 87,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "dataHashMap.put(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.put",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java"
+            },
+            "region" : {
+              "startLine" : 88,
+              "startColumn" : 76,
+              "endLine" : 88,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "(new CWE89_SQL_Injection__console_readLine_prepareStatement_74b()).badSink(dataHashMap  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74a.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE89_SQL_Injection__console_readLine_prepareStatement_74b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 17,
+              "endLine" : 30,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(HashMap<Integer,String> dataHashMap ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataHashMap",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 35,
+              "endLine" : 32,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "String data = dataHashMap.get(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.HashMap<java.lang.Integer,java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java"
+            },
+            "region" : {
+              "startLine" : 32,
+              "startColumn" : 35,
+              "endLine" : 32,
+              "endColumn" : 38,
+              "snippet" : {
+                "text" : "String data = dataHashMap.get(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 58,
+              "endLine" : 41,
+              "endColumn" : 127,
+              "snippet" : {
+                "text" : "sqlStatement = dbConnection.prepareStatement(\"insert into users (status) values ('updated') where name='\"+data+\"'\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"insert into users (status) values ('updated') where name='\"+data+\"'\"",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java"
+            },
+            "region" : {
+              "startLine" : 41,
+              "startColumn" : 41,
+              "endLine" : 41,
+              "endColumn" : 56,
+              "snippet" : {
+                "text" : "java.sql.Connection.prepareStatement"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataHashMap)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__console_readLine_prepareStatement_74b.java:CWE89_SQL_Injection__console_readLine_prepareStatement_74b:badSink(dataHashMap)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'prepareStatement' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.sql.Connection.prepareStatement",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sqli",
+    "cwe" : 89,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "ruleId" : "Protocol:CleartextTransmission",
+  "level" : "error",
+  "message" : {
+    "text" : "'openConnection' method of 'java.net.URL' object could be abused for the transmission of sensitive or security-critical data in cleartext in a communication channel."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_08.java"
+      },
+      "region" : {
+        "startLine" : 54,
+        "startColumn" : 84,
+        "endLine" : 54,
+        "endColumn" : 97,
+        "snippet" : {
+          "text" : "java.net.URL.openConnection"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad()",
+      "fullyQualifiedName" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_08.java:CWE369_Divide_by_Zero__int_URLConnection_divide_08:bad()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_08.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 47,
+              "endLine" : 54,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "URLConnection urlConnection = (new URL(\"http://www.example.org/\")).openConnection();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_08.java:CWE369_Divide_by_Zero__int_URLConnection_divide_08:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new URL(\"http://www.example.org/\"))",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_08.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 84,
+              "endLine" : 54,
+              "endColumn" : 97,
+              "snippet" : {
+                "text" : "java.net.URL.openConnection"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_URLConnection_divide_08.java:CWE369_Divide_by_Zero__int_URLConnection_divide_08:bad()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'openConnection' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "java.net.URL.openConnection",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : null
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-insecure-transport",
+    "cwe" : 319,
+    "confidence" : "LOW"
+  }
+}

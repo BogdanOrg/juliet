@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE477_Obsolete_Functions\\CWE477_Obsolete_Functions__Date_parse_05.java",
+  "reachableFiles" : [ "src\\testcases\\CWE477_Obsolete_Functions\\CWE477_Obsolete_Functions__Date_parse_05.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE477_Obsolete_Functions/CWE477_Obsolete_Functions__Date_parse_05.java:CWE477_Obsolete_Functions__Date_parse_05:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE477_Obsolete_Functions/CWE477_Obsolete_Functions__Date_parse_05.java:CWE477_Obsolete_Functions__Date_parse_05:good()",
+    "typeName" : "good"
+  } ]
+}

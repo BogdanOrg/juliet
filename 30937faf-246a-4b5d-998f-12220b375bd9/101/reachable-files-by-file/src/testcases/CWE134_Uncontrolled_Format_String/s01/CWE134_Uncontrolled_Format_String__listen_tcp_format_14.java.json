@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__listen_tcp_format_14.java",
+  "reachableFiles" : [ "src\\testcases\\CWE134_Uncontrolled_Format_String\\s01\\CWE134_Uncontrolled_Format_String__listen_tcp_format_14.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__listen_tcp_format_14.java:CWE134_Uncontrolled_Format_String__listen_tcp_format_14:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__listen_tcp_format_14.java:CWE134_Uncontrolled_Format_String__listen_tcp_format_14:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72a.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72a.java:CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72a.java:CWE789_Uncontrolled_Mem_Alloc__listen_tcp_ArrayList_72a:good()",
+    "typeName" : "good"
+  } ]
+}

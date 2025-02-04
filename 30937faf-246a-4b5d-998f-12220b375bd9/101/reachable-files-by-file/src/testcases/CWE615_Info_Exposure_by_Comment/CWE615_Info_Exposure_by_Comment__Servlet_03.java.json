@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE615_Info_Exposure_by_Comment\\CWE615_Info_Exposure_by_Comment__Servlet_03.java",
+  "reachableFiles" : [ "src\\testcases\\CWE615_Info_Exposure_by_Comment\\CWE615_Info_Exposure_by_Comment__Servlet_03.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE615_Info_Exposure_by_Comment/CWE615_Info_Exposure_by_Comment__Servlet_03.java:CWE615_Info_Exposure_by_Comment__Servlet_03:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE615_Info_Exposure_by_Comment/CWE615_Info_Exposure_by_Comment__Servlet_03.java:CWE615_Info_Exposure_by_Comment__Servlet_03:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

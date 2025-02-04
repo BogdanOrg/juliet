@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_07.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_07.java:CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_07:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_07.java:CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_07:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

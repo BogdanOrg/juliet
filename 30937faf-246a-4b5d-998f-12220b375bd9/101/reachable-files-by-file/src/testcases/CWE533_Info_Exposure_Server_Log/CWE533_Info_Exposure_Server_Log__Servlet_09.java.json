@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE533_Info_Exposure_Server_Log\\CWE533_Info_Exposure_Server_Log__Servlet_09.java",
+  "reachableFiles" : [ "src\\testcases\\CWE533_Info_Exposure_Server_Log\\CWE533_Info_Exposure_Server_Log__Servlet_09.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE533_Info_Exposure_Server_Log/CWE533_Info_Exposure_Server_Log__Servlet_09.java:CWE533_Info_Exposure_Server_Log__Servlet_09:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE533_Info_Exposure_Server_Log/CWE533_Info_Exposure_Server_Log__Servlet_09.java:CWE533_Info_Exposure_Server_Log__Servlet_09:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

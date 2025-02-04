@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE674_Uncontrolled_Recursion\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE674_Uncontrolled_Recursion\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE674_Uncontrolled_Recursion/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE674_Uncontrolled_Recursion/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

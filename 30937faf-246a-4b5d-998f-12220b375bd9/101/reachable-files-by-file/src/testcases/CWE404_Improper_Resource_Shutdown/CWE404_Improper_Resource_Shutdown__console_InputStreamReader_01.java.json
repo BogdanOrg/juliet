@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE404_Improper_Resource_Shutdown\\CWE404_Improper_Resource_Shutdown__console_InputStreamReader_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE404_Improper_Resource_Shutdown\\CWE404_Improper_Resource_Shutdown__console_InputStreamReader_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__console_InputStreamReader_01.java:CWE404_Improper_Resource_Shutdown__console_InputStreamReader_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__console_InputStreamReader_01.java:CWE404_Improper_Resource_Shutdown__console_InputStreamReader_01:good()",
+    "typeName" : "good"
+  } ]
+}

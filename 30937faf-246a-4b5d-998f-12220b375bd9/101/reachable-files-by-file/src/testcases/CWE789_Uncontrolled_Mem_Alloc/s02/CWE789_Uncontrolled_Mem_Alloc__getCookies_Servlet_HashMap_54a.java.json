@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54a.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54e.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54d.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54c.java", "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54a.java:CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54a.java:CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_54a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

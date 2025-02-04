@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__int_console_readLine_multiply_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE190_Integer_Overflow\\s01\\CWE190_Integer_Overflow__int_console_readLine_multiply_07.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int_console_readLine_multiply_07.java:CWE190_Integer_Overflow__int_console_readLine_multiply_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int_console_readLine_multiply_07.java:CWE190_Integer_Overflow__int_console_readLine_multiply_07:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE535_Info_Exposure_Shell_Error\\CWE535_Info_Exposure_Shell_Error__Servlet_02.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE535_Info_Exposure_Shell_Error\\CWE535_Info_Exposure_Shell_Error__Servlet_02.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE535_Info_Exposure_Shell_Error/CWE535_Info_Exposure_Shell_Error__Servlet_02.java:CWE535_Info_Exposure_Shell_Error__Servlet_02:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE535_Info_Exposure_Shell_Error/CWE535_Info_Exposure_Shell_Error__Servlet_02.java:CWE535_Info_Exposure_Shell_Error__Servlet_02:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

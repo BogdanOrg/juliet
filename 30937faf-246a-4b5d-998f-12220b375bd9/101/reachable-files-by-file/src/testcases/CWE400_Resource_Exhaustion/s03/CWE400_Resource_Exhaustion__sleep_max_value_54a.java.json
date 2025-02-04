@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_max_value_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_max_value_54c.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_max_value_54e.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_max_value_54b.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_max_value_54a.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__sleep_max_value_54d.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__sleep_max_value_54a.java:CWE400_Resource_Exhaustion__sleep_max_value_54a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__sleep_max_value_54a.java:CWE400_Resource_Exhaustion__sleep_max_value_54a:good()",
+    "typeName" : "good"
+  } ]
+}

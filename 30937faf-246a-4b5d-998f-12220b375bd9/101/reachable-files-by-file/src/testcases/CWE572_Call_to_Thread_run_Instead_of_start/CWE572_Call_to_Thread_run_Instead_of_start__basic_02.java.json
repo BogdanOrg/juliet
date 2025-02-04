@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE572_Call_to_Thread_run_Instead_of_start\\CWE572_Call_to_Thread_run_Instead_of_start__basic_02.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcasesupport\\AbstractTestCase.java", "src\\testcases\\CWE572_Call_to_Thread_run_Instead_of_start\\CWE572_Call_to_Thread_run_Instead_of_start__basic_02.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE572_Call_to_Thread_run_Instead_of_start/CWE572_Call_to_Thread_run_Instead_of_start__basic_02.java:CWE572_Call_to_Thread_run_Instead_of_start__basic_02:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE572_Call_to_Thread_run_Instead_of_start/CWE572_Call_to_Thread_run_Instead_of_start__basic_02.java:CWE572_Call_to_Thread_run_Instead_of_start__basic_02:good()",
+    "typeName" : "good"
+  } ]
+}

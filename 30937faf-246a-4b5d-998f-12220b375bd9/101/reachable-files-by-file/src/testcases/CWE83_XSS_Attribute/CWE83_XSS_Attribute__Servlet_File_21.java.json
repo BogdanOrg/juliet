@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_File_21.java",
+  "reachableFiles" : [ "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_File_21.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_File_21.java:CWE83_XSS_Attribute__Servlet_File_21:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_File_21.java:CWE83_XSS_Attribute__Servlet_File_21:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

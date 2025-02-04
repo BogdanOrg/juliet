@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__getParameter_Servlet_74a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__getParameter_Servlet_74b.java", "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__getParameter_Servlet_74a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_74a.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_74a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__getParameter_Servlet_74a.java:CWE36_Absolute_Path_Traversal__getParameter_Servlet_74a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

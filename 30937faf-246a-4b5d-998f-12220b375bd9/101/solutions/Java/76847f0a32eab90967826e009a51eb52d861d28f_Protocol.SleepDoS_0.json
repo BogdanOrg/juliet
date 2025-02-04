@@ -1,0 +1,542 @@
+{
+  "ruleId" : "Protocol:SleepDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'sleep' method of 'java.lang.Thread' object could be abused to perform a Sleep Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+      },
+      "region" : {
+        "startLine" : 39,
+        "startColumn" : 16,
+        "endLine" : 39,
+        "endColumn" : 20,
+        "snippet" : {
+          "text" : "java.lang.Thread.sleep"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink()",
+      "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:badSink()",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 62,
+              "startColumn" : 66,
+              "endLine" : 62,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 62,
+              "startColumn" : 37,
+              "endLine" : 62,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 62,
+              "startColumn" : 37,
+              "endLine" : 62,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 63,
+              "startColumn" : 34,
+              "endLine" : 63,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 63,
+              "startColumn" : 34,
+              "endLine" : 63,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 66,
+              "startColumn" : 54,
+              "endLine" : 66,
+              "endColumn" : 62,
+              "snippet" : {
+                "text" : "String stringNumber = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 66,
+              "startColumn" : 54,
+              "endLine" : 66,
+              "endColumn" : 62,
+              "snippet" : {
+                "text" : "String stringNumber = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "stringNumber",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 71,
+              "startColumn" : 63,
+              "endLine" : 71,
+              "endColumn" : 67,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.trim",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 71,
+              "startColumn" : 63,
+              "endLine" : 71,
+              "endColumn" : 67,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "trim",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 71,
+              "startColumn" : 41,
+              "endLine" : 71,
+              "endColumn" : 49,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.Integer.parseInt",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 71,
+              "startColumn" : 41,
+              "endLine" : 71,
+              "endColumn" : 49,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "count",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 125,
+              "startColumn" : 9,
+              "endLine" : 125,
+              "endColumn" : 25,
+              "snippet" : {
+                "text" : "countBad = count;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "countBad",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 126,
+              "startColumn" : 9,
+              "endLine" : 126,
+              "endColumn" : 16,
+              "snippet" : {
+                "text" : "badSink();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 34,
+              "startColumn" : 18,
+              "endLine" : 34,
+              "endColumn" : 25,
+              "snippet" : {
+                "text" : "private void badSink() throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:badSink()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "countBad",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 36,
+              "startColumn" : 13,
+              "endLine" : 36,
+              "endColumn" : 29,
+              "snippet" : {
+                "text" : "int count = countBad;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:badSink()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "count",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 16,
+              "endLine" : 39,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "java.lang.Thread.sleep"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java:CWE400_Resource_Exhaustion__sleep_connect_tcp_45:badSink()",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'sleep' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.Thread.sleep",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_connect_tcp_45.java"
+            },
+            "region" : {
+              "startLine" : 62,
+              "startColumn" : 66,
+              "endLine" : 62,
+              "endColumn" : 79,
+              "snippet" : {
+                "text" : "getInputStream"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:su:1079877",
+          "loc" : "new InputStreamReader(socket.getInputStream(), \"UTF-8\")"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sleep-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

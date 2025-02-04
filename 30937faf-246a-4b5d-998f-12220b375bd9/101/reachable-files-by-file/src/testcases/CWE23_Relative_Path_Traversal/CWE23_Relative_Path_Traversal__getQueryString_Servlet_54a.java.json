@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_54c.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_54e.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_54b.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_54d.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_54a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getQueryString_Servlet_54a.java:CWE23_Relative_Path_Traversal__getQueryString_Servlet_54a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getQueryString_Servlet_54a.java:CWE23_Relative_Path_Traversal__getQueryString_Servlet_54a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

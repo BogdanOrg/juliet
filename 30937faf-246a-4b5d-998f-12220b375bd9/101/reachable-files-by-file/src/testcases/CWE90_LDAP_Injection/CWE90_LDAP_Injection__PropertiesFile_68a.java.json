@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__PropertiesFile_68a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__PropertiesFile_68b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__PropertiesFile_68a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__PropertiesFile_68a.java:CWE90_LDAP_Injection__PropertiesFile_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__PropertiesFile_68a.java:CWE90_LDAP_Injection__PropertiesFile_68a:good()",
+    "typeName" : "good"
+  } ]
+}

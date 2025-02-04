@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE477_Obsolete_Functions\\CWE477_Obsolete_Functions__URLEncoder_encode_Servlet_14.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE477_Obsolete_Functions\\CWE477_Obsolete_Functions__URLEncoder_encode_Servlet_14.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE477_Obsolete_Functions/CWE477_Obsolete_Functions__URLEncoder_encode_Servlet_14.java:CWE477_Obsolete_Functions__URLEncoder_encode_Servlet_14:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE477_Obsolete_Functions/CWE477_Obsolete_Functions__URLEncoder_encode_Servlet_14.java:CWE477_Obsolete_Functions__URLEncoder_encode_Servlet_14:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

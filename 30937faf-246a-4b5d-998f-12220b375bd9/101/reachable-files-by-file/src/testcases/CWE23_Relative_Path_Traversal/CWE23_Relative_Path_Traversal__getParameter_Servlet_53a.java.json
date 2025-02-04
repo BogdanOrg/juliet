@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getParameter_Servlet_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getParameter_Servlet_53c.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getParameter_Servlet_53b.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getParameter_Servlet_53d.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getParameter_Servlet_53a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getParameter_Servlet_53a.java:CWE23_Relative_Path_Traversal__getParameter_Servlet_53a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getParameter_Servlet_53a.java:CWE23_Relative_Path_Traversal__getParameter_Servlet_53a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

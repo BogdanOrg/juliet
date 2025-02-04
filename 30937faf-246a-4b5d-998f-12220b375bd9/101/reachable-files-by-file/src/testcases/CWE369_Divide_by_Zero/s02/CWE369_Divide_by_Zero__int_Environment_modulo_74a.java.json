@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s02\\CWE369_Divide_by_Zero__int_Environment_modulo_74a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE369_Divide_by_Zero\\s02\\CWE369_Divide_by_Zero__int_Environment_modulo_74b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s02\\CWE369_Divide_by_Zero__int_Environment_modulo_74a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s02/CWE369_Divide_by_Zero__int_Environment_modulo_74a.java:CWE369_Divide_by_Zero__int_Environment_modulo_74a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s02/CWE369_Divide_by_Zero__int_Environment_modulo_74a.java:CWE369_Divide_by_Zero__int_Environment_modulo_74a:good()",
+    "typeName" : "good"
+  } ]
+}

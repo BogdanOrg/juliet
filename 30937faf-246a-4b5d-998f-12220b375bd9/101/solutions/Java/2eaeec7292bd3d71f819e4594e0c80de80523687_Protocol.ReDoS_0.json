@@ -1,0 +1,182 @@
+{
+  "ruleId" : "Protocol:ReDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'split' method of 'java.lang.String' object could be abused to perform a RegEx Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java"
+      },
+      "region" : {
+        "startLine" : 144,
+        "startColumn" : 39,
+        "endLine" : 144,
+        "endColumn" : 43,
+        "snippet" : {
+          "text" : "java.lang.String.split"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2G1Sink(data)",
+      "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java:CWE89_SQL_Injection__Environment_executeBatch_21:goodB2G1Sink(data)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java"
+            },
+            "region" : {
+              "startLine" : 126,
+              "startColumn" : 23,
+              "endLine" : 126,
+              "endColumn" : 29,
+              "snippet" : {
+                "text" : "data = System.getenv(\"ADD\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java:CWE89_SQL_Injection__Environment_executeBatch_21:goodB2G1()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java"
+            },
+            "region" : {
+              "startLine" : 129,
+              "startColumn" : 9,
+              "endLine" : 129,
+              "endColumn" : 21,
+              "snippet" : {
+                "text" : "goodB2G1Sink(data );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1()",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java:CWE89_SQL_Injection__Environment_executeBatch_21:goodB2G1()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "goodB2G1Sink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java"
+            },
+            "region" : {
+              "startLine" : 132,
+              "startColumn" : 18,
+              "endLine" : 132,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "private void goodB2G1Sink(String data ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1Sink(data)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java:CWE89_SQL_Injection__Environment_executeBatch_21:goodB2G1Sink(data)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java"
+            },
+            "region" : {
+              "startLine" : 144,
+              "startColumn" : 39,
+              "endLine" : 144,
+              "endColumn" : 43,
+              "snippet" : {
+                "text" : "java.lang.String.split"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2G1Sink(data)",
+            "fullyQualifiedName" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java:CWE89_SQL_Injection__Environment_executeBatch_21:goodB2G1Sink(data)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'split' in 'goodB2G1Sink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.String.split",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__Environment_executeBatch_21.java"
+            },
+            "region" : {
+              "startLine" : 129,
+              "startColumn" : 22,
+              "endLine" : 129,
+              "endColumn" : 25,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "goodB2G1Sink"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-regex-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getCookies_Servlet_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getCookies_Servlet_16.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__getCookies_Servlet_16.java:CWE606_Unchecked_Loop_Condition__getCookies_Servlet_16:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__getCookies_Servlet_16.java:CWE606_Unchecked_Loop_Condition__getCookies_Servlet_16:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

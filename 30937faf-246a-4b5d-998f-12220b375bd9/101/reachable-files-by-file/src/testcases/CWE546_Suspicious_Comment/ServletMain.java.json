@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE546_Suspicious_Comment\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE546_Suspicious_Comment\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE546_Suspicious_Comment/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE546_Suspicious_Comment/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getCookies_Servlet_66a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getCookies_Servlet_66a.java", "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getCookies_Servlet_66b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_getCookies_Servlet_66a.java:CWE80_XSS__Servlet_getCookies_Servlet_66a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_getCookies_Servlet_66a.java:CWE80_XSS__Servlet_getCookies_Servlet_66a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

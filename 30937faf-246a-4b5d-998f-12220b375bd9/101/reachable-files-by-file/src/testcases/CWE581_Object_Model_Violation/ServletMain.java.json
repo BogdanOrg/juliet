@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE581_Object_Model_Violation\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE581_Object_Model_Violation\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE581_Object_Model_Violation/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE581_Object_Model_Violation/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

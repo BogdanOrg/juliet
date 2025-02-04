@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE484_Omitted_Break_Statement_in_Switch\\CWE484_Omitted_Break_Statement_in_Switch__basic_12.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE484_Omitted_Break_Statement_in_Switch\\CWE484_Omitted_Break_Statement_in_Switch__basic_12.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE484_Omitted_Break_Statement_in_Switch/CWE484_Omitted_Break_Statement_in_Switch__basic_12.java:CWE484_Omitted_Break_Statement_in_Switch__basic_12:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE484_Omitted_Break_Statement_in_Switch/CWE484_Omitted_Break_Statement_in_Switch__basic_12.java:CWE484_Omitted_Break_Statement_in_Switch__basic_12:good()",
+    "typeName" : "good"
+  } ]
+}

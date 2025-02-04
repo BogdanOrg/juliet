@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_init_variable_StringBuilder_17.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_init_variable_StringBuilder_17.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_init_variable_StringBuilder_17.java:CWE563_Unused_Variable__unused_init_variable_StringBuilder_17:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_init_variable_StringBuilder_17.java:CWE563_Unused_Variable__unused_init_variable_StringBuilder_17:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_for_loop_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_for_loop_53d.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_for_loop_53b.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_for_loop_53c.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_for_loop_53a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__URLConnection_for_loop_53a.java:CWE400_Resource_Exhaustion__URLConnection_for_loop_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__URLConnection_for_loop_53a.java:CWE400_Resource_Exhaustion__URLConnection_for_loop_53a:good()",
+    "typeName" : "good"
+  } ]
+}

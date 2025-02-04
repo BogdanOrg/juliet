@@ -1,0 +1,566 @@
+{
+  "ruleId" : "Protocol:PathTraversal",
+  "level" : "error",
+  "message" : {
+    "text" : "'exists' method of 'java.io.File' object could be abused to disclose or manipulate sensitive files."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+      },
+      "region" : {
+        "startLine" : 51,
+        "startColumn" : 22,
+        "endLine" : 51,
+        "endColumn" : 27,
+        "snippet" : {
+          "text" : "java.io.File.exists"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataArray)",
+      "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 66,
+              "endLine" : 52,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 52,
+              "startColumn" : 37,
+              "endLine" : 52,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 53,
+              "startColumn" : 34,
+              "endLine" : 53,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 53,
+              "startColumn" : 34,
+              "endLine" : 53,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 56,
+              "startColumn" : 39,
+              "endLine" : 56,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 56,
+              "startColumn" : 39,
+              "endLine" : 56,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 105,
+              "startColumn" : 9,
+              "endLine" : 105,
+              "endColumn" : 18,
+              "snippet" : {
+                "text" : "dataArray[2] = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.set",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 105,
+              "startColumn" : 9,
+              "endLine" : 105,
+              "endColumn" : 18,
+              "snippet" : {
+                "text" : "dataArray[2] = data;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.set",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "startLine" : 106,
+              "startColumn" : 64,
+              "endLine" : 106,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "(new CWE23_Relative_Path_Traversal__connect_tcp_66b()).badSink(dataArray  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java:CWE23_Relative_Path_Traversal__connect_tcp_66a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE23_Relative_Path_Traversal__connect_tcp_66b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 28,
+              "startColumn" : 17,
+              "endLine" : 28,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(String dataArray[] ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataArray",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 23,
+              "endLine" : 30,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataArray[2];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "io.mend.sast.ArrayProxy<java.lang.String>.get",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 30,
+              "startColumn" : 23,
+              "endLine" : 30,
+              "endColumn" : 35,
+              "snippet" : {
+                "text" : "String data = dataArray[2];"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 34,
+              "endLine" : 47,
+              "endColumn" : 45,
+              "snippet" : {
+                "text" : "File file = new File(root + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "root + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 25,
+              "endLine" : 47,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "File file = new File(root + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.File.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 47,
+              "startColumn" : 25,
+              "endLine" : 47,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "File file = new File(root + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "file",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java"
+            },
+            "region" : {
+              "startLine" : 51,
+              "startColumn" : 22,
+              "endLine" : 51,
+              "endColumn" : 27,
+              "snippet" : {
+                "text" : "java.io.File.exists"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66b.java:CWE23_Relative_Path_Traversal__connect_tcp_66b:badSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING, STOP]' for variable 'exists' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.File.exists",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 17,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_66a.java"
+            },
+            "region" : {
+              "snippet" : { }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:720033",
+          "loc" : "dataArray"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-path-traversal",
+    "cwe" : 22,
+    "confidence" : "LOW"
+  }
+}

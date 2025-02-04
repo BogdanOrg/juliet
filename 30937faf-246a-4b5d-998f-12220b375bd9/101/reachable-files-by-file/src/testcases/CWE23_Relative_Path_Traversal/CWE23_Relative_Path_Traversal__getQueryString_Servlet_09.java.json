@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_09.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE23_Relative_Path_Traversal\\CWE23_Relative_Path_Traversal__getQueryString_Servlet_09.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getQueryString_Servlet_09.java:CWE23_Relative_Path_Traversal__getQueryString_Servlet_09:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__getQueryString_Servlet_09.java:CWE23_Relative_Path_Traversal__getQueryString_Servlet_09:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

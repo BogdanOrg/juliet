@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__console_readLine_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__console_readLine_53c.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__console_readLine_53a.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__console_readLine_53d.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__console_readLine_53b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__console_readLine_53a.java:CWE78_OS_Command_Injection__console_readLine_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__console_readLine_53a.java:CWE78_OS_Command_Injection__console_readLine_53a:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__connect_tcp_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__connect_tcp_53d.java", "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__connect_tcp_53a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__connect_tcp_53b.java", "src\\testcases\\CWE36_Absolute_Path_Traversal\\CWE36_Absolute_Path_Traversal__connect_tcp_53c.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__connect_tcp_53a.java:CWE36_Absolute_Path_Traversal__connect_tcp_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__connect_tcp_53a.java:CWE36_Absolute_Path_Traversal__connect_tcp_53a:good()",
+    "typeName" : "good"
+  } ]
+}

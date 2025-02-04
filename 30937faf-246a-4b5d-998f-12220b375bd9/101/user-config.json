@@ -1,0 +1,40 @@
+{
+  "solverDebugLevel" : null,
+  "solverDebugDirectory" : "C:\\Users\\RonBar-Yosef\\.mendsastcli\\engines\\logs\\eb9d8fcb-8316-44f2-b82d-2f27c66f59dc",
+  "logLevel" : null,
+  "preDiagnosticScan" : false,
+  "maxTimeForEntrySearchSeconds" : 600,
+  "maxTimePerEntryBatchSeconds" : 60,
+  "maxFileSizeKiloBytes" : 1024,
+  "numberOfProcessors" : 12,
+  "cacheDirectory" : "C:\\Users\\RonBar-Yosef\\.mendsastcli\\engines\\mendcache\\30937faf-246a-4b5d-998f-12220b375bd9\\eb9d8fcb-8316-44f2-b82d-2f27c66f59dc",
+  "cacheHeapSizeMB" : -1,
+  "closeCache" : true,
+  "tempDirectory" : null,
+  "diagnosticDirectory" : null,
+  "deleteTempDirectory" : null,
+  "deadCodeAnalysis" : null,
+  "fullScan" : true,
+  "disableFullScanOptimization" : null,
+  "incrementalDirectory" : "C:\\Users\\RonBar-Yosef\\.mendsastcli\\storage\\inc\\30937faf-246a-4b5d-998f-12220b375bd9\\101",
+  "useTaintTransformerDefaultSemantics" : null,
+  "path" : "C:\\Dev\\SourcesToScan\\JavaTestProjects-main\\juliet-test-suite-master\\",
+  "languageConfig" : [ {
+    "language" : "Java",
+    "sourceFilePatterns" : [ ".*\\.java" ],
+    "sourceFilesExcludePatterns" : [ "\\\\out\\\\", "_test\\.py", "\\\\cypress\\\\", "\\\\\\.github\\\\", "\\\\bin\\\\", "\\\\\\.vscode\\\\", "\\\\(\\.?)env\\\\", "\\\\test(s?)\\\\", "\\\\lib\\\\", "\\\\\\.git\\\\", "\\\\locales\\\\", "module-info\\.java", "\\\\\\.mvn\\\\", "\\\\build\\\\", "package-info\\.java", "\\\\release\\\\", "\\\\dist\\\\", "\\\\\\.idea\\\\", "test_.*\\.py", "\\\\(\\.?)virtualenv\\\\", "\\\\\\.pytest_cache\\\\", "\\\\target\\\\", "\\\\(\\.?)venv\\\\", "\\\\e2e\\\\", "\\\\(\\.?)virtual\\\\" ],
+    "sourceFilesIncludePatterns" : [ ],
+    "projectDirIndicators" : [ "build.gradle", "build.xml", "pom.xml" ],
+    "protocolFolders" : [ "C:\\Users\\RonBar-Yosef\\.mendsastcli\\engines\\protocols" ],
+    "reachabilityGraphGeneratorConfig" : {
+      "directory" : null,
+      "timeoutSec" : 300
+    },
+    "regexFolders" : [ "C:\\Users\\RonBar-Yosef\\.mendsastcli\\engines\\protocols" ],
+    "cweConfig" : [ ],
+    "vulnerabilityTypesToBeUsed" : [ "java-ldap-inj", "java-hardcoded-creds", "java-heap-inspect", "java-http-only", "java-weak-enc", "java-system-properties-disc", "java-xpath-inj", "java-weak-rnd", "java-weak-hash", "java-insecure-ds", "java-insecure-transport", "java-sig-verify", "java-misc", "java-hidden-html", "java-cmd-inj", "java-arb-server-conn", "java-code-inj", "java-sqli", "java-unsafe-reflection", "java-log-forge", "java-system-properties", "java-ssrf", "java-err-msg", "java-header-inj", "java-xss", "java-redirect", "java-path-traversal", "java-xxe", "java-regex-dos", "java-mail-relay", "java-sleep-dos", "java-trust-boundary" ],
+    "taintSourcesToBeUsed" : [ ],
+    "externalTypeInfoFolders" : [ "C:\\Users\\RonBar-Yosef\\.mendsastcli\\engines\\externaltypeinfo" ]
+  } ],
+  "pathAsPath" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/"
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_write_06.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s03\\CWE400_Resource_Exhaustion__URLConnection_write_06.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__URLConnection_write_06.java:CWE400_Resource_Exhaustion__URLConnection_write_06:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s03/CWE400_Resource_Exhaustion__URLConnection_write_06.java:CWE400_Resource_Exhaustion__URLConnection_write_06:good()",
+    "typeName" : "good"
+  } ]
+}

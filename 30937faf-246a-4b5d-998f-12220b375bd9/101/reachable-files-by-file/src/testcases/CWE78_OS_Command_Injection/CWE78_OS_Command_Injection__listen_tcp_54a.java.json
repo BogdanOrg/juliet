@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_54a.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_54d.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_54b.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_54e.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__listen_tcp_54c.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__listen_tcp_54a.java:CWE78_OS_Command_Injection__listen_tcp_54a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__listen_tcp_54a.java:CWE78_OS_Command_Injection__listen_tcp_54a:good()",
+    "typeName" : "good"
+  } ]
+}

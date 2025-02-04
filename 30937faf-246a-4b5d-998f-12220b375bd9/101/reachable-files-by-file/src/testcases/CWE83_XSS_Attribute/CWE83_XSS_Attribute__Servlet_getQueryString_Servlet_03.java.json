@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_getQueryString_Servlet_03.java",
+  "reachableFiles" : [ "src\\testcases\\CWE83_XSS_Attribute\\CWE83_XSS_Attribute__Servlet_getQueryString_Servlet_03.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_getQueryString_Servlet_03.java:CWE83_XSS_Attribute__Servlet_getQueryString_Servlet_03:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE83_XSS_Attribute/CWE83_XSS_Attribute__Servlet_getQueryString_Servlet_03.java:CWE83_XSS_Attribute__Servlet_getQueryString_Servlet_03:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

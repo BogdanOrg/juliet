@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE325_Missing_Required_Cryptographic_Step\\CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE325_Missing_Required_Cryptographic_Step\\CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_07.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE325_Missing_Required_Cryptographic_Step/CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_07.java:CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE325_Missing_Required_Cryptographic_Step/CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_07.java:CWE325_Missing_Required_Cryptographic_Step__MessageDigest_update_07:good()",
+    "typeName" : "good"
+  } ]
+}

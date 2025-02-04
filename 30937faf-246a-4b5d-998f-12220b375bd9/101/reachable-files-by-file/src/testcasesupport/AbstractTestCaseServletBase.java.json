@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcasesupport\\AbstractTestCaseServletBase.java",
+  "reachableFiles" : [ "src\\testcasesupport\\AbstractTestCaseServletBase.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcasesupport/AbstractTestCaseServletBase.java:AbstractTestCaseServletBase:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcasesupport/AbstractTestCaseServletBase.java:AbstractTestCaseServletBase:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

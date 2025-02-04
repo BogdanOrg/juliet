@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE586_Explicit_Call_to_Finalize\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE586_Explicit_Call_to_Finalize\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE586_Explicit_Call_to_Finalize/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE586_Explicit_Call_to_Finalize/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE584_Return_in_Finally_Block\\CWE584_Return_in_Finally_Block__basic_03.java",
+  "reachableFiles" : [ "src\\testcases\\CWE584_Return_in_Finally_Block\\CWE584_Return_in_Finally_Block__basic_03.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE584_Return_in_Finally_Block/CWE584_Return_in_Finally_Block__basic_03.java:CWE584_Return_in_Finally_Block__basic_03:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE584_Return_in_Finally_Block/CWE584_Return_in_Finally_Block__basic_03.java:CWE584_Return_in_Finally_Block__basic_03:good()",
+    "typeName" : "good"
+  } ]
+}

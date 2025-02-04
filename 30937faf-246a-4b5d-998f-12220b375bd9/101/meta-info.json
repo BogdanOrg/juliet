@@ -1,0 +1,11 @@
+{
+  "startTime" : 1683794806181,
+  "endTime" : 1683811519504,
+  "executionTimeMs" : 16713323,
+  "engineVersion" : "23.5.1-SNAPSHOT",
+  "repositoryUrl" : null,
+  "sourceCommitId" : null,
+  "targetCommitId" : null,
+  "fullScan" : true,
+  "baseline" : true
+}

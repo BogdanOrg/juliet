@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE327_Use_Broken_Crypto\\CWE327_Use_Broken_Crypto__3DES_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE327_Use_Broken_Crypto\\CWE327_Use_Broken_Crypto__3DES_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE327_Use_Broken_Crypto/CWE327_Use_Broken_Crypto__3DES_08.java:CWE327_Use_Broken_Crypto__3DES_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE327_Use_Broken_Crypto/CWE327_Use_Broken_Crypto__3DES_08.java:CWE327_Use_Broken_Crypto__3DES_08:good()",
+    "typeName" : "good"
+  } ]
+}

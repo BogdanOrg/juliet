@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE506_Embedded_Malicious_Code\\CWE506_Embedded_Malicious_Code__reflection_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE506_Embedded_Malicious_Code\\CWE506_Embedded_Malicious_Code__reflection_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__reflection_01.java:CWE506_Embedded_Malicious_Code__reflection_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__reflection_01.java:CWE506_Embedded_Malicious_Code__reflection_01:good()",
+    "typeName" : "good"
+  } ]
+}

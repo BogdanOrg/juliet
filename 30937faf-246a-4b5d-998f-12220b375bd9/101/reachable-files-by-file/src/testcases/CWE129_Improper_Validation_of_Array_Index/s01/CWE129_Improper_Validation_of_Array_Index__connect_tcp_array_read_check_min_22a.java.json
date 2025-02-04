@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s01\\CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s01\\CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s01\\CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22a.java:CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22a.java:CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_22a:good()",
+    "typeName" : "good"
+  } ]
+}

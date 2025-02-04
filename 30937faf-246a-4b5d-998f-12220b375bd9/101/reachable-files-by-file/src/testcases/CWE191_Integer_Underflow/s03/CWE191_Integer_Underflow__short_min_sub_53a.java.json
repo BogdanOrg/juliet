@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE191_Integer_Underflow\\s03\\CWE191_Integer_Underflow__short_min_sub_53a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE191_Integer_Underflow\\s03\\CWE191_Integer_Underflow__short_min_sub_53a.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE191_Integer_Underflow\\s03\\CWE191_Integer_Underflow__short_min_sub_53b.java", "src\\testcases\\CWE191_Integer_Underflow\\s03\\CWE191_Integer_Underflow__short_min_sub_53c.java", "src\\testcases\\CWE191_Integer_Underflow\\s03\\CWE191_Integer_Underflow__short_min_sub_53d.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_min_sub_53a.java:CWE191_Integer_Underflow__short_min_sub_53a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_min_sub_53a.java:CWE191_Integer_Underflow__short_min_sub_53a:good()",
+    "typeName" : "good"
+  } ]
+}

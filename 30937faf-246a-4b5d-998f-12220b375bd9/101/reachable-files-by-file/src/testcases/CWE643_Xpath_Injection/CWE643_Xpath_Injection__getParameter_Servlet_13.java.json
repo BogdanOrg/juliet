@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getParameter_Servlet_13.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE643_Xpath_Injection\\CWE643_Xpath_Injection__getParameter_Servlet_13.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getParameter_Servlet_13.java:CWE643_Xpath_Injection__getParameter_Servlet_13:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE643_Xpath_Injection/CWE643_Xpath_Injection__getParameter_Servlet_13.java:CWE643_Xpath_Injection__getParameter_Servlet_13:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

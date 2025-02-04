@@ -1,0 +1,542 @@
+{
+  "ruleId" : "Protocol:PathTraversal",
+  "level" : "error",
+  "message" : {
+    "text" : "'exists' method of 'java.io.File' object could be abused to disclose or manipulate sensitive files."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+      },
+      "region" : {
+        "startLine" : 40,
+        "startColumn" : 22,
+        "endLine" : 40,
+        "endColumn" : 27,
+        "snippet" : {
+          "text" : "java.io.File.exists"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(dataVector)",
+      "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 56,
+              "startColumn" : 66,
+              "endLine" : 56,
+              "endColumn" : 80,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 56,
+              "startColumn" : 37,
+              "endLine" : 56,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.InputStreamReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 56,
+              "startColumn" : 37,
+              "endLine" : 56,
+              "endColumn" : 92,
+              "snippet" : {
+                "text" : "readerInputStream = new InputStreamReader(socket.getInputStream(), \"UTF-8\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerInputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 57,
+              "startColumn" : 34,
+              "endLine" : 57,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 57,
+              "startColumn" : 34,
+              "endLine" : 57,
+              "endColumn" : 71,
+              "snippet" : {
+                "text" : "readerBuffered = new BufferedReader(readerInputStream);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "readerBuffered",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 60,
+              "startColumn" : 39,
+              "endLine" : 60,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.BufferedReader.readLine",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 60,
+              "startColumn" : 39,
+              "endLine" : 60,
+              "endColumn" : 47,
+              "snippet" : {
+                "text" : "data = readerBuffered.readLine();"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 123,
+              "startColumn" : 20,
+              "endLine" : 123,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataVector.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 123,
+              "startColumn" : 20,
+              "endLine" : 123,
+              "endColumn" : 23,
+              "snippet" : {
+                "text" : "dataVector.add(2, data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.add",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 124,
+              "startColumn" : 63,
+              "endLine" : 124,
+              "endColumn" : 70,
+              "snippet" : {
+                "text" : "(new CWE36_Absolute_Path_Traversal__listen_tcp_72b()).badSink(dataVector  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java:CWE36_Absolute_Path_Traversal__listen_tcp_72a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE36_Absolute_Path_Traversal__listen_tcp_72b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+            },
+            "region" : {
+              "startLine" : 29,
+              "startColumn" : 17,
+              "endLine" : 29,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(Vector<String> dataVector ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "dataVector",
+            "locationType" : "ARGUMENT"
+          }
+        },
+        "executionOrder" : 11,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 34,
+              "endLine" : 31,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String data = dataVector.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Vector<java.lang.String>.remove",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 12,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+            },
+            "region" : {
+              "startLine" : 31,
+              "startColumn" : 34,
+              "endLine" : 31,
+              "endColumn" : 40,
+              "snippet" : {
+                "text" : "String data = dataVector.remove(2);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 13,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+            },
+            "region" : {
+              "startLine" : 36,
+              "startColumn" : 25,
+              "endLine" : 36,
+              "endColumn" : 39,
+              "snippet" : {
+                "text" : "File file = new File(data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.File.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 14,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+            },
+            "region" : {
+              "startLine" : 36,
+              "startColumn" : 25,
+              "endLine" : 36,
+              "endColumn" : 39,
+              "snippet" : {
+                "text" : "File file = new File(data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "file",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 15,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java"
+            },
+            "region" : {
+              "startLine" : 40,
+              "startColumn" : 22,
+              "endLine" : 40,
+              "endColumn" : 27,
+              "snippet" : {
+                "text" : "java.io.File.exists"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(dataVector)",
+            "fullyQualifiedName" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72b.java:CWE36_Absolute_Path_Traversal__listen_tcp_72b:badSink(dataVector)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING, STOP]' for variable 'exists' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.File.exists",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 16,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE36_Absolute_Path_Traversal/CWE36_Absolute_Path_Traversal__listen_tcp_72a.java"
+            },
+            "region" : {
+              "startLine" : 123,
+              "startColumn" : 27,
+              "endLine" : 123,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "data"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "data",
+          "loc" : "add"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-path-traversal",
+    "cwe" : 22,
+    "confidence" : "LOW"
+  }
+}

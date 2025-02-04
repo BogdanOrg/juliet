@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s04\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61a.java:CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61a.java:CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_write_no_check_61a:good()",
+    "typeName" : "good"
+  } ]
+}

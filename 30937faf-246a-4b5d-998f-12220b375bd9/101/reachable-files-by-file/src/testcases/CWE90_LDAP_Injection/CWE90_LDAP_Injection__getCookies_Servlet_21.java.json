@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__getCookies_Servlet_21.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE90_LDAP_Injection\\CWE90_LDAP_Injection__getCookies_Servlet_21.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__getCookies_Servlet_21.java:CWE90_LDAP_Injection__getCookies_Servlet_21:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__getCookies_Servlet_21.java:CWE90_LDAP_Injection__getCookies_Servlet_21:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

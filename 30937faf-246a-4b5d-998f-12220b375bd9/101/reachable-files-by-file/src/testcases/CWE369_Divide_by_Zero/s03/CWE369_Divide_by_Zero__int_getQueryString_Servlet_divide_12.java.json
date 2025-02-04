@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_getQueryString_Servlet_divide_12.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_getQueryString_Servlet_divide_12.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_getQueryString_Servlet_divide_12.java:CWE369_Divide_by_Zero__int_getQueryString_Servlet_divide_12:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_getQueryString_Servlet_divide_12.java:CWE369_Divide_by_Zero__int_getQueryString_Servlet_divide_12:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE369_Divide_by_Zero\\s03\\CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_08.java:CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_08:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s03/CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_08.java:CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_08:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

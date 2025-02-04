@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE617_Reachable_Assertion\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE617_Reachable_Assertion\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE617_Reachable_Assertion/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE617_Reachable_Assertion/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

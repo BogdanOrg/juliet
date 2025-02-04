@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE395_Catch_NullPointerException\\CWE395_Catch_NullPointerException__basic_07.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE395_Catch_NullPointerException\\CWE395_Catch_NullPointerException__basic_07.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE395_Catch_NullPointerException/CWE395_Catch_NullPointerException__basic_07.java:CWE395_Catch_NullPointerException__basic_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE395_Catch_NullPointerException/CWE395_Catch_NullPointerException__basic_07.java:CWE395_Catch_NullPointerException__basic_07:good()",
+    "typeName" : "good"
+  } ]
+}

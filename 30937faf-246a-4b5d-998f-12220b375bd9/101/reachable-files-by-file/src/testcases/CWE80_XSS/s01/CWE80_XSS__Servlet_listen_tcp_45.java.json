@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_listen_tcp_45.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_listen_tcp_45.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_listen_tcp_45.java:CWE80_XSS__Servlet_listen_tcp_45:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_listen_tcp_45.java:CWE80_XSS__Servlet_listen_tcp_45:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

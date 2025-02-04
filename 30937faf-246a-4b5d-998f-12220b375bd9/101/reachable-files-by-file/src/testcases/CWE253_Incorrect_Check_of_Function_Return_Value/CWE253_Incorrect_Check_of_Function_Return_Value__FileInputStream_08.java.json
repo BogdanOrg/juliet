@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE253_Incorrect_Check_of_Function_Return_Value\\CWE253_Incorrect_Check_of_Function_Return_Value__FileInputStream_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE253_Incorrect_Check_of_Function_Return_Value\\CWE253_Incorrect_Check_of_Function_Return_Value__FileInputStream_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE253_Incorrect_Check_of_Function_Return_Value/CWE253_Incorrect_Check_of_Function_Return_Value__FileInputStream_08.java:CWE253_Incorrect_Check_of_Function_Return_Value__FileInputStream_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE253_Incorrect_Check_of_Function_Return_Value/CWE253_Incorrect_Check_of_Function_Return_Value__FileInputStream_08.java:CWE253_Incorrect_Check_of_Function_Return_Value__FileInputStream_08:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__long_max_square_07.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s04\\CWE190_Integer_Overflow__long_max_square_07.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__long_max_square_07.java:CWE190_Integer_Overflow__long_max_square_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__long_max_square_07.java:CWE190_Integer_Overflow__long_max_square_07:good()",
+    "typeName" : "good"
+  } ]
+}

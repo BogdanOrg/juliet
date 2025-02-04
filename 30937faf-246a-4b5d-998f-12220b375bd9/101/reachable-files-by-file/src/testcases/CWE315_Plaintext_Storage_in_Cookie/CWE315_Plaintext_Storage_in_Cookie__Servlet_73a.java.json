@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE315_Plaintext_Storage_in_Cookie\\CWE315_Plaintext_Storage_in_Cookie__Servlet_73a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE315_Plaintext_Storage_in_Cookie\\CWE315_Plaintext_Storage_in_Cookie__Servlet_73b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE315_Plaintext_Storage_in_Cookie\\CWE315_Plaintext_Storage_in_Cookie__Servlet_73a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE315_Plaintext_Storage_in_Cookie/CWE315_Plaintext_Storage_in_Cookie__Servlet_73a.java:CWE315_Plaintext_Storage_in_Cookie__Servlet_73a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE315_Plaintext_Storage_in_Cookie/CWE315_Plaintext_Storage_in_Cookie__Servlet_73a.java:CWE315_Plaintext_Storage_in_Cookie__Servlet_73a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

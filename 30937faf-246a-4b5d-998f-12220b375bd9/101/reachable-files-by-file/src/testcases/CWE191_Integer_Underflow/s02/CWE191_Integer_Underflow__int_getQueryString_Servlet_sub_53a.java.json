@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE191_Integer_Underflow\\s02\\CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE191_Integer_Underflow\\s02\\CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53c.java", "src\\testcases\\CWE191_Integer_Underflow\\s02\\CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53d.java", "src\\testcases\\CWE191_Integer_Underflow\\s02\\CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53a.java", "src\\testcases\\CWE191_Integer_Underflow\\s02\\CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53a.java:CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53a.java:CWE191_Integer_Underflow__int_getQueryString_Servlet_sub_53a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

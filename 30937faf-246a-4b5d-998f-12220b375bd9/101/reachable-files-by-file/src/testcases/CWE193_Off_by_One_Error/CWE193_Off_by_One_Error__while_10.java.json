@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE193_Off_by_One_Error\\CWE193_Off_by_One_Error__while_10.java",
+  "reachableFiles" : [ "src\\testcases\\CWE193_Off_by_One_Error\\CWE193_Off_by_One_Error__while_10.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE193_Off_by_One_Error/CWE193_Off_by_One_Error__while_10.java:CWE193_Off_by_One_Error__while_10:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE193_Off_by_One_Error/CWE193_Off_by_One_Error__while_10.java:CWE193_Off_by_One_Error__while_10:good()",
+    "typeName" : "good"
+  } ]
+}

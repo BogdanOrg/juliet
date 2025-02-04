@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE378_Temporary_File_Creation_With_Insecure_Perms\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE378_Temporary_File_Creation_With_Insecure_Perms\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE378_Temporary_File_Creation_With_Insecure_Perms/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE378_Temporary_File_Creation_With_Insecure_Perms/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE483_Incorrect_Block_Delimitation\\CWE483_Incorrect_Block_Delimitation__semicolon_07.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE483_Incorrect_Block_Delimitation\\CWE483_Incorrect_Block_Delimitation__semicolon_07.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE483_Incorrect_Block_Delimitation/CWE483_Incorrect_Block_Delimitation__semicolon_07.java:CWE483_Incorrect_Block_Delimitation__semicolon_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE483_Incorrect_Block_Delimitation/CWE483_Incorrect_Block_Delimitation__semicolon_07.java:CWE483_Incorrect_Block_Delimitation__semicolon_07:good()",
+    "typeName" : "good"
+  } ]
+}

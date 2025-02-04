@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE572_Call_to_Thread_run_Instead_of_start\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE572_Call_to_Thread_run_Instead_of_start\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE572_Call_to_Thread_run_Instead_of_start/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE572_Call_to_Thread_run_Instead_of_start/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

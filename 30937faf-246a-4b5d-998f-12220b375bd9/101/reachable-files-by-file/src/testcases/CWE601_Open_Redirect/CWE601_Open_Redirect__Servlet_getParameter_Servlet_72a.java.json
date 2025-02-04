@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_getParameter_Servlet_72a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_getParameter_Servlet_72b.java", "src\\testcases\\CWE601_Open_Redirect\\CWE601_Open_Redirect__Servlet_getParameter_Servlet_72a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_getParameter_Servlet_72a.java:CWE601_Open_Redirect__Servlet_getParameter_Servlet_72a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE601_Open_Redirect/CWE601_Open_Redirect__Servlet_getParameter_Servlet_72a.java:CWE601_Open_Redirect__Servlet_getParameter_Servlet_72a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

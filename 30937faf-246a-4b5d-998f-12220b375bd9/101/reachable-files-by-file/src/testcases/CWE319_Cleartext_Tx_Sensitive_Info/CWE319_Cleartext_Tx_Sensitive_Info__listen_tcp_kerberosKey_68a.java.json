@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68a.java", "src\\testcases\\CWE319_Cleartext_Tx_Sensitive_Info\\CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68a.java:CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68a.java:CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_kerberosKey_68a:good()",
+    "typeName" : "good"
+  } ]
+}

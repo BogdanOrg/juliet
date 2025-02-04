@@ -1,0 +1,362 @@
+{
+  "ruleId" : "Protocol:SleepDoS",
+  "level" : "error",
+  "message" : {
+    "text" : "'sleep' method of 'java.lang.Thread' object could be abused to perform a Sleep Denial of Service attack."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java"
+      },
+      "region" : {
+        "startLine" : 28,
+        "startColumn" : 16,
+        "endLine" : 28,
+        "endColumn" : 20,
+        "snippet" : {
+          "text" : "java.lang.Thread.sleep"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "badSink(countContainer)",
+      "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java:CWE400_Resource_Exhaustion__sleep_Environment_67b:badSink(countContainer)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 39,
+              "startColumn" : 42,
+              "endLine" : 39,
+              "endColumn" : 48,
+              "snippet" : {
+                "text" : "String stringNumber = System.getenv(\"ADD\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "stringNumber",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 44,
+              "startColumn" : 59,
+              "endLine" : 44,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.String.trim",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 44,
+              "startColumn" : 59,
+              "endLine" : 44,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "trim",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 44,
+              "startColumn" : 37,
+              "endLine" : 44,
+              "endColumn" : 45,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.lang.Integer.parseInt",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 44,
+              "startColumn" : 37,
+              "endLine" : 44,
+              "endColumn" : 45,
+              "snippet" : {
+                "text" : "count = Integer.parseInt(stringNumber.trim());"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "count",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 54,
+              "startColumn" : 9,
+              "endLine" : 54,
+              "endColumn" : 36,
+              "snippet" : {
+                "text" : "countContainer.containerOne = count;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "countContainer.containerOne",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 55,
+              "startColumn" : 67,
+              "endLine" : 55,
+              "endColumn" : 74,
+              "snippet" : {
+                "text" : "(new CWE400_Resource_Exhaustion__sleep_Environment_67b()).badSink(countContainer  );"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad()",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java:CWE400_Resource_Exhaustion__sleep_Environment_67a:bad()",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(new CWE400_Resource_Exhaustion__sleep_Environment_67b()).badSink",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java"
+            },
+            "region" : {
+              "startLine" : 23,
+              "startColumn" : 17,
+              "endLine" : 23,
+              "endColumn" : 24,
+              "snippet" : {
+                "text" : "public void badSink(CWE400_Resource_Exhaustion__sleep_Environment_67a.Container countContainer ) throws Throwable"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(countContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java:CWE400_Resource_Exhaustion__sleep_Environment_67b:badSink(countContainer)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "containerOne",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java"
+            },
+            "region" : {
+              "startLine" : 25,
+              "startColumn" : 13,
+              "endLine" : 25,
+              "endColumn" : 48,
+              "snippet" : {
+                "text" : "int count = countContainer.containerOne;"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(countContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java:CWE400_Resource_Exhaustion__sleep_Environment_67b:badSink(countContainer)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "count",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 9,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java"
+            },
+            "region" : {
+              "startLine" : 28,
+              "startColumn" : 16,
+              "endLine" : 28,
+              "endColumn" : 20,
+              "snippet" : {
+                "text" : "java.lang.Thread.sleep"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "badSink(countContainer)",
+            "fullyQualifiedName" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67b.java:CWE400_Resource_Exhaustion__sleep_Environment_67b:badSink(countContainer)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'sleep' in 'badSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.lang.Thread.sleep",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 10,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__sleep_Environment_67a.java"
+            },
+            "region" : {
+              "startLine" : 44,
+              "startColumn" : 59,
+              "endLine" : 44,
+              "endColumn" : 62,
+              "snippet" : {
+                "text" : "trim"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:su:1073974",
+          "loc" : "parseInt"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-sleep-dos",
+    "cwe" : 400,
+    "confidence" : "LOW"
+  }
+}

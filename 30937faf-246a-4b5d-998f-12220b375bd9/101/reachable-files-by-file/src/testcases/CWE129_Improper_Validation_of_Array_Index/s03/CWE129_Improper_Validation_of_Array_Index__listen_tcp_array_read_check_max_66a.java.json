@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66b.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66a.java:CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66a.java:CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_max_66a:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE459_Incomplete_Cleanup\\CWE459_Incomplete_Cleanup__Servlet_temp_file_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE459_Incomplete_Cleanup\\CWE459_Incomplete_Cleanup__Servlet_temp_file_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE459_Incomplete_Cleanup/CWE459_Incomplete_Cleanup__Servlet_temp_file_01.java:CWE459_Incomplete_Cleanup__Servlet_temp_file_01:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE459_Incomplete_Cleanup/CWE459_Incomplete_Cleanup__Servlet_temp_file_01.java:CWE459_Incomplete_Cleanup__Servlet_temp_file_01:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

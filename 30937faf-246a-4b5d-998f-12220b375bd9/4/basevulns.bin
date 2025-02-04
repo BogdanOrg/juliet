@@ -1,0 +1,12 @@
+<THUNDERSCAN_XML_OUTPUT><TYPE>2</TYPE>
+			<FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE>
+			<FUNC><![CDATA[os.listdir ]]></FUNC>
+			<FUNC_CALL><![CDATA[os.listdir(dir)]]></FUNC_CALL>
+			<VULNERABILITY_TYPE>5</VULNERABILITY_TYPE>
+			<VULNERABLE_VARIABLE><![CDATA[sys.argv]]></VULNERABLE_VARIABLE>
+			<VULNERABILITY_DESCRIPTION><![CDATA[listdir() method could be abused to perform arbitrary directory content disclosure.]]></VULNERABILITY_DESCRIPTION>
+			<VULNERABILITY_FILTER>0</VULNERABILITY_FILTER>
+			<VULNERABILITY_CALL_STACK><CALL_FUNC><LINE_NUM>50</LINE_NUM><FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE><FUNCTION><![CDATA[os.listdir]]></FUNCTION></CALL_FUNC></VULNERABILITY_CALL_STACK>
+			<VULNERABILITY_VAR_STACK><CALL_VAR><LINE_NUM>41</LINE_NUM><FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE><VARIABLE><![CDATA[sys.argv]]></VARIABLE></CALL_VAR><CALL_VAR><LINE_NUM>41</LINE_NUM><FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE><VARIABLE><![CDATA[cwe_regex]]></VARIABLE></CALL_VAR><CALL_VAR><LINE_NUM>44</LINE_NUM><FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE><VARIABLE><![CDATA[cwe_dirs]]></VARIABLE></CALL_VAR><CALL_VAR><LINE_NUM>47</LINE_NUM><FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE><VARIABLE><![CDATA[cwe_dirs]]></VARIABLE></CALL_VAR><CALL_VAR><LINE_NUM>49</LINE_NUM><FILE><![CDATA[C:\Dev\SourcesToScan\JavaTestProjects-main\juliet-test-suite-master\create_per_cwe_files.py]]></FILE><VARIABLE><![CDATA[dir]]></VARIABLE></CALL_VAR></VULNERABILITY_VAR_STACK>
+			<VULNERABILITY_VAR_PARENT_STACK><CALL_VAR><VARIABLE><![CDATA[sys.argv]]></VARIABLE></CALL_VAR><CALL_VAR><VARIABLE><![CDATA[cwe_regex]]></VARIABLE></CALL_VAR><CALL_VAR><VARIABLE><![CDATA[cwe_dirs]]></VARIABLE></CALL_VAR><CALL_VAR><VARIABLE><![CDATA[dir]]></VARIABLE></CALL_VAR><CALL_VAR><VARIABLE><![CDATA[dir]]></VARIABLE></CALL_VAR></VULNERABILITY_VAR_PARENT_STACK>			
+			</THUNDERSCAN_XML_OUTPUT>

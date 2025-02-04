@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_10.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE606_Unchecked_Loop_Condition\\CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_10.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_10.java:CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_10:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_10.java:CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_10:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

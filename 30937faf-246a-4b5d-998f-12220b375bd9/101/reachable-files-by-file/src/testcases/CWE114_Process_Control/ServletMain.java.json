@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE114_Process_Control\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE114_Process_Control\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE114_Process_Control/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE114_Process_Control/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

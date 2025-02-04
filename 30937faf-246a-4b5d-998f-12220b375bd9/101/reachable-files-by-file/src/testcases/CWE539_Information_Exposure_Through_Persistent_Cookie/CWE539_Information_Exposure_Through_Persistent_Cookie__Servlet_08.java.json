@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE539_Information_Exposure_Through_Persistent_Cookie\\CWE539_Information_Exposure_Through_Persistent_Cookie__Servlet_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE539_Information_Exposure_Through_Persistent_Cookie\\CWE539_Information_Exposure_Through_Persistent_Cookie__Servlet_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE539_Information_Exposure_Through_Persistent_Cookie/CWE539_Information_Exposure_Through_Persistent_Cookie__Servlet_08.java:CWE539_Information_Exposure_Through_Persistent_Cookie__Servlet_08:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE539_Information_Exposure_Through_Persistent_Cookie/CWE539_Information_Exposure_Through_Persistent_Cookie__Servlet_08.java:CWE539_Information_Exposure_Through_Persistent_Cookie__Servlet_08:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

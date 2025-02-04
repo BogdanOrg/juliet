@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE534_Info_Exposure_Debug_Log\\CWE534_Info_Exposure_Debug_Log__Servlet_13.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE534_Info_Exposure_Debug_Log\\CWE534_Info_Exposure_Debug_Log__Servlet_13.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE534_Info_Exposure_Debug_Log/CWE534_Info_Exposure_Debug_Log__Servlet_13.java:CWE534_Info_Exposure_Debug_Log__Servlet_13:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE534_Info_Exposure_Debug_Log/CWE534_Info_Exposure_Debug_Log__Servlet_13.java:CWE534_Info_Exposure_Debug_Log__Servlet_13:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

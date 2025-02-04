@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE582_Array_Public_Final_Static\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE582_Array_Public_Final_Static\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE582_Array_Public_Final_Static/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE582_Array_Public_Final_Static/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

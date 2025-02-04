@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE113_HTTP_Response_Splitting\\s03\\CWE113_HTTP_Response_Splitting__Property_setHeaderServlet_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE113_HTTP_Response_Splitting\\s03\\CWE113_HTTP_Response_Splitting__Property_setHeaderServlet_07.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s03/CWE113_HTTP_Response_Splitting__Property_setHeaderServlet_07.java:CWE113_HTTP_Response_Splitting__Property_setHeaderServlet_07:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE113_HTTP_Response_Splitting/s03/CWE113_HTTP_Response_Splitting__Property_setHeaderServlet_07.java:CWE113_HTTP_Response_Splitting__Property_setHeaderServlet_07:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

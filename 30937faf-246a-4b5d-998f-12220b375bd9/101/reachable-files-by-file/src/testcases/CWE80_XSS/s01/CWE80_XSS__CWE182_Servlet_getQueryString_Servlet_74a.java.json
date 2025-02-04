@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74a.java", "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74a.java:CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74a.java:CWE80_XSS__CWE182_Servlet_getQueryString_Servlet_74a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

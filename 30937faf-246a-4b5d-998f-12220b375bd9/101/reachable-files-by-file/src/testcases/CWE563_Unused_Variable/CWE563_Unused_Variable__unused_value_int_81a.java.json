@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_value_int_81a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_value_int_81_goodG2B.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_value_int_81a.java", "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_value_int_81_bad.java", "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_value_int_81_goodB2G.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_int_81a.java:CWE563_Unused_Variable__unused_value_int_81a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_int_81a.java:CWE563_Unused_Variable__unused_value_int_81a:good()",
+    "typeName" : "good"
+  } ]
+}

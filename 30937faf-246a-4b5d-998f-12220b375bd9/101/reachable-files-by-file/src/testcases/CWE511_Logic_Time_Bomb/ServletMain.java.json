@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE511_Logic_Time_Bomb\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE511_Logic_Time_Bomb\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE511_Logic_Time_Bomb/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE511_Logic_Time_Bomb/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

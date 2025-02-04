@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE404_Improper_Resource_Shutdown\\CWE404_Improper_Resource_Shutdown__ReentrantLock_Thread_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE404_Improper_Resource_Shutdown\\CWE404_Improper_Resource_Shutdown__ReentrantLock_Thread_01.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__ReentrantLock_Thread_01.java:CWE404_Improper_Resource_Shutdown__ReentrantLock_Thread_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__ReentrantLock_Thread_01.java:CWE404_Improper_Resource_Shutdown__ReentrantLock_Thread_01:good()",
+    "typeName" : "good"
+  } ]
+}

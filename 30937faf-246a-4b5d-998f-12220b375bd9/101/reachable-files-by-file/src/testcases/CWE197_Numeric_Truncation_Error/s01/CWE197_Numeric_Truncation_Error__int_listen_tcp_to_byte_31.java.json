@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_31.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_31.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_31.java:CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_31:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_31.java:CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_31:good()",
+    "typeName" : "good"
+  } ]
+}

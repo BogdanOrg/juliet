@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s02\\CWE80_XSS__Servlet_URLConnection_15.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s02\\CWE80_XSS__Servlet_URLConnection_15.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s02/CWE80_XSS__Servlet_URLConnection_15.java:CWE80_XSS__Servlet_URLConnection_15:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

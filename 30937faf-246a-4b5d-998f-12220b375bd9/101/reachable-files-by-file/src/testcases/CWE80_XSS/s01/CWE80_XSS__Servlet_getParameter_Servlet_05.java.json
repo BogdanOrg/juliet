@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getParameter_Servlet_05.java",
+  "reachableFiles" : [ "src\\testcases\\CWE80_XSS\\s01\\CWE80_XSS__Servlet_getParameter_Servlet_05.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_getParameter_Servlet_05.java:CWE80_XSS__Servlet_getParameter_Servlet_05:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE80_XSS/s01/CWE80_XSS__Servlet_getParameter_Servlet_05.java:CWE80_XSS__Servlet_getParameter_Servlet_05:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE760_Predictable_Salt_One_Way_Hash\\CWE760_Predictable_Salt_One_Way_Hash__basic_15.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE760_Predictable_Salt_One_Way_Hash\\CWE760_Predictable_Salt_One_Way_Hash__basic_15.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE760_Predictable_Salt_One_Way_Hash/CWE760_Predictable_Salt_One_Way_Hash__basic_15.java:CWE760_Predictable_Salt_One_Way_Hash__basic_15:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE760_Predictable_Salt_One_Way_Hash/CWE760_Predictable_Salt_One_Way_Hash__basic_15.java:CWE760_Predictable_Salt_One_Way_Hash__basic_15:good()",
+    "typeName" : "good"
+  } ]
+}

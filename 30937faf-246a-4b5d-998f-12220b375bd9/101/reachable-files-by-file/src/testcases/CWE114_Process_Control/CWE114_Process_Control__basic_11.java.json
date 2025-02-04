@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE114_Process_Control\\CWE114_Process_Control__basic_11.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE114_Process_Control\\CWE114_Process_Control__basic_11.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE114_Process_Control/CWE114_Process_Control__basic_11.java:CWE114_Process_Control__basic_11:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE114_Process_Control/CWE114_Process_Control__basic_11.java:CWE114_Process_Control__basic_11:good()",
+    "typeName" : "good"
+  } ]
+}

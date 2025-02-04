@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE89_SQL_Injection\\s01\\CWE89_SQL_Injection__database_executeUpdate_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE89_SQL_Injection\\s01\\CWE89_SQL_Injection__database_executeUpdate_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__database_executeUpdate_01.java:CWE89_SQL_Injection__database_executeUpdate_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__database_executeUpdate_01.java:CWE89_SQL_Injection__database_executeUpdate_01:good()",
+    "typeName" : "good"
+  } ]
+}

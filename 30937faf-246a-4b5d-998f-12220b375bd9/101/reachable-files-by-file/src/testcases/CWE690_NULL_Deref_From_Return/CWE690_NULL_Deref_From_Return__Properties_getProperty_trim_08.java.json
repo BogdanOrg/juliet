@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_08.java",
+  "reachableFiles" : [ "src\\testcases\\CWE690_NULL_Deref_From_Return\\CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_08.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE690_NULL_Deref_From_Return/CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_08.java:CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE690_NULL_Deref_From_Return/CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_08.java:CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_08:good()",
+    "typeName" : "good"
+  } ]
+}

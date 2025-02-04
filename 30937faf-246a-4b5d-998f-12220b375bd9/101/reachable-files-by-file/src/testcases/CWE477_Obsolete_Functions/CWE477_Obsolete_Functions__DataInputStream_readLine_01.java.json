@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE477_Obsolete_Functions\\CWE477_Obsolete_Functions__DataInputStream_readLine_01.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE477_Obsolete_Functions\\CWE477_Obsolete_Functions__DataInputStream_readLine_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE477_Obsolete_Functions/CWE477_Obsolete_Functions__DataInputStream_readLine_01.java:CWE477_Obsolete_Functions__DataInputStream_readLine_01:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE477_Obsolete_Functions/CWE477_Obsolete_Functions__DataInputStream_readLine_01.java:CWE477_Obsolete_Functions__DataInputStream_readLine_01:good()",
+    "typeName" : "good"
+  } ]
+}

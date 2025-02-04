@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_Property_multiply_52a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_Property_multiply_52c.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_Property_multiply_52b.java", "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_Property_multiply_52a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_Property_multiply_52a.java:CWE190_Integer_Overflow__int_Property_multiply_52a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_Property_multiply_52a.java:CWE190_Integer_Overflow__int_Property_multiply_52a:good()",
+    "typeName" : "good"
+  } ]
+}

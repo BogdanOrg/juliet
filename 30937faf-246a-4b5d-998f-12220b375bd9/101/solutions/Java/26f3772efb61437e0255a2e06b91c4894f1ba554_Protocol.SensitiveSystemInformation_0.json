@@ -1,0 +1,212 @@
+{
+  "ruleId" : "Protocol:SensitiveSystemInformation",
+  "level" : "error",
+  "message" : {
+    "text" : "'sendError' method of 'javax.servlet.http.HttpServletResponse' object could be abused to reveal sensitive internal information."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+      },
+      "region" : {
+        "startLine" : 78,
+        "startColumn" : 22,
+        "endLine" : 78,
+        "endColumn" : 30,
+        "snippet" : {
+          "text" : "javax.servlet.http.HttpServletResponse.sendError"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "bad(request,response)",
+      "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java:CWE81_XSS_Error_Message__Servlet_PropertiesFile_01:bad(request,response)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+            },
+            "region" : {
+              "startLine" : 46,
+              "startColumn" : 28,
+              "endLine" : 46,
+              "endColumn" : 32,
+              "snippet" : {
+                "text" : "properties.load(streamFileInput);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java:CWE81_XSS_Error_Message__Servlet_PropertiesFile_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.load",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 35,
+              "endLine" : 49,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java:CWE81_XSS_Error_Message__Servlet_PropertiesFile_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.util.Properties.getProperty",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 35,
+              "endLine" : 49,
+              "endColumn" : 46,
+              "snippet" : {
+                "text" : "data = properties.getProperty(\"data\");"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java:CWE81_XSS_Error_Message__Servlet_PropertiesFile_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+            },
+            "region" : {
+              "startLine" : 78,
+              "startColumn" : 37,
+              "endLine" : 78,
+              "endColumn" : 83,
+              "snippet" : {
+                "text" : "response.sendError(404, \"<br>bad() - Parameter name has value \" + data);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java:CWE81_XSS_Error_Message__Servlet_PropertiesFile_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "\"<br>bad() - Parameter name has value \" + data",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+            },
+            "region" : {
+              "startLine" : 78,
+              "startColumn" : 22,
+              "endLine" : 78,
+              "endColumn" : 30,
+              "snippet" : {
+                "text" : "javax.servlet.http.HttpServletResponse.sendError"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "bad(request,response)",
+            "fullyQualifiedName" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java:CWE81_XSS_Error_Message__Servlet_PropertiesFile_01:bad(request,response)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'sendError' in 'bad'"
+          },
+          "properties" : {
+            "instanceName" : "javax.servlet.http.HttpServletResponse.sendError",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_PropertiesFile_01.java"
+            },
+            "region" : {
+              "startLine" : 49,
+              "startColumn" : 24,
+              "endLine" : 49,
+              "endColumn" : 33,
+              "snippet" : {
+                "text" : "properties"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "properties",
+          "loc" : "getProperty"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-system-properties-disc",
+    "cwe" : 497,
+    "confidence" : "LOW"
+  }
+}

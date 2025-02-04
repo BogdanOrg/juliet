@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE379_Temporary_File_Creation_in_Insecure_Dir\\CWE379_Temporary_File_Creation_in_Insecure_Dir__basic_08.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE379_Temporary_File_Creation_in_Insecure_Dir\\CWE379_Temporary_File_Creation_in_Insecure_Dir__basic_08.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE379_Temporary_File_Creation_in_Insecure_Dir/CWE379_Temporary_File_Creation_in_Insecure_Dir__basic_08.java:CWE379_Temporary_File_Creation_in_Insecure_Dir__basic_08:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE379_Temporary_File_Creation_in_Insecure_Dir/CWE379_Temporary_File_Creation_in_Insecure_Dir__basic_08.java:CWE379_Temporary_File_Creation_in_Insecure_Dir__basic_08:good()",
+    "typeName" : "good"
+  } ]
+}

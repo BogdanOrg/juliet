@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE561_Dead_Code\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE561_Dead_Code\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE561_Dead_Code/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE561_Dead_Code/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE832_Unlock_Not_Locked\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE832_Unlock_Not_Locked\\CWE832_Unlock_Not_Locked__ReentrantLock_Servlet_01.java", "src\\testcases\\CWE832_Unlock_Not_Locked\\ServletMain.java", "src\\testcasesupport\\AbstractTestCaseServlet.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE832_Unlock_Not_Locked/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE832_Unlock_Not_Locked/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72a.java", "src\\testcases\\CWE197_Numeric_Truncation_Error\\s01\\CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72a.java:CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72a.java:CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_72a:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE396_Catch_Generic_Exception\\CWE396_Catch_Generic_Exception__Exception_14.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE396_Catch_Generic_Exception\\CWE396_Catch_Generic_Exception__Exception_14.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE396_Catch_Generic_Exception/CWE396_Catch_Generic_Exception__Exception_14.java:CWE396_Catch_Generic_Exception__Exception_14:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE396_Catch_Generic_Exception/CWE396_Catch_Generic_Exception__Exception_14.java:CWE396_Catch_Generic_Exception__Exception_14:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__listen_tcp_executeQuery_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__listen_tcp_executeQuery_54e.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__listen_tcp_executeQuery_54d.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__listen_tcp_executeQuery_54a.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__listen_tcp_executeQuery_54c.java", "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__listen_tcp_executeQuery_54b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__listen_tcp_executeQuery_54a.java:CWE89_SQL_Injection__listen_tcp_executeQuery_54a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__listen_tcp_executeQuery_54a.java:CWE89_SQL_Injection__listen_tcp_executeQuery_54a:good()",
+    "typeName" : "good"
+  } ]
+}

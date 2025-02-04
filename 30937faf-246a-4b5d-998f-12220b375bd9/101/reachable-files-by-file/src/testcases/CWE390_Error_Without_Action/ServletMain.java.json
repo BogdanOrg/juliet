@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE390_Error_Without_Action\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE390_Error_Without_Action\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE390_Error_Without_Action/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE390_Error_Without_Action/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

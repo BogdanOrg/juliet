@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_Environment_modulo_10.java",
+  "reachableFiles" : [ "src\\testcases\\CWE369_Divide_by_Zero\\s01\\CWE369_Divide_by_Zero__float_Environment_modulo_10.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_Environment_modulo_10.java:CWE369_Divide_by_Zero__float_Environment_modulo_10:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_Environment_modulo_10.java:CWE369_Divide_by_Zero__float_Environment_modulo_10:good()",
+    "typeName" : "good"
+  } ]
+}

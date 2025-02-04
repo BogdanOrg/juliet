@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_04.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s02\\CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_04.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_04.java:CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_04:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_04.java:CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_04:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

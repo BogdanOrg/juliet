@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__database_54a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__database_54e.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__database_54a.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__database_54d.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__database_54c.java", "src\\testcases\\CWE78_OS_Command_Injection\\CWE78_OS_Command_Injection__database_54b.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__database_54a.java:CWE78_OS_Command_Injection__database_54a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE78_OS_Command_Injection/CWE78_OS_Command_Injection__database_54a.java:CWE78_OS_Command_Injection__database_54a:good()",
+    "typeName" : "good"
+  } ]
+}

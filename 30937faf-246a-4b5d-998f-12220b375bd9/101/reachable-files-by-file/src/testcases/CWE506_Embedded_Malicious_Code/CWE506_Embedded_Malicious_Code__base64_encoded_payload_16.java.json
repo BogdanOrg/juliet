@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE506_Embedded_Malicious_Code\\CWE506_Embedded_Malicious_Code__base64_encoded_payload_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE506_Embedded_Malicious_Code\\CWE506_Embedded_Malicious_Code__base64_encoded_payload_16.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__base64_encoded_payload_16.java:CWE506_Embedded_Malicious_Code__base64_encoded_payload_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__base64_encoded_payload_16.java:CWE506_Embedded_Malicious_Code__base64_encoded_payload_16:good()",
+    "typeName" : "good"
+  } ]
+}

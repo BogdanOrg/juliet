@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67a.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67b.java", "src\\testcases\\CWE129_Improper_Validation_of_Array_Index\\s03\\CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67a.java", "src\\testcasesupport\\AbstractTestCaseServlet.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67a.java:CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE129_Improper_Validation_of_Array_Index/s03/CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67a.java:CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_read_no_check_67a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

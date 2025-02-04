@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_uninit_variable_long_16.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE563_Unused_Variable\\CWE563_Unused_Variable__unused_uninit_variable_long_16.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_uninit_variable_long_16.java:CWE563_Unused_Variable__unused_uninit_variable_long_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_uninit_variable_long_16.java:CWE563_Unused_Variable__unused_uninit_variable_long_16:good()",
+    "typeName" : "good"
+  } ]
+}

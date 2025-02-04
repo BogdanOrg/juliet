@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE667_Improper_Locking\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE667_Improper_Locking\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE667_Improper_Locking/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE667_Improper_Locking/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

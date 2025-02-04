@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE390_Error_Without_Action\\CWE390_Error_Without_Action__mkdirs_10.java",
+  "reachableFiles" : [ "src\\testcases\\CWE390_Error_Without_Action\\CWE390_Error_Without_Action__mkdirs_10.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE390_Error_Without_Action/CWE390_Error_Without_Action__mkdirs_10.java:CWE390_Error_Without_Action__mkdirs_10:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE390_Error_Without_Action/CWE390_Error_Without_Action__mkdirs_10.java:CWE390_Error_Without_Action__mkdirs_10:good()",
+    "typeName" : "good"
+  } ]
+}

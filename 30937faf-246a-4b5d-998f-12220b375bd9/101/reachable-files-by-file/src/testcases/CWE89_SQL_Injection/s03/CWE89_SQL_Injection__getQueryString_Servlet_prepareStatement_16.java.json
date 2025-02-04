@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_16.java",
+  "reachableFiles" : [ "src\\testcases\\CWE89_SQL_Injection\\s03\\CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_16.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_16.java:CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_16:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s03/CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_16.java:CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_16:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

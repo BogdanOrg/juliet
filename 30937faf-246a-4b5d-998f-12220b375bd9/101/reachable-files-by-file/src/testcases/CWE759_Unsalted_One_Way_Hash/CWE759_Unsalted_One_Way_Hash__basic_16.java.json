@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE759_Unsalted_One_Way_Hash\\CWE759_Unsalted_One_Way_Hash__basic_16.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE759_Unsalted_One_Way_Hash\\CWE759_Unsalted_One_Way_Hash__basic_16.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE759_Unsalted_One_Way_Hash/CWE759_Unsalted_One_Way_Hash__basic_16.java:CWE759_Unsalted_One_Way_Hash__basic_16:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE759_Unsalted_One_Way_Hash/CWE759_Unsalted_One_Way_Hash__basic_16.java:CWE759_Unsalted_One_Way_Hash__basic_16:good()",
+    "typeName" : "good"
+  } ]
+}

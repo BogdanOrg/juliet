@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE89_SQL_Injection\\s01\\CWE89_SQL_Injection__connect_tcp_executeUpdate_72a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE89_SQL_Injection\\s01\\CWE89_SQL_Injection__connect_tcp_executeUpdate_72b.java", "src\\testcasesupport\\IO.java", "src\\testcases\\CWE89_SQL_Injection\\s01\\CWE89_SQL_Injection__connect_tcp_executeUpdate_72a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeUpdate_72a.java:CWE89_SQL_Injection__connect_tcp_executeUpdate_72a:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE89_SQL_Injection/s01/CWE89_SQL_Injection__connect_tcp_executeUpdate_72a.java:CWE89_SQL_Injection__connect_tcp_executeUpdate_72a:good()",
+    "typeName" : "good"
+  } ]
+}

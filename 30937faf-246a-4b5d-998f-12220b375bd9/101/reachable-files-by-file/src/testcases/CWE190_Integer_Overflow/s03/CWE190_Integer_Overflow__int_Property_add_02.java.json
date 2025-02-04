@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_Property_add_02.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE190_Integer_Overflow\\s03\\CWE190_Integer_Overflow__int_Property_add_02.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_Property_add_02.java:CWE190_Integer_Overflow__int_Property_add_02:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_Property_add_02.java:CWE190_Integer_Overflow__int_Property_add_02:good()",
+    "typeName" : "good"
+  } ]
+}

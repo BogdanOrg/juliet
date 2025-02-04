@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE585_Empty_Sync_Block\\CWE585_Empty_Sync_Block__Servlet_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE585_Empty_Sync_Block\\CWE585_Empty_Sync_Block__Servlet_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE585_Empty_Sync_Block/CWE585_Empty_Sync_Block__Servlet_01.java:CWE585_Empty_Sync_Block__Servlet_01:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE585_Empty_Sync_Block/CWE585_Empty_Sync_Block__Servlet_01.java:CWE585_Empty_Sync_Block__Servlet_01:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

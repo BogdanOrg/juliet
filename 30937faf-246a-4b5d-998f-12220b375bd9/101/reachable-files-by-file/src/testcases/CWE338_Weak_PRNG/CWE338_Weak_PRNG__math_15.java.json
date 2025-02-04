@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE338_Weak_PRNG\\CWE338_Weak_PRNG__math_15.java",
+  "reachableFiles" : [ "src\\testcases\\CWE338_Weak_PRNG\\CWE338_Weak_PRNG__math_15.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE338_Weak_PRNG/CWE338_Weak_PRNG__math_15.java:CWE338_Weak_PRNG__math_15:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE338_Weak_PRNG/CWE338_Weak_PRNG__math_15.java:CWE338_Weak_PRNG__math_15:good()",
+    "typeName" : "good"
+  } ]
+}

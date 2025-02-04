@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE523_Unprotected_Cred_Transport\\CWE523_Unprotected_Cred_Transport__Servlet_05.java",
+  "reachableFiles" : [ "src\\testcases\\CWE523_Unprotected_Cred_Transport\\CWE523_Unprotected_Cred_Transport__Servlet_05.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE523_Unprotected_Cred_Transport/CWE523_Unprotected_Cred_Transport__Servlet_05.java:CWE523_Unprotected_Cred_Transport__Servlet_05:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE523_Unprotected_Cred_Transport/CWE523_Unprotected_Cred_Transport__Servlet_05.java:CWE523_Unprotected_Cred_Transport__Servlet_05:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

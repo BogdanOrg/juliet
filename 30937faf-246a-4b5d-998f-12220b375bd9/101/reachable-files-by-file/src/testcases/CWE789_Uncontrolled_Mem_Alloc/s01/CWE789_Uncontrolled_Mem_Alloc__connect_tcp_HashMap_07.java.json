@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_07.java",
+  "reachableFiles" : [ "src\\testcases\\CWE789_Uncontrolled_Mem_Alloc\\s01\\CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_07.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_07.java:CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_07:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE789_Uncontrolled_Mem_Alloc/s01/CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_07.java:CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashMap_07:good()",
+    "typeName" : "good"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61b.java", "src\\testcases\\CWE81_XSS_Error_Message\\CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61a.java:CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE81_XSS_Error_Message/CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61a.java:CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_61a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

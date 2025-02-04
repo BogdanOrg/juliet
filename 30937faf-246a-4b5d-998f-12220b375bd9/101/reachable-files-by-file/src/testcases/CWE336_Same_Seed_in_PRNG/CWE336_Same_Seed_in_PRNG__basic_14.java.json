@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE336_Same_Seed_in_PRNG\\CWE336_Same_Seed_in_PRNG__basic_14.java",
+  "reachableFiles" : [ "src\\testcasesupport\\IO.java", "src\\testcases\\CWE336_Same_Seed_in_PRNG\\CWE336_Same_Seed_in_PRNG__basic_14.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE336_Same_Seed_in_PRNG/CWE336_Same_Seed_in_PRNG__basic_14.java:CWE336_Same_Seed_in_PRNG__basic_14:bad()",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE336_Same_Seed_in_PRNG/CWE336_Same_Seed_in_PRNG__basic_14.java:CWE336_Same_Seed_in_PRNG__basic_14:good()",
+    "typeName" : "good"
+  } ]
+}

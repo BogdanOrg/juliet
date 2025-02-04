@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getParameter_Servlet_write_71a.java",
+  "reachableFiles" : [ "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getParameter_Servlet_write_71b.java", "src\\testcases\\CWE400_Resource_Exhaustion\\s01\\CWE400_Resource_Exhaustion__getParameter_Servlet_write_71a.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__getParameter_Servlet_write_71a.java:CWE400_Resource_Exhaustion__getParameter_Servlet_write_71a:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE400_Resource_Exhaustion/s01/CWE400_Resource_Exhaustion__getParameter_Servlet_write_71a.java:CWE400_Resource_Exhaustion__getParameter_Servlet_write_71a:good(request,response)",
+    "typeName" : "good"
+  } ]
+}

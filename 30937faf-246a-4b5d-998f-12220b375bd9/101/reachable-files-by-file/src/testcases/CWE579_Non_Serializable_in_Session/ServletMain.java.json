@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE579_Non_Serializable_in_Session\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE579_Non_Serializable_in_Session\\ServletMain.java", "src\\testcasesupport\\AbstractTestCaseServlet.java", "src\\testcases\\CWE579_Non_Serializable_in_Session\\CWE579_Non_Serializable_in_Session__Servlet_01.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE579_Non_Serializable_in_Session/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE579_Non_Serializable_in_Session/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

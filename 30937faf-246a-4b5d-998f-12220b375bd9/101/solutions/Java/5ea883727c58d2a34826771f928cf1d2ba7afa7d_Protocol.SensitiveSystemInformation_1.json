@@ -1,0 +1,302 @@
+{
+  "ruleId" : "Protocol:SensitiveSystemInformation",
+  "level" : "error",
+  "message" : {
+    "text" : "'println' method of 'java.io.PrintWriter' object could be abused to reveal sensitive internal information."
+  },
+  "locations" : [ {
+    "physicalLocation" : {
+      "artifactLocation" : {
+        "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+      },
+      "region" : {
+        "startLine" : 127,
+        "startColumn" : 20,
+        "endLine" : 127,
+        "endColumn" : 26,
+        "snippet" : {
+          "text" : "java.io.PrintWriter.println"
+        }
+      }
+    },
+    "logicalLocations" : [ {
+      "name" : "goodB2GSink(dataArray)",
+      "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+      "kind" : "function"
+    } ]
+  } ],
+  "codeFlows" : [ {
+    "threadFlows" : [ {
+      "locations" : [ {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 124,
+              "startColumn" : 55,
+              "endLine" : 124,
+              "endColumn" : 67,
+              "snippet" : {
+                "text" : "sslSocket = (SSLSocket) sslsSocketFactory.createSocket(\"remote_host\", 1337);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "createSocket",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 1,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 124,
+              "startColumn" : 25,
+              "endLine" : 124,
+              "endColumn" : 88,
+              "snippet" : {
+                "text" : "sslSocket = (SSLSocket) sslsSocketFactory.createSocket(\"remote_host\", 1337);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "(SSLSocket) sslsSocketFactory.createSocket(\"remote_host\", 1337)",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 2,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 124,
+              "startColumn" : 25,
+              "endLine" : 124,
+              "endColumn" : 88,
+              "snippet" : {
+                "text" : "sslSocket = (SSLSocket) sslsSocketFactory.createSocket(\"remote_host\", 1337);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "sslSocket",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 3,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 125,
+              "startColumn" : 48,
+              "endLine" : 125,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "writer = new PrintWriter(sslSocket.getOutputStream(), true);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.net.Socket.getOutputStream",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 4,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 125,
+              "startColumn" : 48,
+              "endLine" : 125,
+              "endColumn" : 63,
+              "snippet" : {
+                "text" : "writer = new PrintWriter(sslSocket.getOutputStream(), true);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "getOutputStream",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 5,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 125,
+              "startColumn" : 22,
+              "endLine" : 125,
+              "endColumn" : 72,
+              "snippet" : {
+                "text" : "writer = new PrintWriter(sslSocket.getOutputStream(), true);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "java.io.PrintWriter.new",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 6,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 125,
+              "startColumn" : 22,
+              "endLine" : 125,
+              "endColumn" : 72,
+              "snippet" : {
+                "text" : "writer = new PrintWriter(sslSocket.getOutputStream(), true);"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "properties" : {
+            "instanceName" : "writer",
+            "locationType" : "VARIABLE"
+          }
+        },
+        "executionOrder" : 7,
+        "properties" : {
+          "neededInUi" : true
+        }
+      }, {
+        "location" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "file:///C:/Dev/SourcesToScan/JavaTestProjects-main/juliet-test-suite-master/src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 127,
+              "startColumn" : 20,
+              "endLine" : 127,
+              "endColumn" : 26,
+              "snippet" : {
+                "text" : "java.io.PrintWriter.println"
+              }
+            }
+          },
+          "logicalLocations" : [ {
+            "name" : "goodB2GSink(dataArray)",
+            "fullyQualifiedName" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java:CWE319_Cleartext_Tx_Sensitive_Info__send_66b:goodB2GSink(dataArray)",
+            "kind" : "function"
+          } ],
+          "message" : {
+            "text" : "protocol analysis reached states '[FINDING]' for variable 'println' in 'goodB2GSink'"
+          },
+          "properties" : {
+            "instanceName" : "java.io.PrintWriter.println",
+            "locationType" : "FUNCTION"
+          }
+        },
+        "executionOrder" : 8,
+        "properties" : {
+          "neededInUi" : true
+        }
+      } ],
+      "properties" : {
+        "recommendedFixLocation" : {
+          "physicalLocation" : {
+            "artifactLocation" : {
+              "uri" : "src/testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__send_66b.java"
+            },
+            "region" : {
+              "startLine" : 124,
+              "startColumn" : 55,
+              "endLine" : 124,
+              "endColumn" : 66,
+              "snippet" : {
+                "text" : "createSocket"
+              }
+            }
+          },
+          "fullyTainted" : true,
+          "variableName" : "_ws_tmp_var_:su:1889069",
+          "loc" : "(SSLSocket) sslsSocketFactory.createSocket(\"remote_host\", 1337)"
+        }
+      }
+    } ]
+  } ],
+  "properties" : {
+    "vulnerabilityType" : "java-system-properties-disc",
+    "cwe" : 497,
+    "confidence" : "LOW"
+  }
+}

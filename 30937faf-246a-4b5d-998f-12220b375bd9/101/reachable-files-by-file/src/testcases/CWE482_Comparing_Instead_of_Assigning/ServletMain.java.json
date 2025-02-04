@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE482_Comparing_Instead_of_Assigning\\ServletMain.java",
+  "reachableFiles" : [ "src\\testcases\\CWE482_Comparing_Instead_of_Assigning\\ServletMain.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE482_Comparing_Instead_of_Assigning/ServletMain.java:ServletMain:doPost(request,response)",
+    "typeName" : "doPost"
+  }, {
+    "typeFqn" : "src/testcases/CWE482_Comparing_Instead_of_Assigning/ServletMain.java:ServletMain:doGet(request,response)",
+    "typeName" : "doGet"
+  } ]
+}

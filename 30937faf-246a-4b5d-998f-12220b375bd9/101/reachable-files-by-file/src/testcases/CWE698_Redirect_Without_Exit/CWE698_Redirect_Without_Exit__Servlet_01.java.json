@@ -1,0 +1,11 @@
+{
+  "filePath" : "src\\testcases\\CWE698_Redirect_Without_Exit\\CWE698_Redirect_Without_Exit__Servlet_01.java",
+  "reachableFiles" : [ "src\\testcases\\CWE698_Redirect_Without_Exit\\CWE698_Redirect_Without_Exit__Servlet_01.java", "src\\testcasesupport\\IO.java" ],
+  "typeInfoSet" : [ {
+    "typeFqn" : "src/testcases/CWE698_Redirect_Without_Exit/CWE698_Redirect_Without_Exit__Servlet_01.java:CWE698_Redirect_Without_Exit__Servlet_01:bad(request,response)",
+    "typeName" : "bad"
+  }, {
+    "typeFqn" : "src/testcases/CWE698_Redirect_Without_Exit/CWE698_Redirect_Without_Exit__Servlet_01.java:CWE698_Redirect_Without_Exit__Servlet_01:good(request,response)",
+    "typeName" : "good"
+  } ]
+}
